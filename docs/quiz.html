@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What Kind of Change-Maker Are You? | Impact Archetypes</title>
+  <meta name="description" content="A reflective quiz for people working in social impact, nonprofits, philanthropy, CSR, policy, and social enterprise. Discover your impact archetype in under 3 minutes." />
+  <meta property="og:title" content="What Kind of Change-Maker Are You?" />
+  <meta property="og:description" content="Discover how you instinctively approach change, evidence, power, and action. 16 questions · 16 archetypes." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="What Kind of Change-Maker Are You?" />
+  <meta name="twitter:description" content="Discover your social sector archetype in under 3 minutes." />
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <style>
+    /* ── Design tokens ───────────────────────────────────────── */
+    :root {
+      --navy:   #1B3A6B;
+      --teal:   #0EA5E9;
+      --dark:   #0F2442;
+      --bg:     #F0F4F8;
+      --white:  #FFFFFF;
+      --border: #E2E8F0;
+      --text:   #1e293b;
+      --muted:  #64748b;
+      --radius: 12px;
+      --shadow: 0 4px 20px rgba(0,0,0,.08);
+    }
+
+    /* ── Reset & base ────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* ── Screen container ────────────────────────────────────── */
+    .screen {
+      display: none;
+      min-height: 100vh;
+    }
+    .screen.active { display: flex; flex-direction: column; }
+
+    /* ── Brand bar ───────────────────────────────────────────── */
+    .brand-bar {
+      background: var(--dark);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .brand-bar .logo-mark {
+      width: 28px; height: 28px;
+      background: var(--teal);
+      border-radius: 6px;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 800; font-size: 14px; color: white;
+    }
+    .brand-bar .logo-text {
+      color: white; font-size: 14px; font-weight: 600; letter-spacing: .3px;
+    }
+
+    /* ── Landing screen ──────────────────────────────────────── */
+    #screen-landing .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(14,165,233,.12);
+      color: var(--teal);
+      border: 1px solid rgba(14,165,233,.3);
+      border-radius: 100px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .5px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 44px);
+      font-weight: 800;
+      color: var(--dark);
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .hero h1 span { color: var(--teal); }
+    .hero .tagline {
+      font-size: 16px;
+      color: var(--muted);
+      margin-bottom: 8px;
+      max-width: 480px;
+    }
+    .hero .subline {
+      font-size: 15px;
+      color: var(--muted);
+      margin-bottom: 40px;
+      font-style: italic;
+    }
+    .hero .meta {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 16px;
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .hero .meta span {
+      display: flex; gap: 5px; align-items: center;
+    }
+    .btn-primary {
+      background: var(--teal);
+      color: white;
+      border: none;
+      border-radius: var(--radius);
+      padding: 16px 40px;
+      font-size: 17px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background .2s, transform .1s;
+      letter-spacing: .2px;
+    }
+    .btn-primary:hover { background: #0284c7; }
+    .btn-primary:active { transform: scale(.97); }
+    .btn-ghost {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 10px 22px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background .2s;
+    }
+    .btn-ghost:hover { background: var(--border); }
+
+    /* ── Quiz screen ─────────────────────────────────────────── */
+    #screen-quiz {
+      background: var(--bg);
+    }
+    .quiz-topbar {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .back-btn {
+      background: none;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer;
+      color: var(--muted);
+      font-size: 16px;
+      flex-shrink: 0;
+      transition: background .15s;
+    }
+    .back-btn:hover { background: var(--bg); }
+    .progress-wrap {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .progress-label {
+      font-size: 12px;
+      color: var(--muted);
+      font-weight: 500;
+    }
+    .progress-bar-bg {
+      height: 6px;
+      background: var(--border);
+      border-radius: 100px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: var(--teal);
+      border-radius: 100px;
+      transition: width .4s ease;
+    }
+    .quiz-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 24px;
+      max-width: 600px;
+      margin: 0 auto;
+      width: 100%;
+    }
+    .question-dim {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--teal);
+      margin-bottom: 12px;
+      text-align: center;
+    }
+    .question-text {
+      font-size: clamp(18px, 4vw, 23px);
+      font-weight: 700;
+      color: var(--dark);
+      text-align: center;
+      line-height: 1.4;
+      margin-bottom: 40px;
+    }
+    .answer-options {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
+    .answer-btn {
+      background: white;
+      border: 2px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      cursor: pointer;
+      text-align: left;
+      transition: border-color .15s, background .15s, transform .1s;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .answer-btn .dot {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      border: 2px solid var(--border);
+      flex-shrink: 0;
+      transition: background .15s, border-color .15s;
+    }
+    .answer-btn:hover {
+      border-color: var(--teal);
+      background: rgba(14,165,233,.04);
+    }
+    .answer-btn.selected {
+      border-color: var(--teal);
+      background: rgba(14,165,233,.08);
+    }
+    .answer-btn.selected .dot {
+      background: var(--teal);
+      border-color: var(--teal);
+    }
+    .answer-btn:active { transform: scale(.98); }
+
+    /* ── Result screen ───────────────────────────────────────── */
+    #screen-result {
+      background: var(--bg);
+    }
+    .result-body {
+      max-width: 640px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      width: 100%;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .result-animate { animation: fadeUp .5s ease both; }
+
+    .result-badge-wrap {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    .result-badge {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+    .badge-icon {
+      width: 80px; height: 80px;
+      border-radius: 20px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+      margin-bottom: 4px;
+    }
+    .badge-code {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      opacity: .7;
+    }
+    .result-name {
+      font-size: clamp(26px, 6vw, 36px);
+      font-weight: 800;
+      color: var(--dark);
+      text-align: center;
+      margin-bottom: 8px;
+      line-height: 1.2;
+    }
+    .result-oneliner {
+      font-size: 18px;
+      color: var(--muted);
+      text-align: center;
+      margin-bottom: 28px;
+      font-style: italic;
+    }
+    .result-summary {
+      background: white;
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--text);
+      box-shadow: var(--shadow);
+    }
+
+    /* Dimension bars */
+    .dim-bars {
+      background: white;
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+    }
+    .dim-bars h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 16px;
+      font-weight: 700;
+    }
+    .dim-row {
+      margin-bottom: 14px;
+    }
+    .dim-row:last-child { margin-bottom: 0; }
+    .dim-labels {
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 5px;
+    }
+    .dim-bar-bg {
+      height: 8px;
+      background: var(--border);
+      border-radius: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .dim-bar-fill {
+      position: absolute;
+      top: 0; bottom: 0;
+      border-radius: 100px;
+      background: var(--teal);
+      transition: left .6s ease, right .6s ease;
+    }
+
+    /* Info cards */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    @media (max-width: 480px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+    .info-card.full { grid-column: 1 / -1; }
+    .info-card h4 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .info-card p, .info-card li {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text);
+    }
+    .info-card ul { padding-left: 18px; }
+    .info-card li { margin-bottom: 4px; }
+
+    .paired-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 4px;
+    }
+    .chip {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 5px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--navy);
+    }
+
+    /* Share section */
+    .share-section {
+      background: white;
+      border-radius: var(--radius);
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+    .share-section h3 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+    .share-section p {
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 20px;
+    }
+    .share-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+    .share-btn {
+      display: flex;
+      align-items: center;
+      gap: 7px;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+      transition: opacity .2s, transform .1s;
+      text-decoration: none;
+      color: white;
+    }
+    .share-btn:hover { opacity: .88; }
+    .share-btn:active { transform: scale(.96); }
+    .share-btn.linkedin  { background: #0A66C2; }
+    .share-btn.twitter   { background: #000000; }
+    .share-btn.whatsapp  { background: #25D366; }
+    .share-btn.copy      { background: var(--navy); }
+    .share-btn.download  { background: var(--teal); }
+
+    .bottom-ctas {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 8px;
+    }
+
+    /* ── All Types screen ────────────────────────────────────── */
+    #screen-all-types {
+      background: var(--bg);
+    }
+    .all-types-body {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 32px 20px 60px;
+      width: 100%;
+    }
+    .all-types-body h2 {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--dark);
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .all-types-body .sub {
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 32px;
+      font-size: 15px;
+    }
+    .types-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 14px;
+    }
+    .type-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 18px;
+      cursor: pointer;
+      transition: box-shadow .2s, transform .15s;
+      box-shadow: var(--shadow);
+      border: 2px solid transparent;
+    }
+    .type-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(0,0,0,.12);
+    }
+    .type-card-icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .type-card-code {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .type-card-name {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 6px;
+    }
+    .type-card-oneliner {
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      display: none;
+      position: fixed; inset: 0;
+      background: rgba(0,0,0,.5);
+      z-index: 100;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.open { display: flex; }
+    .modal-box {
+      background: white;
+      border-radius: 16px;
+      max-width: 540px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 32px;
+      position: relative;
+    }
+    .modal-close {
+      position: absolute; top: 16px; right: 16px;
+      background: var(--bg);
+      border: none;
+      border-radius: 50%;
+      width: 32px; height: 32px;
+      cursor: pointer;
+      font-size: 18px;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--muted);
+    }
+
+    /* Share card (off-screen for html2canvas) */
+    #share-card-offscreen {
+      position: absolute;
+      left: -9999px;
+      top: -9999px;
+      width: 600px;
+      height: 314px;
+      background: var(--dark);
+      border-radius: 16px;
+      padding: 36px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+      color: white;
+    }
+    #share-card-offscreen .sc-top {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+    }
+    #share-card-offscreen .sc-icon {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 30px;
+      flex-shrink: 0;
+    }
+    #share-card-offscreen .sc-info {}
+    #share-card-offscreen .sc-code {
+      font-size: 11px; font-weight: 700; letter-spacing: 2px;
+      text-transform: uppercase; opacity: .6; margin-bottom: 4px;
+    }
+    #share-card-offscreen .sc-name {
+      font-size: 24px; font-weight: 800; line-height: 1.2; margin-bottom: 6px;
+    }
+    #share-card-offscreen .sc-oneliner {
+      font-size: 14px; opacity: .8; font-style: italic;
+    }
+    #share-card-offscreen .sc-strengths {
+      display: flex; gap: 8px; flex-wrap: wrap;
+    }
+    #share-card-offscreen .sc-strength-chip {
+      background: rgba(255,255,255,.12);
+      border-radius: 100px;
+      padding: 4px 12px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    #share-card-offscreen .sc-footer {
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    #share-card-offscreen .sc-site {
+      font-size: 12px; opacity: .5;
+    }
+    #share-card-offscreen .sc-tag {
+      font-size: 12px; opacity: .5;
+    }
+
+    /* Utility */
+    .mt-20 { margin-top: 20px; }
+    .text-center { text-align: center; }
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════ LANDING ═══════════════════ -->
+<div id="screen-landing" class="screen active">
+  <div class="brand-bar">
+    <div class="logo-mark">IA</div>
+    <span class="logo-text">Impact Archetypes</span>
+  </div>
+  <div class="hero">
+    <div class="hero-badge">Social Sector Quiz</div>
+    <h1>What Kind of <span>Change-Maker</span> Are You?</h1>
+    <p class="tagline">A reflective quiz for people working in social impact, nonprofits, philanthropy, CSR, policy, and social enterprise.</p>
+    <p class="subline">Discover how you instinctively approach change, evidence, power, and action.</p>
+    <button class="btn-primary" onclick="startQuiz()">Start Quiz</button>
+    <div class="meta">
+      <span>⏱ ~3 minutes</span>
+      <span>📋 16 questions</span>
+      <span>🎭 16 archetypes</span>
+    </div>
+    <p class="mt-20"><a href="#" onclick="showAllTypes(); return false;">Browse all 16 archetypes →</a></p>
+  </div>
+</div>
+
+<!-- ═══════════════════ QUIZ ═══════════════════ -->
+<div id="screen-quiz" class="screen">
+  <div class="brand-bar">
+    <div class="logo-mark">IA</div>
+    <span class="logo-text">Impact Archetypes</span>
+  </div>
+  <div class="quiz-topbar">
+    <button class="back-btn" onclick="goBack()" title="Previous question">&#8592;</button>
+    <div class="progress-wrap">
+      <div class="progress-label" id="progress-label">Question 1 of 16</div>
+      <div class="progress-bar-bg">
+        <div class="progress-bar-fill" id="progress-bar" style="width:0%"></div>
+      </div>
+    </div>
+  </div>
+  <div class="quiz-body">
+    <div class="question-dim" id="question-dim"></div>
+    <div class="question-text" id="question-text"></div>
+    <div class="answer-options" id="answer-options"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════ RESULT ═══════════════════ -->
+<div id="screen-result" class="screen">
+  <div class="brand-bar">
+    <div class="logo-mark">IA</div>
+    <span class="logo-text">Impact Archetypes</span>
+  </div>
+  <div class="result-body" id="result-body"></div>
+</div>
+
+<!-- ═══════════════════ ALL TYPES ═══════════════════ -->
+<div id="screen-all-types" class="screen">
+  <div class="brand-bar">
+    <div class="logo-mark">IA</div>
+    <span class="logo-text">Impact Archetypes</span>
+  </div>
+  <div class="all-types-body">
+    <h2>All 16 Impact Archetypes</h2>
+    <p class="sub">Click any archetype to learn more. <a href="#" onclick="showScreen('landing'); return false;">← Back to quiz</a></p>
+    <div class="types-grid" id="types-grid"></div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal-overlay" onclick="closeModal(event)">
+  <div class="modal-box" id="modal-box">
+    <button class="modal-close" onclick="closeModalDirect()">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- Share card (off-screen) -->
+<div id="share-card-offscreen">
+  <div class="sc-top">
+    <div class="sc-icon" id="sc-icon"></div>
+    <div class="sc-info">
+      <div class="sc-code" id="sc-code"></div>
+      <div class="sc-name" id="sc-name"></div>
+      <div class="sc-oneliner" id="sc-oneliner"></div>
+    </div>
+  </div>
+  <div class="sc-strengths" id="sc-strengths"></div>
+  <div class="sc-footer">
+    <span class="sc-site">edzola.com/quiz</span>
+    <span class="sc-tag">#ImpactArchetypes</span>
+  </div>
+</div>
+
+<script>
+// ══════════════════════════════════════════════════
+//  DATA
+// ══════════════════════════════════════════════════
+
+const QUESTIONS = [
+  // Dimension A: Systems (S) vs Ground (G)
+  { dim: 'A', dimLabel: 'Scope of Change', text: 'Lasting social change usually requires changing systems, not just delivering better programs.', pole: 'S' },
+  { dim: 'A', dimLabel: 'Scope of Change', text: "I'm most energised when I can see the direct effect of work on people's lives.", pole: 'G' },
+  { dim: 'A', dimLabel: 'Scope of Change', text: 'Policy, incentives, and institutional design often matter more than the quality of any single intervention.', pole: 'S' },
+  { dim: 'A', dimLabel: 'Scope of Change', text: 'I trust solutions more after they have been tested in messy, real-world conditions.', pole: 'G' },
+  // Dimension B: Evidence (E) vs Experience (X)
+  { dim: 'B', dimLabel: 'Basis of Judgment', text: 'Good intentions are not enough; impact should be backed by data wherever possible.', pole: 'E' },
+  { dim: 'B', dimLabel: 'Basis of Judgment', text: 'Lived experience often reveals truths that standard metrics miss.', pole: 'X' },
+  { dim: 'B', dimLabel: 'Basis of Judgment', text: "I'm more convinced by a well-designed evaluation than by a compelling story alone.", pole: 'E' },
+  { dim: 'B', dimLabel: 'Basis of Judgment', text: 'I would rather listen deeply to community insight than over-rely on a neat dashboard.', pole: 'X' },
+  // Dimension C: Institution (I) vs Collective (C)
+  { dim: 'C', dimLabel: 'Theory of Scale', text: 'Strong organizations are the main vehicle through which impact can scale sustainably.', pole: 'I' },
+  { dim: 'C', dimLabel: 'Theory of Scale', text: 'Change lasts longer when communities and networks shape it together, not just one organization.', pole: 'C' },
+  { dim: 'C', dimLabel: 'Theory of Scale', text: 'Governance, process, and role clarity are underrated strengths in social change work.', pole: 'I' },
+  { dim: 'C', dimLabel: 'Theory of Scale', text: 'I trust collaborative ecosystems more than hero organizations.', pole: 'C' },
+  // Dimension D: Builder (B) vs Challenger (H)
+  { dim: 'D', dimLabel: 'Action Orientation', text: 'When I see a problem, my first instinct is to build, test, or improve something.', pole: 'B' },
+  { dim: 'D', dimLabel: 'Action Orientation', text: 'Before acting, I often question whether the proposed solution is solving the right problem.', pole: 'H' },
+  { dim: 'D', dimLabel: 'Action Orientation', text: 'I\'m comfortable prototyping even when the path is still somewhat unclear.', pole: 'B' },
+  { dim: 'D', dimLabel: 'Action Orientation', text: 'I often notice hidden assumptions, power dynamics, or unintended harms before others do.', pole: 'H' },
+];
+
+const ANSWER_OPTIONS = [
+  { label: 'Strongly Agree',    value: 2  },
+  { label: 'Agree',             value: 1  },
+  { label: 'Neutral',           value: 0  },
+  { label: 'Disagree',          value: -1 },
+  { label: 'Strongly Disagree', value: -2 },
+];
+
+const ARCHETYPES = {
+  'SEIB': {
+    name: 'The Systems Architect',
+    code: 'SEIB',
+    icon: '🏛️',
+    color: '#0EA5E9',
+    bg: 'rgba(14,165,233,.15)',
+    oneliner: 'You see the machine behind the mess.',
+    summary: "You think in structures, trust data, and build for the long term. You're drawn to root causes, institutional design, and solutions that can survive beyond a single project. Your natural habitat is the strategy layer — where policy, incentives, and organisational design intersect.",
+    strengths: ['Long-term structural thinking', 'Rigorous analytical framing', 'Designing durable systems'],
+    blindspot: 'May reach for frameworks before trust is built in the room.',
+    growth: 'Practice sitting with complexity and lived messiness before proposing architecture. Ask "who shaped this analysis?" before presenting it.',
+    inTeam: 'Brings structure when things feel chaotic. Often the one who maps the logic model.',
+    underPressure: 'Produces a very thorough strategy deck. May need reminding that the deck is not the change.',
+    pairedWith: ['The Community Catalyst (GXCB)', 'The Movement Strategist (SXCB)'],
+    shareText: "I got The Systems Architect — I see the machine behind the mess. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SEIH': {
+    name: 'The Accountability Steward',
+    code: 'SEIH',
+    icon: '🔍',
+    color: '#6366f1',
+    bg: 'rgba(99,102,241,.15)',
+    oneliner: 'You audit the room before you trust the report.',
+    summary: "You think structurally, trust data, and your instinct is to question, probe, and prevent shallow scaling. You're the person who asks whether the evidence actually holds up — and whether the impact claim is honest.",
+    strengths: ['Analytical rigour', 'Spotting performative reporting', 'Holding systems accountable'],
+    blindspot: 'Can slow momentum by over-scrutinising before others are ready.',
+    growth: 'Learn to distinguish productive challenge from paralysis. Not every gap needs a full audit before action.',
+    inTeam: 'The one who reads the footnotes. Invaluable in evaluation, governance, and donor reporting.',
+    underPressure: 'Asks hard questions at inconvenient moments. Usually right.',
+    pairedWith: ['The Program Engineer (GEIB)', 'The Coalition Designer (SECB)'],
+    shareText: "I got The Accountability Steward — I audit the room before I trust the report. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SECB': {
+    name: 'The Coalition Designer',
+    code: 'SECB',
+    icon: '🌐',
+    color: '#f59e0b',
+    bg: 'rgba(245,158,11,.15)',
+    oneliner: 'You build alliances that outlast any single funder.',
+    summary: "You think in systems and trust evidence, but you believe scale happens through networks, not org charts. You're drawn to coordination, shared learning, and building coalitions where multiple actors align around a common goal.",
+    strengths: ['Systems thinking', 'Evidence-based coalition strategy', 'Cross-sector convening'],
+    blindspot: 'May over-engineer coalition design before checking whether partners actually want to coordinate.',
+    growth: 'Stay connected to frontline implementation. Coalitions that lose ground-level feedback tend to drift.',
+    inTeam: 'The connector and strategist. Keeps the bigger picture in view when others are siloed.',
+    underPressure: "Tries to convene a working group. Sometimes that's exactly right.",
+    pairedWith: ['The Ground Realist (GXIH)', 'The Program Engineer (GEIB)'],
+    shareText: "I got The Coalition Designer — I build alliances that outlast any single funder. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SECH': {
+    name: 'The Structural Critic',
+    code: 'SECH',
+    icon: '⚡',
+    color: '#ef4444',
+    bg: 'rgba(239,68,68,.15)',
+    oneliner: 'You see the power dynamics others politely skip.',
+    summary: "You think in patterns, question easy metrics, and are wary of cosmetic reform. You're rarely satisfied by solutions that don't address root causes, and you're often the first to name what's being left out of the analysis.",
+    strengths: ['Pattern recognition', 'Power analysis', 'Challenging shallow solutions'],
+    blindspot: 'Can be perceived as resistant even when the critique is correct.',
+    growth: 'Pair your critique with a constructive ask. "Here\'s what\'s missing" lands better with a "here\'s what we could do instead."',
+    inTeam: 'The one who names the elephant. Often underestimated until they\'re proved right.',
+    underPressure: "Writes a very good memo no one has time to read. Keeps a record anyway.",
+    pairedWith: ['The Institutional Reformer (SXIB)', 'The Voice Amplifier (GXCH)'],
+    shareText: "I got The Structural Critic — I see the power dynamics others politely skip. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SXIB': {
+    name: 'The Institutional Reformer',
+    code: 'SXIB',
+    icon: '🔧',
+    color: '#8b5cf6',
+    bg: 'rgba(139,92,246,.15)',
+    oneliner: 'You change systems from the inside.',
+    summary: "You think structurally but rely more on contextual judgment and human insight than dashboards. You understand institutions well enough to navigate them — and push them. You're drawn to the messy work of reforming organisations that matter.",
+    strengths: ['Institutional navigation', 'Contextual judgment', 'Reforming from within'],
+    blindspot: 'May absorb institutional logic so deeply that radical options become hard to see.',
+    growth: 'Make space for voices from outside the institution. The view from inside has blind spots too.',
+    inTeam: 'The credible insider who can unlock what others can\'t.',
+    underPressure: 'Works the informal channels. Usually more effective than it looks.',
+    pairedWith: ['The Structural Critic (SECH)', 'The Community Catalyst (GXCB)'],
+    shareText: "I got The Institutional Reformer — I change systems from the inside. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SXIH': {
+    name: 'The Power Mapper',
+    code: 'SXIH',
+    icon: '🗺️',
+    color: '#ec4899',
+    bg: 'rgba(236,72,153,.15)',
+    oneliner: "You always notice who's missing from the room.",
+    summary: "You see hierarchy, legitimacy, and exclusion quickly. You're attuned to who holds power, who shapes the agenda, and whose voice is absent. You work structurally, but your lens is relational and political — not just technical.",
+    strengths: ['Power literacy', 'Political awareness', 'Spotting exclusion early'],
+    blindspot: 'Can get stuck in analysis of power without a clear theory of how to shift it.',
+    growth: 'Translate your power map into a concrete engagement strategy. Naming the problem is step one, not step ten.',
+    inTeam: 'The one who quietly tracks the political dynamics everyone else pretends don\'t exist.',
+    underPressure: "Sends a very pointed email. It's usually the most important thing that gets said.",
+    pairedWith: ['The Coalition Designer (SECB)', 'The Voice Amplifier (GXCH)'],
+    shareText: "I got The Power Mapper — I always notice who's missing from the room. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SXCB': {
+    name: 'The Movement Strategist',
+    code: 'SXCB',
+    icon: '🔥',
+    color: '#f97316',
+    bg: 'rgba(249,115,22,.15)',
+    oneliner: 'You turn ideas into momentum.',
+    summary: "You combine structural thinking with intuition, and believe change needs narrative, legitimacy, and collective ownership — not just a good theory of change. You're drawn to the political and cultural dimensions of social change.",
+    strengths: ['Strategic narrative', 'Coalition and movement building', 'Legitimacy-centred design'],
+    blindspot: 'May get impatient with institutional drag and the slow pace of systemic change.',
+    growth: 'Build your tolerance for the implementation grind. Momentum without delivery can burn allies out.',
+    inTeam: 'The visionary strategist who can hold the "why" when others are buried in the "what."',
+    underPressure: 'Drafts a rallying message and sends it to the group chat. Energises the room.',
+    pairedWith: ['The Program Engineer (GEIB)', 'The Accountability Steward (SEIH)'],
+    shareText: "I got The Movement Strategist — I turn ideas into momentum. #ImpactArchetypes edzola.com/quiz",
+  },
+  'SXCH': {
+    name: 'The Cultural Challenger',
+    code: 'SXCH',
+    icon: '🌀',
+    color: '#06b6d4',
+    bg: 'rgba(6,182,212,.15)',
+    oneliner: "You surface the norms others have stopped noticing.",
+    summary: "You question dominant assumptions and often name the social norms, cultural defaults, and invisible scripts that shape how change gets done. You're interested in the deep patterns that formal analysis misses.",
+    strengths: ['Cultural analysis', 'Surfacing invisible norms', 'Challenging dominant framings'],
+    blindspot: 'Can be ahead of the room in ways that make collaboration difficult in the short term.',
+    growth: 'Find allies who can translate your insight into language the room is ready to hear.',
+    inTeam: 'The one who reframes the question. Often the most important voice in a strategy process.',
+    underPressure: "Asks the question no one wanted to ask. It's usually the right question.",
+    pairedWith: ['The Institutional Reformer (SXIB)', 'The Grassroots Skeptic (GECH)'],
+    shareText: "I got The Cultural Challenger — I surface the norms others have stopped noticing. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GEIB': {
+    name: 'The Program Engineer',
+    code: 'GEIB',
+    icon: '⚙️',
+    color: '#10b981',
+    bg: 'rgba(16,185,129,.15)',
+    oneliner: 'You make good intentions operational.',
+    summary: "You care about execution, metrics, and getting things to actually work. You're drawn to implementation quality, operational design, and building teams that deliver. You trust what you can measure and improve.",
+    strengths: ['Implementation excellence', 'Operational clarity', 'Results-focused delivery'],
+    blindspot: 'May overvalue what is easy to measure and underweight what isn\'t.',
+    growth: 'Regularly ask what your metrics are missing. Invite the people most affected to tell you what\'s not showing up in the data.',
+    inTeam: 'The one who turns the strategy into a workplan. Indispensable at the execution stage.',
+    underPressure: 'Rebuilds the project plan. Usually fixes the problem.',
+    pairedWith: ['The Movement Strategist (SXCB)', 'The Accountability Steward (SEIH)'],
+    shareText: "I got The Program Engineer — I make good intentions operational. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GEIH': {
+    name: 'The Field Auditor',
+    code: 'GEIH',
+    icon: '🔎',
+    color: '#84cc16',
+    bg: 'rgba(132,204,22,.15)',
+    oneliner: 'You spot the gap between the report and the reality.',
+    summary: "You're grounded in operations but have a strong instinct to spot broken incentives, performative reporting, and the distance between what's claimed and what's actually happening. You keep implementation honest.",
+    strengths: ['Field-level realism', 'Spotting implementation gaps', 'Challenging performative reporting'],
+    blindspot: 'May resist systems and structures that feel too abstract, even when they\'d genuinely help.',
+    growth: 'Build your appetite for the policy and structural levers that shape the field conditions you navigate daily.',
+    inTeam: "The reality check. When the pilot looks too good to be true, you're the one who finds out why.",
+    underPressure: 'Does a field visit. Finds out what\'s actually happening.',
+    pairedWith: ['The Systems Architect (SEIB)', 'The Ground Realist (GXIH)'],
+    shareText: "I got The Field Auditor — I spot the gap between the report and the reality. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GECB': {
+    name: 'The Community Builder',
+    code: 'GECB',
+    icon: '🤝',
+    color: '#0EA5E9',
+    bg: 'rgba(14,165,233,.15)',
+    oneliner: 'You know that trust is the technology.',
+    summary: "You work close to people, value participation, and believe that change sticks when communities shape it. You're practical, people-first, and energised by local action that builds real ownership.",
+    strengths: ['Community trust-building', 'Participatory design', 'Practical people-centred action'],
+    blindspot: 'Can be resistant to data and evaluation if they feel extractive or top-down.',
+    growth: 'Find evaluation approaches that feel participatory rather than extractive. Evidence gathered with communities is still evidence.',
+    inTeam: 'The one who keeps the work connected to real people. Essential when abstract thinking loses the thread.',
+    underPressure: 'Calls the community. Asks what they think should happen next.',
+    pairedWith: ['The Systems Architect (SEIB)', 'The Movement Strategist (SXCB)'],
+    shareText: "I got The Community Builder — I know that trust is the technology. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GECH': {
+    name: 'The Grassroots Skeptic',
+    code: 'GECH',
+    icon: '🌱',
+    color: '#f59e0b',
+    bg: 'rgba(245,158,11,.15)',
+    oneliner: 'You push back when polished frameworks miss what\'s actually happening.',
+    summary: "You value frontline reality and are quick to challenge when theory meets the ground badly. You're often the voice that prevents well-resourced but poorly-grounded work from doing harm.",
+    strengths: ['Frontline credibility', 'Challenging disconnected theory', 'Ground-truth realism'],
+    blindspot: 'Skepticism can sometimes prevent engagement with ideas that would genuinely help if given a fair hearing.',
+    growth: 'Practice distinguishing between bad frameworks and frameworks that need adaptation. Some ideas are worth improving, not rejecting.',
+    inTeam: 'The one who grounds the room. Keeps work from floating off into abstraction.',
+    underPressure: 'Says what everyone else was thinking. Bluntly. Usually the most useful thing said that day.',
+    pairedWith: ['The Cultural Challenger (SXCH)', 'The Power Mapper (SXIH)'],
+    shareText: "I got The Grassroots Skeptic — I push back when polished frameworks miss what's actually happening. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GXIB': {
+    name: 'The Practical Institutionalist',
+    code: 'GXIB',
+    icon: '🏗️',
+    color: '#6366f1',
+    bg: 'rgba(99,102,241,.15)',
+    oneliner: 'You build things that last longer than the funding cycle.',
+    summary: "You like stable systems and real-world execution, and you trust practitioner judgment over abstract frameworks. You believe lasting impact comes from strong organisations with good people, clear roles, and reliable processes.",
+    strengths: ['Practical implementation', 'Institutional stability', 'Practitioner-led design'],
+    blindspot: 'May default to existing institutional forms even when more flexible structures would serve the goal better.',
+    growth: 'Explore collective and network-based models of scale. Organisations aren\'t the only vehicle for durable change.',
+    inTeam: 'The reliable, grounded presence who makes things function.',
+    underPressure: 'Focuses on what can be controlled and delivered. Steady when others spiral.',
+    pairedWith: ['The Movement Strategist (SXCB)', 'The Coalition Designer (SECB)'],
+    shareText: "I got The Practical Institutionalist — I build things that last longer than the funding cycle. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GXIH': {
+    name: 'The Ground Realist',
+    code: 'GXIH',
+    icon: '🧭',
+    color: '#8b5cf6',
+    bg: 'rgba(139,92,246,.15)',
+    oneliner: 'You keep work honest.',
+    summary: "You're sensitive to context, wary of oversimplification, and often serve as the reality check in the room. You trust judgment over dashboards, and you know that what looks clean on a slide rarely looks clean on the ground.",
+    strengths: ['Contextual judgment', 'Realism about complexity', 'Grounded practical wisdom'],
+    blindspot: 'May sound skeptical before others have caught up — can be misread as resistant when actually perceptive.',
+    growth: 'Practice sharing your insight in ways that invite the room rather than close it down. Your realism is a gift; its packaging matters.',
+    inTeam: 'The person who spots the problem in the plan before it becomes the problem in the field.',
+    underPressure: 'Gets very quiet. Then says one very precise thing that reframes the whole problem.',
+    pairedWith: ['The Systems Architect (SEIB)', 'The Field Auditor (GEIH)'],
+    shareText: "I got The Ground Realist — I keep work honest. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GXCB': {
+    name: 'The Community Catalyst',
+    code: 'GXCB',
+    icon: '💫',
+    color: '#ec4899',
+    bg: 'rgba(236,72,153,.15)',
+    oneliner: 'Practical, people-first, and built for collective action.',
+    summary: "You're people-centred, intuitive, practical, and energised by local collective action. You believe change is most powerful when it grows from within communities, with real ownership and real relationships at the centre.",
+    strengths: ['People energy', 'Local collective action', 'Intuitive relationship building'],
+    blindspot: 'Can be cautious about scale strategies that feel top-down, even when scale would genuinely benefit the communities you work with.',
+    growth: 'Engage with systems and structural levers. The more you understand what shapes the conditions your communities face, the more powerful your work becomes.',
+    inTeam: 'The one who brings warmth, energy, and local legitimacy. Makes the work feel alive.',
+    underPressure: 'Gathers the community. Reminds everyone why the work matters.',
+    pairedWith: ['The Systems Architect (SEIB)', 'The Institutional Reformer (SXIB)'],
+    shareText: "I got The Community Catalyst — practical, people-first, and built for collective action. #ImpactArchetypes edzola.com/quiz",
+  },
+  'GXCH': {
+    name: 'The Voice Amplifier',
+    code: 'GXCH',
+    icon: '📣',
+    color: '#f97316',
+    bg: 'rgba(249,115,22,.15)',
+    oneliner: "You challenge top-down solutions before anyone else has noticed there's a problem.",
+    summary: "You instinctively protect dignity, representation, and narrative fairness. You're quick to notice when community voices are being sidelined, when stories are being extracted rather than honoured, and when solutions are being designed for rather than with.",
+    strengths: ['Narrative justice', 'Representation advocacy', 'Protecting community dignity'],
+    blindspot: 'Can be perceived as blocking progress when actually trying to prevent harm — a distinction worth making explicit.',
+    growth: "Build bridges with systems thinkers and institutionalists. Your insight is most powerful when it can influence the architecture, not just critique it.",
+    inTeam: 'The conscience. Keeps work from drifting into extractive, tokenistic, or top-down patterns.',
+    underPressure: "Speaks up immediately. Doesn't wait. Sometimes that's exactly what the situation needs.",
+    pairedWith: ['The Power Mapper (SXIH)', 'The Structural Critic (SECH)'],
+    shareText: "I got The Voice Amplifier — I challenge top-down solutions before anyone else has noticed there's a problem. #ImpactArchetypes edzola.com/quiz",
+  },
+};
+
+// ══════════════════════════════════════════════════
+//  STATE
+// ══════════════════════════════════════════════════
+
+const state = {
+  screen: 'landing',
+  currentQ: 0,
+  answers: new Array(16).fill(null),
+  archetype: null,
+  dimScores: { A: 0, B: 0, C: 0, D: 0 },
+};
+
+// ══════════════════════════════════════════════════
+//  ANALYTICS
+// ══════════════════════════════════════════════════
+
+function track(event, data) {
+  console.log('[Analytics]', event, data || '');
+  // Plug in GA4: if (typeof gtag !== 'undefined') gtag('event', event, data);
+}
+
+// ══════════════════════════════════════════════════
+//  NAVIGATION
+// ══════════════════════════════════════════════════
+
+function showScreen(name) {
+  document.querySelectorAll('.screen').forEach(s => s.classList.remove('active'));
+  document.getElementById('screen-' + name).classList.add('active');
+  state.screen = name;
+  window.scrollTo(0, 0);
+}
+
+function startQuiz() {
+  state.currentQ = 0;
+  state.answers = new Array(16).fill(null);
+  state.archetype = null;
+  showScreen('quiz');
+  renderQuestion();
+  track('quiz_started');
+}
+
+function showAllTypes() {
+  renderAllTypes();
+  showScreen('all-types');
+  track('all_types_clicked');
+}
+
+// ══════════════════════════════════════════════════
+//  QUIZ RENDER
+// ══════════════════════════════════════════════════
+
+function renderQuestion() {
+  const q = QUESTIONS[state.currentQ];
+  const pct = (state.currentQ / 16) * 100;
+
+  document.getElementById('progress-label').textContent =
+    `Question ${state.currentQ + 1} of 16`;
+  document.getElementById('progress-bar').style.width = pct + '%';
+  document.getElementById('question-dim').textContent =
+    `Dimension ${q.dim}: ${q.dimLabel}`;
+  document.getElementById('question-text').textContent = q.text;
+
+  const container = document.getElementById('answer-options');
+  container.innerHTML = '';
+  ANSWER_OPTIONS.forEach(opt => {
+    const btn = document.createElement('button');
+    btn.className = 'answer-btn' +
+      (state.answers[state.currentQ] === opt.value ? ' selected' : '');
+    btn.innerHTML = `<span class="dot"></span><span>${opt.label}</span>`;
+    btn.onclick = () => selectAnswer(opt.value);
+    container.appendChild(btn);
+  });
+}
+
+function selectAnswer(value) {
+  state.answers[state.currentQ] = value;
+  renderQuestion(); // refresh selection highlight
+
+  track('question_answered', { q: state.currentQ + 1, value });
+
+  setTimeout(() => {
+    if (state.currentQ < 15) {
+      state.currentQ++;
+      renderQuestion();
+    } else {
+      computeResult();
+    }
+  }, 280);
+}
+
+function goBack() {
+  if (state.currentQ > 0) {
+    state.currentQ--;
+    renderQuestion();
+  } else {
+    showScreen('landing');
+  }
+}
+
+// ══════════════════════════════════════════════════
+//  SCORING
+// ══════════════════════════════════════════════════
+
+function computeResult() {
+  const a = state.answers;
+  // Dim A: Q1(S+), Q2(G+reverse), Q3(S+), Q4(G+reverse)
+  const dimA = (a[0] + a[2]) - (a[1] + a[3]);
+  // Dim B: Q5(E+), Q6(X+reverse), Q7(E+), Q8(X+reverse)
+  const dimB = (a[4] + a[6]) - (a[5] + a[7]);
+  // Dim C: Q9(I+), Q10(C+reverse), Q11(I+), Q12(C+reverse)
+  const dimC = (a[8] + a[10]) - (a[9] + a[11]);
+  // Dim D: Q13(B+), Q14(H+reverse), Q15(B+), Q16(H+reverse)
+  const dimD = (a[12] + a[14]) - (a[13] + a[15]);
+
+  state.dimScores = { A: dimA, B: dimB, C: dimC, D: dimD };
+
+  const S_or_G = dimA >= 0 ? 'S' : 'G';
+  const E_or_X = dimB >= 0 ? 'E' : 'X';
+  const I_or_C = dimC >= 0 ? 'I' : 'C';
+  const B_or_H = dimD >= 0 ? 'B' : 'H';
+
+  state.archetype = S_or_G + E_or_X + I_or_C + B_or_H;
+  track('quiz_completed', { archetype: state.archetype });
+
+  renderResult();
+  showScreen('result');
+}
+
+// ══════════════════════════════════════════════════
+//  RESULT RENDER
+// ══════════════════════════════════════════════════
+
+function renderResult() {
+  const arch = ARCHETYPES[state.archetype];
+  if (!arch) return;
+
+  track('result_viewed', { archetype: state.archetype });
+
+  // Populate off-screen share card
+  const sc = document.getElementById('share-card-offscreen');
+  sc.style.background = arch.color;
+  document.getElementById('sc-icon').style.background = 'rgba(255,255,255,.2)';
+  document.getElementById('sc-icon').textContent = arch.icon;
+  document.getElementById('sc-code').textContent = arch.code;
+  document.getElementById('sc-name').textContent = arch.name;
+  document.getElementById('sc-oneliner').textContent = arch.oneliner;
+  const strDiv = document.getElementById('sc-strengths');
+  strDiv.innerHTML = arch.strengths.map(s =>
+    `<span class="sc-strength-chip">${s}</span>`
+  ).join('');
+
+  // Dimension bar calculations (score range is -8 to +8 per dim, 4 items × 2)
+  const dimDefs = [
+    { key: 'A', leftLabel: 'Systems', rightLabel: 'Ground' },
+    { key: 'B', leftLabel: 'Evidence', rightLabel: 'Experience' },
+    { key: 'C', leftLabel: 'Institution', rightLabel: 'Collective' },
+    { key: 'D', leftLabel: 'Builder', rightLabel: 'Challenger' },
+  ];
+  const barsHTML = dimDefs.map(d => {
+    const score = state.dimScores[d.key]; // -8 to +8
+    // Normalize to 0–100 where 50 = neutral
+    const pct = ((score + 8) / 16) * 100;
+    // Bar starts at midpoint (50%) and extends left or right
+    const midPct = 50;
+    const left  = Math.min(pct, midPct);
+    const width = Math.abs(pct - midPct);
+    return `
+      <div class="dim-row">
+        <div class="dim-labels">
+          <span>${d.leftLabel}</span>
+          <span>${d.rightLabel}</span>
+        </div>
+        <div class="dim-bar-bg">
+          <div class="dim-bar-fill" style="left:${left}%;width:${width}%"></div>
+        </div>
+      </div>`;
+  }).join('');
+
+  const pairedHTML = arch.pairedWith.map(p =>
+    `<span class="chip">${p}</span>`
+  ).join('');
+
+  document.getElementById('result-body').innerHTML = `
+    <div class="result-animate">
+      <div class="result-badge-wrap">
+        <div class="result-badge">
+          <div class="badge-icon" style="background:${arch.bg};color:${arch.color}">${arch.icon}</div>
+          <div class="badge-code" style="color:${arch.color}">${arch.code}</div>
+        </div>
+      </div>
+      <div class="result-name">${arch.name}</div>
+      <div class="result-oneliner">"${arch.oneliner}"</div>
+      <div class="result-summary">${arch.summary}</div>
+
+      <div class="dim-bars">
+        <h3>Your Dimensions</h3>
+        ${barsHTML}
+      </div>
+
+      <div class="info-grid">
+        <div class="info-card">
+          <h4>Strengths</h4>
+          <ul>${arch.strengths.map(s => `<li>${s}</li>`).join('')}</ul>
+        </div>
+        <div class="info-card">
+          <h4>Blind Spot</h4>
+          <p>${arch.blindspot}</p>
+        </div>
+        <div class="info-card full">
+          <h4>Growth Edge</h4>
+          <p>${arch.growth}</p>
+        </div>
+        <div class="info-card">
+          <h4>In a Team</h4>
+          <p>${arch.inTeam}</p>
+        </div>
+        <div class="info-card">
+          <h4>Under Pressure</h4>
+          <p>${arch.underPressure}</p>
+        </div>
+        <div class="info-card full">
+          <h4>Works Well With</h4>
+          <div class="paired-chips">${pairedHTML}</div>
+        </div>
+      </div>
+
+      <div class="share-section">
+        <h3>Share your archetype</h3>
+        <p>Send it to your team. They'll probably recognise themselves too.</p>
+        <div class="share-btns">
+          <button class="share-btn linkedin" onclick="shareLinkedIn()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </button>
+          <button class="share-btn twitter" onclick="shareTwitter()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.258 5.63 5.906-5.63zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            Twitter / X
+          </button>
+          <button class="share-btn whatsapp" onclick="shareWhatsApp()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.122 1.533 5.854L0 24l6.335-1.509A11.934 11.934 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.784 9.784 0 0 1-5.112-1.436l-.367-.218-3.808.907.962-3.671-.242-.384A9.78 9.78 0 0 1 2.182 12C2.182 6.579 6.579 2.182 12 2.182c5.421 0 9.818 4.397 9.818 9.818 0 5.421-4.397 9.818-9.818 9.818z"/></svg>
+            WhatsApp
+          </button>
+          <button class="share-btn copy" onclick="copyResult()">
+            📋 Copy text
+          </button>
+          <button class="share-btn download" onclick="downloadCard()">
+            ⬇ Download card
+          </button>
+        </div>
+      </div>
+
+      <div class="bottom-ctas">
+        <button class="btn-ghost" onclick="retakeQuiz()">↩ Retake quiz</button>
+        <button class="btn-ghost" onclick="showAllTypes()">All 16 archetypes →</button>
+      </div>
+
+      <p class="text-center mt-20" style="font-size:12px;color:var(--muted)">
+        This is a reflective archetype quiz, not a clinical or diagnostic tool.<br>
+        Results are for reflection and conversation. <a href="/">edzola.com</a>
+      </p>
+    </div>
+  `;
+}
+
+// ══════════════════════════════════════════════════
+//  SHARE FUNCTIONS
+// ══════════════════════════════════════════════════
+
+function shareLinkedIn() {
+  track('share_channel_clicked', { channel: 'linkedin' });
+  const url = encodeURIComponent('https://edzola.com/quiz');
+  const text = encodeURIComponent(ARCHETYPES[state.archetype]?.shareText || '');
+  window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${url}&summary=${text}`, '_blank');
+}
+
+function shareTwitter() {
+  track('share_channel_clicked', { channel: 'twitter' });
+  const text = encodeURIComponent(ARCHETYPES[state.archetype]?.shareText || '');
+  window.open(`https://twitter.com/intent/tweet?text=${text}`, '_blank');
+}
+
+function shareWhatsApp() {
+  track('share_channel_clicked', { channel: 'whatsapp' });
+  const text = encodeURIComponent(ARCHETYPES[state.archetype]?.shareText || '');
+  window.open(`https://wa.me/?text=${text}`, '_blank');
+}
+
+function copyResult() {
+  track('share_channel_clicked', { channel: 'copy' });
+  const arch = ARCHETYPES[state.archetype];
+  if (!arch) return;
+  const text = `${arch.shareText}\n\nFind out yours: https://edzola.com/quiz`;
+  navigator.clipboard.writeText(text).then(() => {
+    const btn = document.querySelector('.share-btn.copy');
+    if (btn) { btn.textContent = '✓ Copied!'; setTimeout(() => { btn.textContent = '📋 Copy text'; }, 2000); }
+  }).catch(() => {
+    alert('Copy: ' + text);
+  });
+}
+
+function downloadCard() {
+  track('share_channel_clicked', { channel: 'download' });
+  const el = document.getElementById('share-card-offscreen');
+  html2canvas(el, { scale: 2, useCORS: true, backgroundColor: null }).then(canvas => {
+    const link = document.createElement('a');
+    link.download = `impact-archetype-${state.archetype}.png`;
+    link.href = canvas.toDataURL('image/png');
+    link.click();
+  }).catch(err => {
+    console.error('Share card error', err);
+    alert('Could not generate image. Try copying the text instead.');
+  });
+}
+
+// ══════════════════════════════════════════════════
+//  ALL TYPES
+// ══════════════════════════════════════════════════
+
+function renderAllTypes() {
+  const grid = document.getElementById('types-grid');
+  grid.innerHTML = Object.values(ARCHETYPES).map(arch => `
+    <div class="type-card" onclick="openModal('${arch.code}')" style="border-color:transparent">
+      <div class="type-card-icon">${arch.icon}</div>
+      <div class="type-card-code" style="color:${arch.color}">${arch.code}</div>
+      <div class="type-card-name">${arch.name}</div>
+      <div class="type-card-oneliner">${arch.oneliner}</div>
+    </div>
+  `).join('');
+}
+
+function openModal(code) {
+  const arch = ARCHETYPES[code];
+  if (!arch) return;
+  document.getElementById('modal-content').innerHTML = `
+    <div style="display:flex;align-items:center;gap:14px;margin-bottom:20px">
+      <div style="width:52px;height:52px;border-radius:12px;background:${arch.bg};display:flex;align-items:center;justify-content:center;font-size:26px;flex-shrink:0">${arch.icon}</div>
+      <div>
+        <div style="font-size:11px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:${arch.color};margin-bottom:2px">${arch.code}</div>
+        <div style="font-size:20px;font-weight:800;color:var(--dark)">${arch.name}</div>
+      </div>
+    </div>
+    <p style="font-size:15px;color:var(--muted);font-style:italic;margin-bottom:16px">"${arch.oneliner}"</p>
+    <p style="font-size:14px;line-height:1.7;margin-bottom:16px">${arch.summary}</p>
+    <div style="margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Strengths</div>
+      <ul style="padding-left:18px;font-size:14px;line-height:1.8">${arch.strengths.map(s => `<li>${s}</li>`).join('')}</ul>
+    </div>
+    <div style="margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Blind Spot</div>
+      <p style="font-size:14px;line-height:1.6">${arch.blindspot}</p>
+    </div>
+    <div style="margin-bottom:12px">
+      <div style="font-size:11px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--muted);margin-bottom:8px">Works Well With</div>
+      <div style="display:flex;flex-wrap:wrap;gap:8px">${arch.pairedWith.map(p => `<span class="chip">${p}</span>`).join('')}</div>
+    </div>
+    <button class="btn-primary" style="width:100%;margin-top:8px" onclick="startQuiz();closeModalDirect()">Take the quiz →</button>
+  `;
+  document.getElementById('modal-overlay').classList.add('open');
+}
+
+function closeModal(e) {
+  if (e.target === document.getElementById('modal-overlay')) closeModalDirect();
+}
+function closeModalDirect() {
+  document.getElementById('modal-overlay').classList.remove('open');
+}
+
+// ══════════════════════════════════════════════════
+//  MISC
+// ══════════════════════════════════════════════════
+
+function retakeQuiz() {
+  track('retake_clicked');
+  startQuiz();
+}
+
+// Keyboard support
+document.addEventListener('keydown', e => {
+  if (state.screen === 'quiz') {
+    const keys = { '1': 2, '2': 1, '3': 0, '4': -1, '5': -2 };
+    if (keys[e.key] !== undefined) selectAnswer(keys[e.key]);
+    if (e.key === 'ArrowLeft' || e.key === 'Backspace') goBack();
+  }
+  if (e.key === 'Escape') closeModalDirect();
+});
+</script>
+</body>
+</html>
