@@ -41,7 +41,7 @@
   /* Neutral */
   --bg:       #F0F4F8;
   --surface:  #FFFFFF;
-  --border:   #E2E8F0;
+  --border:   #DCE5EE;
   --text-1:   #0F172A;
   --text-2:   #475569;
   --text-3:   #94A3B8;
@@ -198,6 +198,58 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 
+.workspace-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr);
+  gap: 28px;
+  align-items: end;
+  margin-bottom: 20px;
+  padding: 26px 28px;
+  color: #fff;
+  background: var(--brand-navy);
+  border-radius: 14px;
+  overflow: hidden;
+  position: relative;
+}
+.intro-eyebrow {
+  display: block;
+  margin-bottom: 8px;
+  color: #7DD3FC;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.workspace-intro h1 {
+  max-width: 720px;
+  font-size: clamp(28px, 3vw, 44px);
+  line-height: 1.08;
+  letter-spacing: -.04em;
+  text-wrap: balance;
+}
+.intro-copy p {
+  max-width: 700px;
+  margin-top: 10px;
+  color: rgba(255,255,255,.72);
+  font-size: 14px;
+  line-height: 1.65;
+}
+.intro-guidance {
+  padding-left: 22px;
+  border-left: 1px solid rgba(255,255,255,.18);
+  position: relative;
+  z-index: 1;
+}
+.intro-guidance strong {
+  display: block;
+  margin-bottom: 5px;
+  color: #fff;
+  font-size: 12px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.intro-guidance p { color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.55; }
+
 /* ============================
    BROWSE TAB
    ============================ */
@@ -205,7 +257,8 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   background: var(--surface);
   border-radius: var(--r-lg);
   padding: 20px 24px;
-  box-shadow: var(--shadow-md);
+  border: 1px solid var(--border);
+  box-shadow: 0 8px 24px rgba(15,36,66,.06);
   margin-bottom: 16px;
 }
 .search-row {
@@ -438,7 +491,10 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   background: var(--surface);
   border-radius: var(--r-lg);
   padding: 20px 20px 18px;
-  box-shadow: var(--shadow-sm);
+  box-shadow: 0 2px 8px rgba(15,36,66,.05);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  border-left: 1px solid var(--border);
   border-top: 4px solid var(--type-grant);
   cursor: pointer;
   transition: all .18s;
@@ -466,6 +522,17 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   align-items: flex-start;
   gap: 8px;
 }
+.card-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  color: var(--text-3);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  text-transform: uppercase;
+}
 .card-name {
   font-size: 16px;
   font-weight: 700;
@@ -478,7 +545,6 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   height: 8px;
   border-radius: 50%;
   flex-shrink: 0;
-  margin-top: 6px;
 }
 .status-dot.active    { background: var(--color-success); }
 .status-dot.likely    { background: var(--color-success); opacity: .7; }
@@ -594,12 +660,10 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   display: flex;
   align-items: center;
   gap: 16px;
-  border-left: 4px solid var(--brand-teal);
+  border: 1px solid var(--border);
 }
-.kpi.k2 { border-left-color: var(--color-success); }
-.kpi.k3 { border-left-color: var(--color-purple); }
-.kpi.k4 { border-left-color: var(--color-orange); }
-.kpi-icon { font-size: 28px; }
+.kpi.k2, .kpi.k3, .kpi.k4 { border-left-color: var(--border); }
+.kpi-icon { display: none; }
 .kpi-num {
   font-size: 32px;
   font-weight: 900;
@@ -626,6 +690,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-sm);
   padding: 22px;
+  border: 1px solid var(--border);
 }
 .dash-card.full { grid-column: 1/-1; }
 .dash-card h3 {
@@ -727,7 +792,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
    CALENDAR TAB
    ============================ */
 .cal-header {
-  background: linear-gradient(135deg, var(--brand-dark), var(--brand-navy));
+  background: var(--brand-navy);
   border-radius: var(--r-lg);
   padding: 22px 26px;
   margin-bottom: 20px;
@@ -1049,6 +1114,9 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   .tab-btn { min-height: 50px; padding: 12px 13px; font-size: 13px; }
 
   .page-content { padding: 16px 14px 28px; }
+  .workspace-intro { grid-template-columns: 1fr; gap: 18px; padding: 22px 20px; }
+  .workspace-intro h1 { font-size: 30px; }
+  .intro-guidance { padding: 16px 0 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.18); }
   .search-hero { padding: 16px; border-radius: 12px; }
   .search-row { align-items: stretch; }
   .search-input, .btn-filter-toggle, .af-select, .sort-select, .table-search, .table-select, .btn-export, .btn-reset {
@@ -1156,17 +1224,17 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 <!-- ==================== TAB NAV ==================== -->
 <nav class="tab-nav">
   <button class="tab-btn active" onclick="gotoTab('browse')">
-    🗂 Browse
+    Browse
     <span class="tab-count" id="tc-browse">656</span>
   </button>
   <button class="tab-btn" onclick="gotoTab('dashboard')">
-    📊 Dashboard
+    Dashboard
   </button>
   <button class="tab-btn" onclick="gotoTab('calendar')">
-    📅 Grant Calendar
+    Grant Calendar
   </button>
   <button class="tab-btn" onclick="gotoTab('table')">
-    📋 Table View
+    Table View
     <span class="tab-count" id="tc-table">656</span>
   </button>
 </nav>
@@ -1174,33 +1242,45 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 <!-- ==================== PAGE ==================== -->
 <main class="page-content">
 
+<section class="workspace-intro" aria-labelledby="page-title">
+  <div class="intro-copy">
+    <span class="intro-eyebrow">EdZola Tech Nonprofit Funding Playbook</span>
+    <h1 id="page-title">Find the funding your mission can use.</h1>
+    <p>Search 656 grants, fellowships, prizes, and accelerator programs gathered across six years of nonprofit technology funding research.</p>
+  </div>
+  <aside class="intro-guidance" aria-label="Data guidance">
+    <strong>Before you apply</strong>
+    <p>Funding windows and eligibility change. Open the official program website to verify the latest details.</p>
+  </aside>
+</section>
+
 <!-- ========== BROWSE ========== -->
 <section class="tab-panel active" id="panel-browse">
 
   <div class="search-hero">
     <div class="search-row">
       <div class="search-wrap">
-        <span class="search-icon">🔍</span>
+        <span class="search-icon" aria-hidden="true">⌕</span>
         <input class="search-input" id="s-search" type="text"
           placeholder="Search programs, foundations, sectors, keywords…"
           oninput="debouncedFilter()">
       </div>
       <button class="btn-filter-toggle" onclick="toggleAdvanced()">
-        ⚙ Filters
+        Filters
         <span class="filter-badge" id="filter-badge">0</span>
       </button>
     </div>
 
     <div class="profile-row">
       <span class="profile-label">Quick filter:</span>
-      <button class="profile-pill" onclick="applyProfile('us-np')">🇺🇸 US Nonprofits</button>
-      <button class="profile-pill" onclick="applyProfile('global')">🌍 Global Orgs</button>
-      <button class="profile-pill" onclick="applyProfile('se')">💼 Social Enterprise</button>
-      <button class="profile-pill" onclick="applyProfile('fellow')">👤 Fellowships</button>
-      <button class="profile-pill" onclick="applyProfile('big')">💰 $100k+ Grants</button>
-      <button class="profile-pill" onclick="applyProfile('edtech')">📚 EdTech</button>
-      <button class="profile-pill" onclick="applyProfile('climate')">🌿 Climate</button>
-      <button class="profile-pill" onclick="applyProfile('recurring')">🔄 Recurring Only</button>
+      <button class="profile-pill" onclick="applyProfile('us-np')">US Nonprofits</button>
+      <button class="profile-pill" onclick="applyProfile('global')">Global Orgs</button>
+      <button class="profile-pill" onclick="applyProfile('se')">Social Enterprise</button>
+      <button class="profile-pill" onclick="applyProfile('fellow')">Fellowships</button>
+      <button class="profile-pill" onclick="applyProfile('big')">$100k+ Grants</button>
+      <button class="profile-pill" onclick="applyProfile('edtech')">EdTech</button>
+      <button class="profile-pill" onclick="applyProfile('climate')">Climate</button>
+      <button class="profile-pill" onclick="applyProfile('recurring')">Recurring Only</button>
     </div>
 
     <div class="type-filter-row">
@@ -1280,8 +1360,8 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         </select>
       </div>
       <div class="af-actions">
-        <button class="btn-reset" onclick="resetAll()">✕ Reset all filters</button>
-        <button class="btn-export" onclick="exportCSV()">⬇ Export CSV</button>
+        <button class="btn-reset" onclick="resetAll()">Reset all filters</button>
+        <button class="btn-export" onclick="exportCSV()">Export CSV</button>
       </div>
     </div>
   </div>
@@ -1301,7 +1381,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 
   <div class="cards-grid" id="cards-grid"></div>
   <div class="no-results" id="no-results" style="display:none">
-    <div class="no-results-icon">🔍</div>
+    <div class="no-results-icon" aria-hidden="true">⌕</div>
     <h3>No programs match your filters</h3>
     <p>Try broadening your search or resetting filters.</p>
   </div>
@@ -1312,46 +1392,42 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 <section class="tab-panel" id="panel-dashboard">
   <div class="kpi-row">
     <div class="kpi">
-      <span class="kpi-icon">📋</span>
       <div><div class="kpi-num" id="k-total">656</div><div class="kpi-label">Total Programs Tracked</div></div>
     </div>
     <div class="kpi k2">
-      <span class="kpi-icon">✅</span>
       <div><div class="kpi-num" id="k-active">—</div><div class="kpi-label">Active or Web-Verified</div></div>
     </div>
     <div class="kpi k3">
-      <span class="kpi-icon">🔄</span>
       <div><div class="kpi-num" id="k-recurring">—</div><div class="kpi-label">Recurring Programs</div></div>
     </div>
     <div class="kpi k4">
-      <span class="kpi-icon">🌍</span>
       <div><div class="kpi-num" id="k-global">—</div><div class="kpi-label">Open to Global Applicants</div></div>
     </div>
   </div>
 
   <div class="dash-grid">
     <div class="dash-card">
-      <h3>🏷 Opportunity Types</h3>
+      <h3>Opportunity Types</h3>
       <div class="donut-wrap">
         <svg class="donut-svg" width="140" height="140" viewBox="0 0 140 140" id="donut-svg"></svg>
         <div class="donut-legend" id="donut-legend"></div>
       </div>
     </div>
     <div class="dash-card">
-      <h3>📂 Top Sectors</h3>
+      <h3>Top Sectors</h3>
       <div id="sector-bars"></div>
     </div>
     <div class="dash-card full">
-      <h3>📅 Deadline Heatmap — How many grants close each month</h3>
+      <h3>Deadline Heatmap — How many grants close each month</h3>
       <p style="font-size:12px;color:var(--text-3);margin-bottom:14px">Click any month to jump to that month in the calendar view.</p>
       <div class="heatmap-grid" id="heatmap-grid"></div>
     </div>
     <div class="dash-card">
-      <h3>🌍 Geography</h3>
+      <h3>Geography</h3>
       <div id="geo-bars"></div>
     </div>
     <div class="dash-card">
-      <h3>✅ Web-Verified Active Programs</h3>
+      <h3>Web-Verified Active Programs</h3>
       <div id="verified-list"></div>
     </div>
   </div>
@@ -1361,7 +1437,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 <section class="tab-panel" id="panel-calendar">
   <div class="cal-header">
     <div>
-      <h2>📅 Annual Grant Calendar</h2>
+      <h2>Annual Grant Calendar</h2>
       <p>Typical application deadlines by month. Click any program for full details.</p>
     </div>
     <div class="cal-legend">
@@ -1379,7 +1455,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 <section class="tab-panel" id="panel-table">
   <div class="table-controls">
     <input class="table-search" id="t-search" type="text"
-      placeholder="🔍  Search programs…" oninput="applyTableFilter()">
+      placeholder="Search programs…" oninput="applyTableFilter()">
     <select class="table-select" id="t-type" onchange="applyTableFilter()">
       <option value="">All Types</option>
       <option>Grant</option><option>Fellowship</option>
@@ -1397,7 +1473,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
       <option>Global</option><option>US Only</option><option>UK</option>
       <option>Canada</option><option>Africa</option><option>India</option>
     </select>
-    <button class="btn-export" onclick="exportCSV()">⬇ Export CSV</button>
+    <button class="btn-export" onclick="exportCSV()">Export CSV</button>
     <span id="t-count" style="font-size:12.5px;color:var(--text-3);margin-left:4px"></span>
   </div>
   <div class="table-wrap">
@@ -1442,7 +1518,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         <p id="modal-notes" style="color:var(--text-3)"></p>
       </div>
       <a id="modal-cta" class="modal-cta" target="_blank" style="display:none">
-        🔗 Visit Official Website ↗
+        Visit Official Website ↗
       </a>
     </div>
   </div>
@@ -1674,6 +1750,15 @@ function statusDotClass(s) {
   return 'verify';
 }
 
+function statusShortLabel(s) {
+  if (!s) return 'Check status';
+  if (s.includes('Web Verified')) return 'Verified';
+  if (s.includes('Likely Active') || s === 'Active') return 'Active';
+  if (s.includes('Verify')) return 'Verify';
+  if (s.includes('Paused') || s.includes('Inactive')) return 'Inactive';
+  return 'Check status';
+}
+
 function typeTagCss(t) {
   return TYPE_CSS[t] || 'tag-type-default';
 }
@@ -1712,18 +1797,21 @@ function renderCards() {
     return `<article class="card" data-type="${esc(r.opportunity_type)}" onclick="openModal(${idx})">
       <div class="card-header">
         <div class="card-name">${esc(r.name)}</div>
-        <div class="status-dot ${statusDotClass(r.status)}" title="${esc(r.status||'Unknown status')}"></div>
+        <div class="card-status" title="${esc(r.status||'Unknown status')}">
+          <span class="status-dot ${statusDotClass(r.status)}" aria-hidden="true"></span>
+          <span>${statusShortLabel(r.status)}</span>
+        </div>
       </div>
       ${amtEl}
       <div class="card-tags">
         <span class="tag ${typeTagCss(r.opportunity_type)}">${esc(r.opportunity_type||'Grant')}</span>
-        ${r.is_recurring==='Yes'?'<span class="tag tag-recurring">🔄 Recurring</span>':''}
-        ${(r.status||'').includes('Web Verified')?'<span class="tag tag-verified">✅ Verified</span>':''}
+        ${r.is_recurring==='Yes'?'<span class="tag tag-recurring">Recurring</span>':''}
+        ${(r.status||'').includes('Web Verified')?'<span class="tag tag-verified">Verified</span>':''}
       </div>
       <p class="card-desc">${esc(r.description||'No description available.')}</p>
       <div class="card-footer">
-        <span class="card-geo">📍 ${esc(geo1)}</span>
-        ${deadM?`<span class="card-deadline">📅 Closes ${esc(deadM)}</span>`:''}
+        <span class="card-geo">${esc(geo1)}</span>
+        ${deadM?`<span class="card-deadline">Closes ${esc(deadM)}</span>`:''}
       </div>
     </article>`;
   }).join('');
@@ -1793,7 +1881,7 @@ function renderTable() {
       <td style="font-size:12px">${esc(r.status||'Unknown')}</td>
       <td>${esc(deadM)}</td>
       <td style="font-size:12px;max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc((r.geography||'—').split(',')[0].trim())}</td>
-      <td>${r.is_recurring==='Yes'?'<span style="color:#8B5CF6;font-weight:700">🔄 Yes</span>':'—'}</td>
+      <td>${r.is_recurring==='Yes'?'<span style="color:#6D28D9;font-weight:700">Yes</span>':'—'}</td>
       <td style="font-weight:600">${esc(r.last_seen_year||'—')}</td>
     </tr>`;
   }).join('');
@@ -1888,7 +1976,7 @@ function buildDashboard() {
     const idx=DATA.indexOf(r);
     const url=r.official_url||r.current_url||'';
     return `<div class="verified-item" onclick="openModal(${idx})">
-      <span class="vi-check">✅</span>
+      <span class="vi-check" aria-hidden="true">✓</span>
       <div class="vi-info">
         <div class="vi-name">${esc(r.name)}</div>
         <div class="vi-meta">${esc(r.grant_amount||'Varies')} · ${esc(r.opportunity_type)}</div>
@@ -1980,16 +2068,16 @@ function openModal(idx) {
 
   // Status row
   const statusMap = {
-    'Active (Web Verified)': ['✅ Web-Verified Active','#DCFCE7','#166534'],
-    'Likely Active': ['🟢 Likely Active','#F0FDF4','#166534'],
-    'Verify Status': ['🟡 Verify Status','#FEFCE8','#854D0E'],
-    'Check if Active': ['🟠 Check if Active','#FFF7ED','#9A3412'],
-    'Paused/Inactive': ['🔴 Paused/Inactive','#FEF2F2','#991B1B'],
+    'Active (Web Verified)': ['Web-Verified Active','#DCFCE7','#166534'],
+    'Likely Active': ['Likely Active','#F0FDF4','#166534'],
+    'Verify Status': ['Verify Status','#FEFCE8','#854D0E'],
+    'Check if Active': ['Check if Active','#FFF7ED','#9A3412'],
+    'Paused/Inactive': ['Paused/Inactive','#FEF2F2','#991B1B'],
   };
-  const [statusLabel,statusBg,statusText] = statusMap[r.status]||['❓ Unknown','#F1F5F9','#475569'];
+  const [statusLabel,statusBg,statusText] = statusMap[r.status]||['Unknown','#F1F5F9','#475569'];
   document.getElementById('modal-status-row').innerHTML = `
     <span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:${statusBg};color:${statusText}">${statusLabel}</span>
-    ${r.is_recurring==='Yes'?'<span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:#F5F3FF;color:#6D28D9">🔄 Recurring Program</span>':''}
+    ${r.is_recurring==='Yes'?'<span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:#F5F3FF;color:#6D28D9">Recurring Program</span>':''}
   `;
 
   // Amount
