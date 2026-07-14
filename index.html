@@ -7,7 +7,7 @@
 <meta name="description" content="A searchable directory of technology grants, fellowships, prizes, and accelerator programs for nonprofits and social impact teams worldwide.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================
    RESET & DESIGN TOKENS
@@ -1262,6 +1262,268 @@ tbody td { padding: 12px 14px; vertical-align: middle; }
   html { scroll-behavior: auto; }
   *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
 }
+
+/* ============================
+   EDZOLA BRAND ALIGNMENT
+   Source: local EdZola design system
+   ============================ */
+:root {
+  --brand-navy: #bd563f;
+  --brand-teal: #d96f55;
+  --brand-dark: #231f20;
+  --color-success: #2e6e68;
+  --color-warning: #8a6a12;
+  --color-danger: #9a3c22;
+  --color-purple: #765f7e;
+  --color-orange: #bd563f;
+  --color-blue: #438f88;
+  --color-green2: #34766f;
+  --type-grant: #d96f55;
+  --type-fellowship: #765f7e;
+  --type-competition: #c99a21;
+  --type-accelerator: #438f88;
+  --type-program: #34766f;
+  --type-loi: #8f5e4d;
+  --type-rfp: #9a536a;
+  --bg: #f8f1ea;
+  --surface: #fffaf5;
+  --border: #d8cec4;
+  --text-1: #231f20;
+  --text-2: #625953;
+  --text-3: #897d73;
+  --r: 8px;
+  --r-lg: 14px;
+  --shadow-sm: 0 1px 2px rgba(35,31,32,.05), 0 8px 24px rgba(35,31,32,.05);
+  --shadow-md: 0 14px 34px rgba(35,31,32,.10);
+  --shadow-lg: 0 24px 70px rgba(35,31,32,.14);
+  --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: Georgia, 'Times New Roman', serif;
+}
+
+body {
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(circle at 8% 3%, rgba(232,150,122,.18), transparent 24rem),
+    var(--bg);
+  color: var(--text-1);
+}
+a, a:visited { color: var(--brand-navy); }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  outline-color: #c99a21;
+}
+
+.header {
+  background: rgba(248,241,234,.94);
+  border-bottom: 1px solid rgba(35,31,32,.11);
+  box-shadow: none;
+  backdrop-filter: blur(14px);
+}
+.header-inner { height: 74px; }
+.logo { gap: 15px; }
+.logo-wordmark { display: block; width: 148px; height: auto; }
+.logo-text {
+  padding-left: 15px;
+  border-left: 1px solid rgba(35,31,32,.16);
+  color: var(--text-1);
+}
+.logo-tagline { color: var(--text-2); font-size: 11px; font-weight: 600; letter-spacing: .02em; }
+.hstat { color: var(--text-2); }
+.hstat-num {
+  color: var(--text-1);
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 400;
+}
+.hstat-label { font-size: 10px; font-weight: 700; letter-spacing: .1em; }
+.header-divider { background: rgba(35,31,32,.13); }
+
+.tab-nav {
+  top: 74px;
+  background: rgba(255,250,245,.95);
+  border-bottom: 1px solid var(--border);
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+}
+.tab-btn { font-weight: 700; }
+.tab-btn:hover { color: var(--brand-navy); text-decoration: none; }
+.tab-btn.active { color: var(--brand-navy); border-bottom-color: #e8967a; }
+.tab-btn .tab-count { background: #efe5d9; }
+.tab-btn.active .tab-count { background: #fde9e1; color: #8f3e2d; }
+
+.page-content { padding-top: 30px; }
+.workspace-intro {
+  min-height: 248px;
+  align-items: center;
+  padding: 38px 42px;
+  color: var(--text-1);
+  background:
+    url('assets/starburst-coral.svg') calc(100% - 36px) 24px / 86px 86px no-repeat,
+    url('assets/floral-mark.svg') calc(100% - 182px) calc(100% + 30px) / 124px 124px no-repeat,
+    #fff4ea;
+  border: 1px solid rgba(35,31,32,.11);
+  border-radius: 16px;
+  box-shadow: var(--shadow-sm);
+}
+.intro-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--brand-navy);
+  font-size: 11px;
+  letter-spacing: .14em;
+}
+.intro-eyebrow::before { content: ''; width: 24px; height: 2px; background: #e8967a; }
+.workspace-intro h1 {
+  max-width: 640px;
+  margin-top: 12px;
+  color: #111313;
+  font-family: var(--font-display);
+  font-size: clamp(40px, 4.6vw, 68px);
+  font-weight: 400;
+  line-height: .98;
+  letter-spacing: -.035em;
+}
+.intro-copy p { max-width: 680px; color: var(--text-2); font-size: 15px; }
+.intro-guidance {
+  margin-right: 104px;
+  padding: 20px 22px;
+  border: 1px solid rgba(35,31,32,.11);
+  border-left: 3px solid #e8967a;
+  border-radius: 8px;
+  background: rgba(255,250,245,.86);
+  box-shadow: var(--shadow-sm);
+}
+.intro-guidance strong { color: var(--text-1); }
+.intro-guidance p { color: var(--text-2); }
+
+.search-hero,
+.advanced-filters,
+.card,
+.kpi,
+.dash-card,
+.cal-month-card,
+.table-controls,
+.table-wrap,
+.modal-box {
+  background: var(--surface);
+  border-color: rgba(35,31,32,.11);
+  box-shadow: var(--shadow-sm);
+}
+.search-hero { padding: 24px; }
+.search-input, .profile-pill, .type-pill, .af-select, .sort-select, .table-search, .table-select {
+  background: #fff4ea;
+  border-color: var(--border);
+}
+.search-input:focus, .af-select:focus, .table-search:focus { border-color: #e8967a; background: var(--surface); }
+.btn-filter-toggle,
+.btn-export,
+.modal-cta {
+  background: var(--brand-navy);
+  border-radius: 999px;
+  color: #fffaf5;
+  font-weight: 700;
+}
+.btn-filter-toggle:hover, .btn-export:hover { background: #8f3e2d; }
+.profile-pill, .type-pill, .page-btn { border-radius: 999px; }
+.profile-pill:hover { border-color: #e8967a; color: #8f3e2d; background: #fde9e1; }
+.profile-pill.on { background: #e8967a; border-color: #e8967a; color: #231f20; }
+.type-pill[data-val=""].on { background: #231f20; border-color: #231f20; }
+.type-pill[data-val="Grant"] { background:#fde9e1; color:#8f3e2d; border-color:#f7cdbd; }
+.type-pill[data-val="Fellowship"] { background:#eee7f0; color:#604e68; border-color:#d8c9dd; }
+.type-pill[data-val="Competition/Prize/Award"] { background:#fff7dd; color:#7a5e0f; border-color:#fcebb8; }
+.type-pill[data-val="Accelerator/Incubator"] { background:#dcefeb; color:#295f5a; border-color:#b8ddd7; }
+.type-pill[data-val="Program/Cohort"] { background:#e3eee8; color:#2e6251; border-color:#bfd5c9; }
+.type-pill[data-val="Grant (LOI Stage)"] { background:#f1e6e1; color:#71483a; border-color:#dec9c0; }
+
+.card { border-top-width: 3px; }
+.card:hover { box-shadow: var(--shadow-md); }
+.card-name { color: #111313; }
+.card-amount,
+.kpi-num,
+.hm-count,
+.modal-amount {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -.02em;
+}
+.card-amount { color: var(--brand-navy); font-size: 25px; }
+.tag { border-radius: 999px; }
+.tag-type-grant { background:#fde9e1; color:#8f3e2d; }
+.tag-type-fellowship { background:#eee7f0; color:#604e68; }
+.tag-type-competition { background:#fff7dd; color:#7a5e0f; }
+.tag-type-accelerator { background:#dcefeb; color:#295f5a; }
+.tag-type-program { background:#e3eee8; color:#2e6251; }
+.tag-type-loi { background:#f1e6e1; color:#71483a; }
+.tag-type-rfp { background:#f4e5e9; color:#7a4053; }
+.tag-type-default { background:#efe5d9; color:#625953; }
+.tag-recurring { background:#fff7dd; color:#7a5e0f; }
+.tag-verified { background:#dcefeb; color:#295f5a; }
+.page-btn.active { background: #231f20; border-color: #231f20; }
+
+.kpi { position: relative; overflow: hidden; }
+.kpi::after {
+  content: '';
+  position: absolute;
+  right: -22px;
+  bottom: -30px;
+  width: 92px;
+  height: 92px;
+  border-radius: 50%;
+  background: rgba(232,150,122,.13);
+}
+.kpi-num { color: #111313; font-size: 40px; }
+.dash-card h3 { font-size: 15px; }
+.sector-track { background: #e9e0d7; }
+.cal-header {
+  color: #231f20;
+  background: #efc7b5;
+  border: 1px solid rgba(35,31,32,.11);
+}
+.cal-header h2 { font-family: var(--font-display); font-size: 28px; font-weight: 400; }
+.cal-month-head { background: #231f20; color: #fffaf5; }
+.modal-top { background: #fff4ea; color: #231f20; }
+.modal-name { font-family: var(--font-display); font-size: 29px; font-weight: 400; }
+.modal-close { color: #625953; }
+
+.credit-panel {
+  background: #231f20;
+  border-color: #231f20;
+  color: #fffaf5;
+  box-shadow: var(--shadow-md);
+}
+.credit-kicker { color: #efad98; }
+.credit-panel h2 { font-family: var(--font-display); font-size: 28px; font-weight: 400; }
+.credit-panel p { color: rgba(248,241,234,.72); }
+.source-credit { border-left-color: rgba(248,241,234,.18); }
+.source-copy a, .source-copy a:visited { color: #efad98; }
+.ffwd-logo-frame { border-radius: 6px; background: #000; }
+.independence-note { color: var(--text-2); }
+
+@media (max-width: 1100px) {
+  .intro-guidance { margin-right: 82px; }
+}
+@media (max-width: 720px) {
+  .header-inner { height: 68px; }
+  .logo-wordmark { width: 124px; }
+  .tab-nav { top: 68px; }
+  .workspace-intro {
+    min-height: 0;
+    padding: 30px 22px;
+    background:
+      url('assets/starburst-coral.svg') calc(100% - 16px) 16px / 58px 58px no-repeat,
+      #fff4ea;
+  }
+  .workspace-intro h1 { max-width: 10ch; font-size: 42px; }
+  .intro-copy p { padding-right: 42px; }
+  .intro-guidance { margin-right: 0; }
+  .profile-label, .type-label { background: var(--surface); }
+  .credit-panel h2 { font-size: 25px; }
+  .source-credit { border-top-color: rgba(248,241,234,.18); }
+}
+@media (max-width: 430px) {
+  .logo-text { display: none; }
+  .header-stats { margin-left: auto; }
+}
 </style>
 </head>
 <body>
@@ -1270,10 +1532,9 @@ tbody td { padding: 12px 14px; vertical-align: middle; }
 <header class="header">
   <div class="header-inner">
     <div class="logo">
-      <div class="logo-mark">EZ</div>
+      <img class="logo-wordmark" src="assets/edzola-wordmark.png" alt="EdZola" width="1165" height="373">
       <div class="logo-text">
-        <div class="logo-name">Ed<span>Zola</span></div>
-        <div class="logo-tagline">Tech Nonprofit Funding Intelligence</div>
+        <div class="logo-tagline">Technology funding for nonprofits</div>
       </div>
     </div>
     <div class="header-stats">
@@ -1323,13 +1584,13 @@ tbody td { padding: 12px 14px; vertical-align: middle; }
 
 <section class="workspace-intro" aria-labelledby="page-title">
   <div class="intro-copy">
-    <span class="intro-eyebrow">EdZola Tech Nonprofit Funding Playbook</span>
-    <h1 id="page-title">Find the funding your mission can use.</h1>
-    <p>Search 656 grants, fellowships, prizes, and accelerator programs gathered across six years of nonprofit technology funding research.</p>
+    <span class="intro-eyebrow">A public resource by EdZola</span>
+    <h1 id="page-title">Funding for the work that matters.</h1>
+    <p>Search 656 grants, fellowships, prizes, and accelerator programmes consolidated from six years of technology funding research.</p>
   </div>
   <aside class="intro-guidance" aria-label="Data guidance">
-    <strong>Before you apply</strong>
-    <p>Funding windows and eligibility change. Open the official program website to verify the latest details.</p>
+    <strong>Verify before you apply</strong>
+    <p>Funding windows and eligibility change. Check the funder’s official website for the latest details.</p>
   </aside>
 </section>
 
@@ -1385,7 +1646,7 @@ tbody td { padding: 12px 14px; vertical-align: middle; }
           <option>Global</option><option>US Only</option><option>UK</option>
           <option>Canada</option><option>Africa</option><option>India</option>
           <option>Asia</option><option>Europe</option><option>Latin America</option>
-          <option>Developing Countries</option>
+          <option value="Developing Countries">Low- and Middle-Income Countries</option>
         </select>
       </div>
       <div class="af-group">
@@ -1521,11 +1782,11 @@ tbody td { padding: 12px 14px; vertical-align: middle; }
       <p>Typical application deadlines by month. Click any program for full details.</p>
     </div>
     <div class="cal-legend">
-      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#0EA5E9"></div>Grant</div>
-      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#8B5CF6"></div>Fellowship</div>
-      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#F97316"></div>Prize</div>
-      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#3B82F6"></div>Accelerator</div>
-      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#059669"></div>Program</div>
+      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#D96F55"></div>Grant</div>
+      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#765F7E"></div>Fellowship</div>
+      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#C99A21"></div>Prize</div>
+      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#438F88"></div>Accelerator</div>
+      <div class="cal-leg-item"><div class="cal-leg-dot" style="background:#34766F"></div>Programme</div>
     </div>
   </div>
   <div class="cal-grid" id="cal-grid"></div>
@@ -1583,7 +1844,7 @@ tbody td { padding: 12px 14px; vertical-align: middle; }
     <div>
       <span class="credit-kicker">An EdZola public resource</span>
       <h2>Six years of funding research, made easier to use.</h2>
-      <p>EdZola consolidated and organized this directory to help nonprofits and social impact teams spend less time hunting for technology funding.</p>
+      <p>EdZola consolidated and organised this directory so nonprofit teams can spend less time hunting for technology funding.</p>
     </div>
     <div class="source-credit">
       <a class="ffwd-logo-frame" href="https://www.ffwd.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fast Forward">
@@ -1643,13 +1904,13 @@ function getPageSize() {
   return 36;
 }
 const TYPE_COLORS = {
-  'Grant': '#0EA5E9',
-  'Fellowship': '#8B5CF6',
-  'Competition/Prize/Award': '#F97316',
-  'Accelerator/Incubator': '#3B82F6',
-  'Program/Cohort': '#059669',
-  'Grant (LOI Stage)': '#6366F1',
-  'RFP': '#EC4899',
+  'Grant': '#D96F55',
+  'Fellowship': '#765F7E',
+  'Competition/Prize/Award': '#C99A21',
+  'Accelerator/Incubator': '#438F88',
+  'Program/Cohort': '#34766F',
+  'Grant (LOI Stage)': '#8F5E4D',
+  'RFP': '#9A536A',
 };
 const TYPE_CSS = {
   'Grant':'tag-type-grant','Fellowship':'tag-type-fellowship',
@@ -1988,7 +2249,7 @@ function renderTable() {
   document.getElementById('table-body').innerHTML = tableFiltered.map(r => {
     const idx = DATA.indexOf(r);
     const deadM = r.typical_deadline_month || r.app_close_month || '—';
-    const typeColor = TYPE_COLORS[r.opportunity_type]||'#94A3B8';
+    const typeColor = TYPE_COLORS[r.opportunity_type]||'#897D73';
     return `<tr role="button" tabindex="0" aria-label="View details for ${esc(r.name)}" onclick="openModal(${idx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${idx})}">
       <td class="td-name">${esc(r.name)}</td>
       <td class="td-amount">${esc(r.grant_amount||'—')}</td>
@@ -1996,7 +2257,7 @@ function renderTable() {
       <td style="font-size:12px">${esc(r.status||'Unknown')}</td>
       <td>${esc(deadM)}</td>
       <td style="font-size:12px;max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc((r.geography||'—').split(',')[0].trim())}</td>
-      <td>${r.is_recurring==='Yes'?'<span style="color:#6D28D9;font-weight:700">Yes</span>':'—'}</td>
+      <td>${r.is_recurring==='Yes'?'<span style="color:#8A6A12;font-weight:700">Yes</span>':'—'}</td>
       <td style="font-weight:600">${esc(r.last_seen_year||'—')}</td>
     </tr>`;
   }).join('');
@@ -2011,7 +2272,7 @@ function buildDashboard() {
   DATA.forEach(r => { const t=r.opportunity_type||'Grant'; typeCounts[t]=(typeCounts[t]||0)+1; });
   const types = Object.entries(typeCounts).sort((a,b)=>b[1]-a[1]);
   const total = types.reduce((s,[,c])=>s+c,0);
-  const COLORS = ['#0EA5E9','#8B5CF6','#F97316','#3B82F6','#059669','#6366F1','#EC4899'];
+  const COLORS = ['#D96F55','#765F7E','#C99A21','#438F88','#34766F','#8F5E4D','#9A536A'];
   let angle = -90;
   let paths = '';
   let legendHtml = '';
@@ -2034,9 +2295,9 @@ function buildDashboard() {
     angle += pct*360;
   });
   // Center hole
-  paths += `<circle cx="70" cy="70" r="32" fill="white"/>`;
-  paths += `<text x="70" y="66" text-anchor="middle" font-size="20" font-weight="900" fill="#0F172A">${total}</text>`;
-  paths += `<text x="70" y="80" text-anchor="middle" font-size="12" fill="#94A3B8">PROGRAMS</text>`;
+  paths += `<circle cx="70" cy="70" r="32" fill="#FFFAF5"/>`;
+  paths += `<text x="70" y="66" text-anchor="middle" font-size="20" font-family="Georgia, serif" fill="#231F20">${total}</text>`;
+  paths += `<text x="70" y="80" text-anchor="middle" font-size="10" fill="#897D73">PROGRAMMES</text>`;
   document.getElementById('donut-svg').innerHTML = paths;
   document.getElementById('donut-legend').innerHTML = legendHtml;
 
@@ -2045,7 +2306,7 @@ function buildDashboard() {
   DATA.forEach(r => { (r.sector||'General/Multiple Sectors').split(',').forEach(s=>{ const k=s.trim(); sectorCounts[k]=(sectorCounts[k]||0)+1; }); });
   const sectors = Object.entries(sectorCounts).sort((a,b)=>b[1]-a[1]).slice(0,10);
   const maxS = sectors[0]?.[1]||1;
-  const SEC_COLORS = ['#0EA5E9','#059669','#10B981','#3B82F6','#8B5CF6','#F59E0B','#F97316','#EF4444','#6366F1','#EC4899'];
+  const SEC_COLORS = ['#D96F55','#438F88','#34766F','#C99A21','#765F7E','#BD563F','#62ACA4','#8F5E4D','#E5BD43','#9A536A'];
   document.getElementById('sector-bars').innerHTML = sectors.map(([name,cnt],i) => `
     <div class="sector-bar">
       <div class="sector-bar-label"><span>${name}</span><span>${cnt}</span></div>
@@ -2062,9 +2323,9 @@ function buildDashboard() {
   document.getElementById('heatmap-grid').innerHTML = MONTHS.map((m,i)=>{
     const cnt = monthCounts[m];
     const intensity = cnt/maxM;
-    const bg = cnt===0 ? '#F1F5F9' : `rgba(14,165,233,${(0.15+intensity*0.85).toFixed(2)})`;
-    const textColor = intensity>0.5 ? '#fff' : '#0369A1';
-    const textColorLabel = intensity>0.5 ? 'rgba(255,255,255,.7)' : '#94A3B8';
+    const bg = cnt===0 ? '#EFE5D9' : `rgba(217,111,85,${(0.15+intensity*0.85).toFixed(2)})`;
+    const textColor = intensity>0.5 ? '#FFFAF5' : '#8F3E2D';
+    const textColorLabel = intensity>0.5 ? 'rgba(255,250,245,.78)' : '#897D73';
     return `<div class="hm-cell" role="button" tabindex="0" style="background:${bg}" onclick="jumpCal('${m}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();jumpCal('${m}')}" title="Click to see ${m} grants">
       <div class="hm-month" style="color:${textColor}">${m}</div>
       <div class="hm-count" style="color:${textColor}">${cnt}</div>
@@ -2081,7 +2342,7 @@ function buildDashboard() {
     <div class="sector-bar">
       <div class="sector-bar-label"><span>${name}</span><span>${cnt}</span></div>
       <div class="sector-track">
-        <div class="sector-fill" style="width:${(cnt/maxG*100).toFixed(1)}%;background:#0EA5E9"></div>
+        <div class="sector-fill" style="width:${(cnt/maxG*100).toFixed(1)}%;background:#438F88"></div>
       </div>
     </div>`).join('');
 
@@ -2143,7 +2404,7 @@ function buildCalendar() {
         ${items.length===0 ? '<div class="cal-empty">None tracked</div>' :
           visible.map(r=>{
             const idx=DATA.indexOf(r);
-            const color=TYPE_COLORS[r.opportunity_type]||'#0EA5E9';
+            const color=TYPE_COLORS[r.opportunity_type]||'#D96F55';
             return `<div class="cal-item" role="button" tabindex="0" onclick="openModal(${idx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${idx})}">
               <div class="cal-item-dot" style="background:${color}"></div>
               <div class="cal-item-info">
@@ -2174,7 +2435,7 @@ function openModal(idx) {
   if (!r) return;
   lastFocusedElement = document.activeElement;
   const type = r.opportunity_type||'Grant';
-  const color = TYPE_COLORS[type]||'#0EA5E9';
+  const color = TYPE_COLORS[type]||'#D96F55';
 
   document.getElementById('modal-type-bar').innerHTML = `<span style="color:${color};display:inline-flex;align-items:center;gap:6px">
     <span style="display:inline-block;width:10px;height:10px;border-radius:3px;background:${color}"></span>
@@ -2193,7 +2454,7 @@ function openModal(idx) {
   const [statusLabel,statusBg,statusText] = statusMap[r.status]||['Unknown','#F1F5F9','#475569'];
   document.getElementById('modal-status-row').innerHTML = `
     <span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:${statusBg};color:${statusText}">${statusLabel}</span>
-    ${r.is_recurring==='Yes'?'<span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:#F5F3FF;color:#6D28D9">Recurring Program</span>':''}
+    ${r.is_recurring==='Yes'?'<span style="font-size:12px;font-weight:600;padding:4px 10px;border-radius:20px;background:#FFF7DD;color:#7A5E0F">Recurring programme</span>':''}
   `;
 
   // Amount
