@@ -250,6 +250,66 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 }
 .intro-guidance p { color: rgba(255,255,255,.72); font-size: 13px; line-height: 1.55; }
 
+.site-footer {
+  max-width: 1600px;
+  margin: 12px auto 0;
+  padding: 8px 32px 32px;
+}
+.credit-panel {
+  display: grid;
+  grid-template-columns: minmax(0, .75fr) minmax(320px, 1.25fr);
+  gap: 30px;
+  align-items: center;
+  padding: 24px 26px;
+  background: #FFFDF7;
+  border: 1px solid #E8E1D1;
+  border-radius: 14px;
+}
+.credit-kicker {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--brand-navy);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.credit-panel h2 { font-size: 20px; line-height: 1.25; letter-spacing: -.02em; }
+.credit-panel p { margin-top: 7px; color: var(--text-2); font-size: 13px; line-height: 1.65; }
+.source-credit {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-left: 26px;
+  border-left: 1px solid #DED5C1;
+}
+.ffwd-logo-frame {
+  position: relative;
+  width: 164px;
+  height: 34px;
+  flex: 0 0 164px;
+  overflow: hidden;
+}
+.ffwd-logo-frame img {
+  position: absolute;
+  width: 164px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.source-copy { min-width: 0; }
+.source-copy strong { display: block; font-size: 13px; }
+.source-copy p { margin-top: 3px; font-size: 12px; }
+.source-copy a { font-weight: 700; }
+.source-copy a:visited { color: var(--brand-teal); }
+.independence-note {
+  margin-top: 12px;
+  color: var(--text-3);
+  font-size: 11px;
+  text-align: center;
+}
+
 /* ============================
    BROWSE TAB
    ============================ */
@@ -1117,6 +1177,10 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   .workspace-intro { grid-template-columns: 1fr; gap: 18px; padding: 22px 20px; }
   .workspace-intro h1 { font-size: 30px; }
   .intro-guidance { padding: 16px 0 0; border-left: 0; border-top: 1px solid rgba(255,255,255,.18); }
+  .site-footer { padding: 4px 14px 24px; }
+  .credit-panel { grid-template-columns: 1fr; gap: 20px; padding: 22px 20px; }
+  .source-credit { align-items: flex-start; flex-direction: column; gap: 12px; padding: 18px 0 0; border-left: 0; border-top: 1px solid #DED5C1; }
+  .independence-note { padding-inline: 8px; }
   .search-hero { padding: 16px; border-radius: 12px; }
   .search-row { align-items: stretch; }
   .search-input, .btn-filter-toggle, .af-select, .sort-select, .table-search, .table-select, .btn-export, .btn-reset {
@@ -1496,6 +1560,26 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 </section>
 
 </main>
+
+<footer class="site-footer">
+  <div class="credit-panel">
+    <div>
+      <span class="credit-kicker">An EdZola public resource</span>
+      <h2>Six years of funding research, made easier to use.</h2>
+      <p>EdZola consolidated and organized this directory to help nonprofits and social impact teams spend less time hunting for technology funding.</p>
+    </div>
+    <div class="source-credit">
+      <a class="ffwd-logo-frame" href="https://www.ffwd.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit Fast Forward">
+        <img src="assets/fast-forward-logo.png" alt="Fast Forward" width="1200" height="630" loading="lazy">
+      </a>
+      <div class="source-copy">
+        <strong>Source acknowledgement</strong>
+        <p>Funding discovery includes opportunities originally shared through <a href="https://www.ffwd.org/" target="_blank" rel="noopener noreferrer">Fast Forward’s Funding emails</a>.</p>
+      </div>
+    </div>
+  </div>
+  <p class="independence-note">This independent EdZola directory is not affiliated with or endorsed by the funders listed. Always verify details on the official program website.</p>
+</footer>
 
 <!-- ==================== MODAL ==================== -->
 <div class="modal-backdrop" id="modal-backdrop" onclick="closeModalIfBg(event)">
