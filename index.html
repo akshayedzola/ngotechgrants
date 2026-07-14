@@ -115,7 +115,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .logo-text { color: #fff; }
 .logo-name { font-size: 18px; font-weight: 800; letter-spacing: -0.3px; }
 .logo-name span { color: #7DD3FC; }
-.logo-tagline { font-size: 11px; color: rgba(255,255,255,.55); }
+.logo-tagline { font-size: 12px; color: rgba(255,255,255,.55); }
 
 .header-stats {
   display: flex;
@@ -134,7 +134,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   line-height: 1.1;
 }
 .hstat-label {
-  font-size: 10px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: .6px;
 }
@@ -167,7 +167,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   border: none;
   border-bottom: 3px solid transparent;
   margin-bottom: -2px;
-  transition: all .15s;
+  transition: color .15s, border-color .15s, background-color .15s;
   display: flex;
   align-items: center;
   gap: 7px;
@@ -177,7 +177,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   background: var(--bg);
   border-radius: 10px;
   padding: 1px 7px;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--text-2);
 }
@@ -215,7 +215,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   display: block;
   margin-bottom: 8px;
   color: #7DD3FC;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 800;
   letter-spacing: .12em;
   text-transform: uppercase;
@@ -286,7 +286,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .ffwd-logo-frame {
   position: relative;
   width: 164px;
-  height: 34px;
+  height: 44px;
   flex: 0 0 164px;
   overflow: hidden;
 }
@@ -301,12 +301,12 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 .source-copy { min-width: 0; }
 .source-copy strong { display: block; font-size: 13px; }
 .source-copy p { margin-top: 3px; font-size: 12px; }
-.source-copy a { font-weight: 700; }
+.source-copy a { display: inline-flex; align-items: center; min-height: 44px; font-weight: 700; }
 .source-copy a:visited { color: var(--brand-teal); }
 .independence-note {
   margin-top: 12px;
   color: var(--text-3);
-  font-size: 11px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -349,6 +349,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   color: var(--text-1);
   outline: none;
   transition: border-color .15s;
+  min-height: 46px;
 }
 .search-input:focus { border-color: var(--brand-teal); background: #fff; }
 .search-input::placeholder { color: var(--text-3); }
@@ -365,13 +366,14 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   gap: 7px;
   transition: .15s;
   white-space: nowrap;
+  min-height: 46px;
 }
 .btn-filter-toggle:hover { background: var(--brand-dark); }
 .btn-filter-toggle .filter-badge {
   background: rgba(255,255,255,.25);
   border-radius: 8px;
   padding: 0 6px;
-  font-size: 11px;
+  font-size: 12px;
   display: none;
 }
 .btn-filter-toggle .filter-badge.show { display: inline; }
@@ -385,7 +387,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   flex-wrap: wrap;
 }
 .profile-label {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--text-3);
   text-transform: uppercase;
@@ -401,6 +403,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   color: var(--text-2);
   background: var(--bg);
   transition: .15s;
+  min-height: 46px;
 }
 .profile-pill:hover { border-color: var(--brand-teal); color: var(--brand-teal); background: #F0FAFE; }
 .profile-pill.on { background: var(--brand-teal); border-color: var(--brand-teal); color: #fff; }
@@ -414,7 +417,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   flex-wrap: wrap;
 }
 .type-label {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   color: var(--text-3);
   text-transform: uppercase;
@@ -431,6 +434,8 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   background: var(--bg);
   color: var(--text-2);
   transition: .15s;
+  min-height: 46px;
+  min-width: 44px;
 }
 .type-pill:hover { opacity: .85; transform: translateY(-1px); }
 .type-pill.on { color: #fff; }
@@ -456,7 +461,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   box-shadow: var(--shadow-md);
   margin-bottom: 16px;
   overflow: hidden;
-  transition: max-height .3s ease;
+  transition: none;
   max-height: 0;
 }
 .advanced-filters.open { max-height: 300px; }
@@ -468,7 +473,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   border-top: 2px solid var(--bg);
 }
 .af-group { display: flex; flex-direction: column; gap: 5px; }
-.af-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--text-3); }
+.af-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--text-3); }
 .af-select {
   padding: 8px 10px;
   border: 1.5px solid var(--border);
@@ -478,6 +483,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   background: var(--bg);
   outline: none;
   transition: .15s;
+  min-height: 44px;
 }
 .af-select:focus { border-color: var(--brand-teal); background: #fff; }
 .af-actions {
@@ -495,6 +501,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   font-size: 13px;
   font-weight: 600;
   color: var(--text-2);
+  min-height: 44px;
 }
 .btn-reset:hover { border-color: var(--color-danger); color: var(--color-danger); }
 .btn-export {
@@ -505,6 +512,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   font-size: 13px;
   font-weight: 600;
   color: #fff;
+  min-height: 44px;
 }
 .btn-export:hover { background: #059669; }
 
@@ -527,7 +535,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   align-items: center;
   gap: 8px;
 }
-.sort-label { font-size: 12px; color: var(--text-3); }
+.sort-label { font-size: 12px; color: var(--text-2); }
 .sort-select {
   padding: 6px 10px;
   border: 1.5px solid var(--border);
@@ -536,6 +544,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   color: var(--text-1);
   background: var(--bg);
   outline: none;
+  min-height: 44px;
 }
 
 /* ============================
@@ -557,7 +566,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   border-left: 1px solid var(--border);
   border-top: 4px solid var(--type-grant);
   cursor: pointer;
-  transition: all .18s;
+  transition: transform .18s, box-shadow .18s, border-color .18s;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -588,7 +597,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   gap: 6px;
   flex-shrink: 0;
   color: var(--text-3);
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: .03em;
   text-transform: uppercase;
@@ -626,7 +635,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   gap: 5px;
 }
 .tag {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 600;
   padding: 3px 8px;
   border-radius: 6px;
@@ -779,6 +788,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   padding: 4px 6px;
   border-radius: 6px;
   transition: .1s;
+  min-height: 44px;
 }
 .donut-item:hover { background: var(--bg); }
 .donut-swatch { width: 10px; height: 10px; border-radius: 3px; flex-shrink: 0; }
@@ -823,9 +833,9 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   gap: 4px;
 }
 .hm-cell:hover { transform: scale(1.06); }
-.hm-month { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
+.hm-month { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; }
 .hm-count { font-size: 22px; font-weight: 900; line-height: 1; }
-.hm-label { font-size: 10px; opacity: .7; }
+.hm-label { font-size: 12px; opacity: .7; }
 
 /* Geo bars */
 .geo-bar { margin-bottom: 9px; }
@@ -839,14 +849,15 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   border-bottom: 1px solid var(--border);
   cursor: pointer;
   transition: .1s;
+  min-height: 44px;
 }
 .verified-item:last-child { border-bottom: none; }
 .verified-item:hover { background: var(--bg); margin: 0 -22px; padding: 9px 22px; }
 .vi-check { color: var(--color-success); font-size: 16px; flex-shrink: 0; }
 .vi-info { flex: 1; min-width: 0; }
 .vi-name { font-size: 13px; font-weight: 600; color: var(--text-1); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.vi-meta { font-size: 11px; color: var(--text-3); }
-.vi-link { font-size: 12px; color: var(--brand-teal); flex-shrink: 0; }
+.vi-meta { font-size: 12px; color: var(--text-3); }
+.vi-link { display: inline-grid; place-items: center; width: 44px; height: 44px; font-size: 12px; color: var(--brand-teal); flex-shrink: 0; }
 
 /* ============================
    CALENDAR TAB
@@ -912,6 +923,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   cursor: pointer;
   transition: .1s;
   margin-bottom: 4px;
+  min-height: 44px;
 }
 .cal-item:hover { background: var(--bg); }
 .cal-item-dot { width: 8px; height: 8px; border-radius: 2px; flex-shrink: 0; }
@@ -924,7 +936,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.cal-item-meta { font-size: 11px; color: var(--text-3); }
+.cal-item-meta { font-size: 12px; color: var(--text-3); }
 .cal-show-more {
   text-align: center;
   padding: 8px;
@@ -932,6 +944,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   color: var(--brand-teal);
   font-weight: 600;
   cursor: pointer;
+  min-height: 44px;
 }
 .cal-show-more:hover { text-decoration: underline; }
 .cal-empty { text-align: center; padding: 20px; font-size: 13px; color: var(--text-3); }
@@ -957,6 +970,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   font-size: 13.5px;
   background: var(--bg);
   outline: none;
+  min-height: 44px;
 }
 .table-search:focus { border-color: var(--brand-teal); }
 .table-select {
@@ -966,6 +980,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   font-size: 13px;
   background: var(--bg);
   outline: none;
+  min-height: 44px;
 }
 .table-wrap {
   overflow-x: auto;
@@ -992,7 +1007,7 @@ thead th .sort-arrow { opacity: .5; margin-left: 4px; }
 thead th.sorted .sort-arrow { opacity: 1; }
 tbody tr { border-bottom: 1px solid var(--border); cursor: pointer; transition: .1s; }
 tbody tr:hover { background: #F8FAFF; }
-tbody td { padding: 11px 14px; vertical-align: middle; }
+tbody td { padding: 12px 14px; vertical-align: middle; }
 .td-name { font-weight: 600; color: var(--text-1); max-width: 220px; }
 .td-amount { font-weight: 700; color: var(--color-success); white-space: nowrap; }
 
@@ -1031,7 +1046,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   border-radius: 20px 20px 0 0;
 }
 .modal-type-bar {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .8px;
@@ -1088,7 +1103,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   padding: 10px 12px;
 }
 .meta-chip .mc-label {
-  font-size: 10px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .5px;
@@ -1102,7 +1117,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 }
 .modal-desc-section { margin-bottom: 16px; }
 .modal-desc-section h4 {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .5px;
@@ -1155,7 +1170,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   .logo { gap: 9px; }
   .logo-mark { width: 38px; height: 38px; }
   .logo-name { font-size: 17px; }
-  .logo-tagline { max-width: 150px; font-size: 10px; line-height: 1.25; }
+  .logo-tagline { max-width: 150px; font-size: 12px; line-height: 1.25; }
   .header-stats { gap: 12px; }
   .header-divider, .header-stats .hstat:nth-child(3), .header-stats .hstat:nth-child(5) { display: none; }
   .hstat-num { font-size: 16px; }
@@ -1286,18 +1301,18 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 </header>
 
 <!-- ==================== TAB NAV ==================== -->
-<nav class="tab-nav">
-  <button class="tab-btn active" onclick="gotoTab('browse')">
+<nav class="tab-nav" aria-label="Funding directory views" role="tablist">
+  <button class="tab-btn active" id="tab-browse" role="tab" aria-selected="true" aria-controls="panel-browse" onclick="gotoTab('browse')">
     Browse
     <span class="tab-count" id="tc-browse">656</span>
   </button>
-  <button class="tab-btn" onclick="gotoTab('dashboard')">
+  <button class="tab-btn" id="tab-dashboard" role="tab" aria-selected="false" aria-controls="panel-dashboard" onclick="gotoTab('dashboard')">
     Dashboard
   </button>
-  <button class="tab-btn" onclick="gotoTab('calendar')">
+  <button class="tab-btn" id="tab-calendar" role="tab" aria-selected="false" aria-controls="panel-calendar" onclick="gotoTab('calendar')">
     Grant Calendar
   </button>
-  <button class="tab-btn" onclick="gotoTab('table')">
+  <button class="tab-btn" id="tab-table" role="tab" aria-selected="false" aria-controls="panel-table" onclick="gotoTab('table')">
     Table View
     <span class="tab-count" id="tc-table">656</span>
   </button>
@@ -1319,17 +1334,18 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 </section>
 
 <!-- ========== BROWSE ========== -->
-<section class="tab-panel active" id="panel-browse">
+<section class="tab-panel active" id="panel-browse" role="tabpanel" aria-labelledby="tab-browse">
 
   <div class="search-hero">
     <div class="search-row">
       <div class="search-wrap">
         <span class="search-icon" aria-hidden="true">⌕</span>
         <input class="search-input" id="s-search" type="text"
+          aria-label="Search funding programs"
           placeholder="Search programs, foundations, sectors, keywords…"
           oninput="debouncedFilter()">
       </div>
-      <button class="btn-filter-toggle" onclick="toggleAdvanced()">
+      <button class="btn-filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="adv-filters" onclick="toggleAdvanced()">
         Filters
         <span class="filter-badge" id="filter-badge">0</span>
       </button>
@@ -1363,7 +1379,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   <div class="advanced-filters" id="adv-filters">
     <div class="af-inner">
       <div class="af-group">
-        <label class="af-label">Geography</label>
+        <label class="af-label" for="f-geo">Geography</label>
         <select class="af-select" id="f-geo" onchange="applyFilters()">
           <option value="">All</option>
           <option>Global</option><option>US Only</option><option>UK</option>
@@ -1373,7 +1389,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         </select>
       </div>
       <div class="af-group">
-        <label class="af-label">Status</label>
+        <label class="af-label" for="f-status">Status</label>
         <select class="af-select" id="f-status" onchange="applyFilters()">
           <option value="">All Statuses</option>
           <option>Active (Web Verified)</option>
@@ -1384,7 +1400,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         </select>
       </div>
       <div class="af-group">
-        <label class="af-label">Sector</label>
+        <label class="af-label" for="f-sector">Sector</label>
         <select class="af-select" id="f-sector" onchange="applyFilters()">
           <option value="">All Sectors</option>
           <option>Education/EdTech</option><option>Health/HealthTech</option>
@@ -1398,7 +1414,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         </select>
       </div>
       <div class="af-group">
-        <label class="af-label">For-Profit OK?</label>
+        <label class="af-label" for="f-fp">For-Profit OK?</label>
         <select class="af-select" id="f-fp" onchange="applyFilters()">
           <option value="">Either</option>
           <option value="No – Nonprofit Only">Nonprofit Only</option>
@@ -1406,7 +1422,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         </select>
       </div>
       <div class="af-group">
-        <label class="af-label">Recurring</label>
+        <label class="af-label" for="f-rec">Recurring</label>
         <select class="af-select" id="f-rec" onchange="applyFilters()">
           <option value="">Any</option>
           <option value="Yes">Recurring</option>
@@ -1414,7 +1430,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
         </select>
       </div>
       <div class="af-group">
-        <label class="af-label">Deadline Month</label>
+        <label class="af-label" for="f-month">Deadline Month</label>
         <select class="af-select" id="f-month" onchange="applyFilters()">
           <option value="">Any Month</option>
           <option>Jan</option><option>Feb</option><option>Mar</option>
@@ -1431,9 +1447,9 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
   </div>
 
   <div class="results-bar">
-    <div class="results-count" id="results-count"><strong>656</strong> programs</div>
+    <div class="results-count" id="results-count" aria-live="polite"><strong>656</strong> programs</div>
     <div class="sort-wrap">
-      <span class="sort-label">Sort by:</span>
+      <label class="sort-label" for="sort-by">Sort by:</label>
       <select class="sort-select" id="sort-by" onchange="applyFilters()">
         <option value="name">Name A→Z</option>
         <option value="amount_desc">Amount (High→Low)</option>
@@ -1453,7 +1469,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 </section>
 
 <!-- ========== DASHBOARD ========== -->
-<section class="tab-panel" id="panel-dashboard">
+<section class="tab-panel" id="panel-dashboard" role="tabpanel" aria-labelledby="tab-dashboard">
   <div class="kpi-row">
     <div class="kpi">
       <div><div class="kpi-num" id="k-total">656</div><div class="kpi-label">Total Programs Tracked</div></div>
@@ -1498,7 +1514,7 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 </section>
 
 <!-- ========== CALENDAR ========== -->
-<section class="tab-panel" id="panel-calendar">
+<section class="tab-panel" id="panel-calendar" role="tabpanel" aria-labelledby="tab-calendar">
   <div class="cal-header">
     <div>
       <h2>Annual Grant Calendar</h2>
@@ -1516,23 +1532,24 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 </section>
 
 <!-- ========== TABLE ========== -->
-<section class="tab-panel" id="panel-table">
+<section class="tab-panel" id="panel-table" role="tabpanel" aria-labelledby="tab-table">
   <div class="table-controls">
     <input class="table-search" id="t-search" type="text"
+      aria-label="Search programs in table"
       placeholder="Search programs…" oninput="applyTableFilter()">
-    <select class="table-select" id="t-type" onchange="applyTableFilter()">
+    <select class="table-select" id="t-type" aria-label="Filter table by opportunity type" onchange="applyTableFilter()">
       <option value="">All Types</option>
       <option>Grant</option><option>Fellowship</option>
       <option>Competition/Prize/Award</option><option>Accelerator/Incubator</option>
       <option>Program/Cohort</option><option>Grant (LOI Stage)</option><option>RFP</option>
     </select>
-    <select class="table-select" id="t-status" onchange="applyTableFilter()">
+    <select class="table-select" id="t-status" aria-label="Filter table by status" onchange="applyTableFilter()">
       <option value="">All Statuses</option>
       <option>Active (Web Verified)</option><option>Likely Active</option>
       <option>Verify Status</option><option>Check if Active</option>
       <option>Paused/Inactive</option>
     </select>
-    <select class="table-select" id="t-geo" onchange="applyTableFilter()">
+    <select class="table-select" id="t-geo" aria-label="Filter table by geography" onchange="applyTableFilter()">
       <option value="">All Geographies</option>
       <option>Global</option><option>US Only</option><option>UK</option>
       <option>Canada</option><option>Africa</option><option>India</option>
@@ -1583,12 +1600,12 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 
 <!-- ==================== MODAL ==================== -->
 <div class="modal-backdrop" id="modal-backdrop" onclick="closeModalIfBg(event)">
-  <div class="modal-box" id="modal-box">
+  <div class="modal-box" id="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-name" tabindex="-1">
     <div class="modal-top">
       <div class="modal-type-bar" id="modal-type-bar"></div>
       <div class="modal-name" id="modal-name"></div>
       <div class="modal-status-row" id="modal-status-row"></div>
-      <button class="modal-close" onclick="closeModal()" title="Close">✕</button>
+      <button class="modal-close" onclick="closeModal()" title="Close" aria-label="Close program details">✕</button>
     </div>
     <div class="modal-body">
       <div class="modal-amount" id="modal-amount"></div>
@@ -1652,11 +1669,14 @@ let typeSel = '';
 let profileActive = '';
 let profileMinAmt = 0;
 let debounceTimer = null;
+let lastFocusedElement = null;
 
 // =====================
 // INIT
 // =====================
 document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.profile-pill').forEach(button => button.setAttribute('aria-pressed', 'false'));
+  document.querySelectorAll('.type-pill').forEach(button => button.setAttribute('aria-pressed', String(button.classList.contains('on'))));
   const active = DATA.filter(r => (r.status||'').includes('Active'));
   const recurring = DATA.filter(r => r.is_recurring === 'Yes');
   const global_ = DATA.filter(r => (r.geography||'').includes('Global'));
@@ -1677,9 +1697,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // =====================
 function gotoTab(name) {
   document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => {
+    b.classList.remove('active');
+    b.setAttribute('aria-selected', 'false');
+  });
   document.getElementById('panel-'+name).classList.add('active');
-  document.querySelectorAll('.tab-btn')[['browse','dashboard','calendar','table'].indexOf(name)].classList.add('active');
+  const activeTab = document.querySelectorAll('.tab-btn')[['browse','dashboard','calendar','table'].indexOf(name)];
+  activeTab.classList.add('active');
+  activeTab.setAttribute('aria-selected', 'true');
 }
 
 // =====================
@@ -1773,12 +1798,15 @@ function resetAll() {
   document.querySelectorAll('.type-pill').forEach(p=>p.classList.remove('on'));
   document.querySelector('.type-pill[data-val=""]').classList.add('on');
   document.querySelectorAll('.profile-pill').forEach(p=>p.classList.remove('on'));
+  document.querySelectorAll('.type-pill').forEach(p=>p.setAttribute('aria-pressed', String(p.classList.contains('on'))));
+  document.querySelectorAll('.profile-pill').forEach(p=>p.setAttribute('aria-pressed', 'false'));
   applyFilters();
 }
 
 function toggleAdvanced() {
   advOpen = !advOpen;
   document.getElementById('adv-filters').classList.toggle('open', advOpen);
+  document.getElementById('filter-toggle').setAttribute('aria-expanded', String(advOpen));
 }
 
 // Type pills
@@ -1786,6 +1814,7 @@ function setType(btn) {
   typeSel = btn.dataset.val;
   document.querySelectorAll('.type-pill').forEach(p=>p.classList.remove('on'));
   btn.classList.add('on');
+  document.querySelectorAll('.type-pill').forEach(p=>p.setAttribute('aria-pressed', String(p===btn)));
   applyFilters();
 }
 
@@ -1817,6 +1846,8 @@ function applyProfile(key) {
   document.querySelectorAll('.profile-pill').forEach(b=>{
     if(b.getAttribute('onclick').includes(key)) b.classList.add('on');
   });
+  document.querySelectorAll('.profile-pill').forEach(b=>b.setAttribute('aria-pressed', String(b.classList.contains('on'))));
+  document.querySelectorAll('.type-pill').forEach(b=>b.setAttribute('aria-pressed', String(b.classList.contains('on'))));
   if (!advOpen && (p.geo||p.fp||p.sector||p.rec||p.status)) toggleAdvanced();
   applyFilters();
 }
@@ -1878,7 +1909,7 @@ function renderCards() {
       ? `<div class="card-amount">${esc(r.grant_amount)}</div>`
       : `<div class="card-amount empty">Amount not specified</div>`;
     const geo1 = (r.geography||'Not specified').split(',')[0].trim();
-    return `<article class="card" data-type="${esc(r.opportunity_type)}" onclick="openModal(${idx})">
+    return `<article class="card" data-type="${esc(r.opportunity_type)}" role="button" tabindex="0" aria-label="View details for ${esc(r.name)}" onclick="openModal(${idx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${idx})}">
       <div class="card-header">
         <div class="card-name">${esc(r.name)}</div>
         <div class="card-status" title="${esc(r.status||'Unknown status')}">
@@ -1958,10 +1989,10 @@ function renderTable() {
     const idx = DATA.indexOf(r);
     const deadM = r.typical_deadline_month || r.app_close_month || '—';
     const typeColor = TYPE_COLORS[r.opportunity_type]||'#94A3B8';
-    return `<tr onclick="openModal(${idx})">
+    return `<tr role="button" tabindex="0" aria-label="View details for ${esc(r.name)}" onclick="openModal(${idx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${idx})}">
       <td class="td-name">${esc(r.name)}</td>
       <td class="td-amount">${esc(r.grant_amount||'—')}</td>
-      <td><span style="font-size:11px;font-weight:700;color:${typeColor}">${esc(r.opportunity_type||'')}</span></td>
+      <td><span style="font-size: 12px;font-weight:700;color:${typeColor}">${esc(r.opportunity_type||'')}</span></td>
       <td style="font-size:12px">${esc(r.status||'Unknown')}</td>
       <td>${esc(deadM)}</td>
       <td style="font-size:12px;max-width:140px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc((r.geography||'—').split(',')[0].trim())}</td>
@@ -1995,7 +2026,7 @@ function buildDashboard() {
     paths += `<path d="M${cx},${cy} L${x1.toFixed(2)},${y1.toFixed(2)} A${r},${r} 0 ${lg},1 ${x2.toFixed(2)},${y2.toFixed(2)} Z"
       fill="${COLORS[i%COLORS.length]}" opacity=".9" style="cursor:pointer" onclick="filterByType('${name}')">
       <title>${name}: ${cnt}</title></path>`;
-    legendHtml += `<div class="donut-item" onclick="filterByType('${name}')">
+    legendHtml += `<div class="donut-item" role="button" tabindex="0" onclick="filterByType('${name}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();filterByType('${name}')}">
       <div class="donut-swatch" style="background:${COLORS[i%COLORS.length]}"></div>
       <span class="donut-name">${name}</span>
       <span class="donut-count">${cnt}</span>
@@ -2005,7 +2036,7 @@ function buildDashboard() {
   // Center hole
   paths += `<circle cx="70" cy="70" r="32" fill="white"/>`;
   paths += `<text x="70" y="66" text-anchor="middle" font-size="20" font-weight="900" fill="#0F172A">${total}</text>`;
-  paths += `<text x="70" y="80" text-anchor="middle" font-size="9" fill="#94A3B8">PROGRAMS</text>`;
+  paths += `<text x="70" y="80" text-anchor="middle" font-size="12" fill="#94A3B8">PROGRAMS</text>`;
   document.getElementById('donut-svg').innerHTML = paths;
   document.getElementById('donut-legend').innerHTML = legendHtml;
 
@@ -2034,7 +2065,7 @@ function buildDashboard() {
     const bg = cnt===0 ? '#F1F5F9' : `rgba(14,165,233,${(0.15+intensity*0.85).toFixed(2)})`;
     const textColor = intensity>0.5 ? '#fff' : '#0369A1';
     const textColorLabel = intensity>0.5 ? 'rgba(255,255,255,.7)' : '#94A3B8';
-    return `<div class="hm-cell" style="background:${bg}" onclick="jumpCal('${m}')" title="Click to see ${m} grants">
+    return `<div class="hm-cell" role="button" tabindex="0" style="background:${bg}" onclick="jumpCal('${m}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();jumpCal('${m}')}" title="Click to see ${m} grants">
       <div class="hm-month" style="color:${textColor}">${m}</div>
       <div class="hm-count" style="color:${textColor}">${cnt}</div>
       <div class="hm-label" style="color:${textColorLabel}">grant${cnt!==1?'s':''}</div>
@@ -2059,7 +2090,7 @@ function buildDashboard() {
   document.getElementById('verified-list').innerHTML = ver.map(r=>{
     const idx=DATA.indexOf(r);
     const url=r.official_url||r.current_url||'';
-    return `<div class="verified-item" onclick="openModal(${idx})">
+    return `<div class="verified-item" role="button" tabindex="0" onclick="openModal(${idx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${idx})}">
       <span class="vi-check" aria-hidden="true">✓</span>
       <div class="vi-info">
         <div class="vi-name">${esc(r.name)}</div>
@@ -2113,7 +2144,7 @@ function buildCalendar() {
           visible.map(r=>{
             const idx=DATA.indexOf(r);
             const color=TYPE_COLORS[r.opportunity_type]||'#0EA5E9';
-            return `<div class="cal-item" onclick="openModal(${idx})">
+            return `<div class="cal-item" role="button" tabindex="0" onclick="openModal(${idx})" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openModal(${idx})}">
               <div class="cal-item-dot" style="background:${color}"></div>
               <div class="cal-item-info">
                 <div class="cal-item-name">${esc(r.name.length>42?r.name.slice(0,40)+'…':r.name)}</div>
@@ -2121,7 +2152,7 @@ function buildCalendar() {
               </div>
             </div>`;
           }).join('') +
-          (remaining>0 ? `<div class="cal-show-more" onclick="jumpToCalFilter('${m}')">+${remaining} more programs →</div>` : '')
+          (remaining>0 ? `<div class="cal-show-more" role="button" tabindex="0" onclick="jumpToCalFilter('${m}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();jumpToCalFilter('${m}')}">+${remaining} more programs →</div>` : '')
         }
       </div>
     </div>`;
@@ -2141,6 +2172,7 @@ function jumpToCalFilter(m) {
 function openModal(idx) {
   const r = DATA[idx];
   if (!r) return;
+  lastFocusedElement = document.activeElement;
   const type = r.opportunity_type||'Grant';
   const color = TYPE_COLORS[type]||'#0EA5E9';
 
@@ -2196,18 +2228,31 @@ function openModal(idx) {
 
   document.getElementById('modal-backdrop').classList.add('open');
   document.body.style.overflow='hidden';
+  document.querySelector('.modal-close').focus();
 }
 
 function closeModal() {
   document.getElementById('modal-backdrop').classList.remove('open');
   document.body.style.overflow='';
+  if (lastFocusedElement && document.contains(lastFocusedElement)) lastFocusedElement.focus();
 }
 
 function closeModalIfBg(e) {
   if (e.target===document.getElementById('modal-backdrop')) closeModal();
 }
 
-document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+document.addEventListener('keydown', e => {
+  const backdrop = document.getElementById('modal-backdrop');
+  if (e.key === 'Escape' && backdrop.classList.contains('open')) closeModal();
+  if (e.key !== 'Tab' || !backdrop.classList.contains('open')) return;
+  const focusable = [...document.getElementById('modal-box').querySelectorAll('button, a[href], [tabindex]:not([tabindex="-1"])')]
+    .filter(el => !el.hidden && el.offsetParent !== null);
+  if (!focusable.length) return;
+  const first = focusable[0];
+  const last = focusable[focusable.length - 1];
+  if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+});
 
 // =====================
 // EXPORT
