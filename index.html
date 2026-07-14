@@ -4,6 +4,10 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>EdZola | Tech Nonprofit Funding Playbook</title>
+<meta name="description" content="A searchable directory of technology grants, fellowships, prizes, and accelerator programs for nonprofits and social impact teams worldwide.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* ============================
    RESET & DESIGN TOKENS
@@ -53,23 +57,29 @@
   --shadow-lg: 0 20px 40px rgba(0,0,0,.15), 0 8px 16px rgba(0,0,0,.08);
 }
 
-html { font-size: 15px; scroll-behavior: smooth; }
+html { font-size: 16px; scroll-behavior: smooth; }
 body {
-  font-family: -apple-system, 'Segoe UI', Arial, sans-serif;
+  font-family: 'Manrope', sans-serif;
   background: var(--bg);
   color: var(--text-1);
   line-height: 1.5;
   min-height: 100vh;
 }
 a { color: var(--brand-teal); text-decoration: none; }
+a:visited { color: #6D28D9; }
 a:hover { text-decoration: underline; }
 button { cursor: pointer; font-family: inherit; }
+button, input, select, a { -webkit-tap-highlight-color: transparent; }
+button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible, [tabindex]:focus-visible {
+  outline: 3px solid #FBBF24;
+  outline-offset: 3px;
+}
 
 /* ============================
    HEADER
    ============================ */
 .header {
-  background: linear-gradient(135deg, var(--brand-dark) 0%, var(--brand-navy) 60%, #1a5276 100%);
+  background: var(--brand-dark);
   padding: 0 32px;
   position: sticky;
   top: 0;
@@ -80,7 +90,7 @@ button { cursor: pointer; font-family: inherit; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  height: 68px;
   gap: 24px;
 }
 .logo {
@@ -144,7 +154,7 @@ button { cursor: pointer; font-family: inherit; }
   display: flex;
   gap: 4px;
   position: sticky;
-  top: 60px;
+  top: 68px;
   z-index: 100;
   box-shadow: var(--shadow-sm);
 }
@@ -420,14 +430,14 @@ button { cursor: pointer; font-family: inherit; }
    ============================ */
 .cards-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
 }
 
 .card {
   background: var(--surface);
   border-radius: var(--r-lg);
-  padding: 20px;
+  padding: 20px 20px 18px;
   box-shadow: var(--shadow-sm);
   border-top: 4px solid var(--type-grant);
   cursor: pointer;
@@ -437,6 +447,7 @@ button { cursor: pointer; font-family: inherit; }
   gap: 10px;
   position: relative;
   overflow: hidden;
+  min-height: 232px;
 }
 .card:hover {
   transform: translateY(-3px);
@@ -456,7 +467,7 @@ button { cursor: pointer; font-family: inherit; }
   gap: 8px;
 }
 .card-name {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--text-1);
   line-height: 1.3;
@@ -507,7 +518,7 @@ button { cursor: pointer; font-family: inherit; }
 .tag-verified          { background:#DCFCE7; color:#166534; }
 
 .card-desc {
-  font-size: 13px;
+  font-size: 14px;
   color: var(--text-2);
   line-height: 1.55;
   display: -webkit-box;
@@ -522,7 +533,7 @@ button { cursor: pointer; font-family: inherit; }
   align-items: center;
   padding-top: 10px;
   border-top: 1px solid var(--border);
-  font-size: 12px;
+  font-size: 12.5px;
   color: var(--text-3);
   margin-top: auto;
 }
@@ -539,7 +550,9 @@ button { cursor: pointer; font-family: inherit; }
   padding-bottom: 8px;
 }
 .page-btn {
-  padding: 8px 16px;
+  min-width: 44px;
+  min-height: 44px;
+  padding: 8px 14px;
   border: 1.5px solid var(--border);
   border-radius: 8px;
   font-size: 13px;
@@ -912,10 +925,10 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 }
 .modal-close {
   position: absolute;
-  top: 18px;
-  right: 20px;
-  width: 32px;
-  height: 32px;
+  top: 12px;
+  right: 14px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   background: var(--bg);
   border: none;
@@ -1000,6 +1013,108 @@ tbody td { padding: 11px 14px; vertical-align: middle; }
 .text-sm { font-size: 12px; }
 .text-muted { color: var(--text-3); }
 .sr-only { position:absolute; width:1px; height:1px; padding:0; overflow:hidden; clip:rect(0,0,0,0); border:0; }
+
+/* ============================
+   RESPONSIVE EXPERIENCE
+   ============================ */
+@media (max-width: 1100px) {
+  .header, .tab-nav { padding-left: 20px; padding-right: 20px; }
+  .page-content { padding: 20px; }
+  .header-stats { gap: 16px; }
+  .cards-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+@media (max-width: 720px) {
+  .header { position: relative; padding: 0 16px; }
+  .header-inner { height: 72px; gap: 12px; }
+  .logo { gap: 9px; }
+  .logo-mark { width: 38px; height: 38px; }
+  .logo-name { font-size: 17px; }
+  .logo-tagline { max-width: 150px; font-size: 10px; line-height: 1.25; }
+  .header-stats { gap: 12px; }
+  .header-divider, .header-stats .hstat:nth-child(3), .header-stats .hstat:nth-child(5) { display: none; }
+  .hstat-num { font-size: 16px; }
+  .hstat-label { font-size: 8px; letter-spacing: .4px; }
+
+  .tab-nav {
+    position: sticky;
+    top: 0;
+    padding: 0 10px;
+    gap: 0;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+  }
+  .tab-nav::-webkit-scrollbar { display: none; }
+  .tab-btn { min-height: 50px; padding: 12px 13px; font-size: 13px; }
+
+  .page-content { padding: 16px 14px 28px; }
+  .search-hero { padding: 16px; border-radius: 12px; }
+  .search-row { align-items: stretch; }
+  .search-input, .btn-filter-toggle, .af-select, .sort-select, .table-search, .table-select, .btn-export, .btn-reset {
+    min-height: 44px;
+  }
+  .btn-filter-toggle { padding-inline: 14px; }
+  .profile-row, .type-filter-row {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 4px;
+    scrollbar-width: none;
+  }
+  .profile-row::-webkit-scrollbar, .type-filter-row::-webkit-scrollbar { display: none; }
+  .profile-label, .type-label { position: sticky; left: 0; background: var(--surface); z-index: 2; padding-right: 6px; }
+  .profile-pill, .type-pill { min-height: 44px; flex: 0 0 auto; }
+  .advanced-filters.open { max-height: 760px; }
+  .af-inner { grid-template-columns: 1fr; padding: 16px; }
+  .af-actions { flex-wrap: wrap; }
+  .results-bar { align-items: flex-end; }
+  .sort-wrap { flex-direction: column; align-items: flex-start; gap: 4px; }
+
+  .cards-grid { grid-template-columns: 1fr; gap: 14px; }
+  .card { min-height: 0; padding: 18px; }
+  .card:hover { transform: none; }
+  .card-amount { font-size: 21px; }
+  .card-footer { gap: 10px; flex-wrap: wrap; }
+  .pagination { flex-wrap: wrap; gap: 6px; }
+  .page-info { width: 100%; text-align: center; }
+
+  .kpi-row { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .kpi { padding: 16px; gap: 10px; border-left-width: 3px; }
+  .kpi-icon { display: none; }
+  .kpi-num { font-size: 26px; }
+  .dash-grid { gap: 14px; }
+  .dash-card { padding: 18px; }
+  .heatmap-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .hm-cell { min-height: 88px; justify-content: center; }
+
+  .cal-header { align-items: flex-start; padding: 20px; }
+  .cal-grid { grid-template-columns: 1fr; }
+  .cal-item, .cal-show-more { min-height: 44px; }
+
+  .table-controls { align-items: stretch; flex-direction: column; padding: 14px; }
+  .table-wrap { border-radius: 0 0 12px 12px; }
+  table { font-size: 13px; min-width: 940px; }
+
+  .modal-backdrop { padding: 0; align-items: flex-end; }
+  .modal-box { max-height: 94vh; border-radius: 18px 18px 0 0; }
+  .modal-top { padding: 20px 64px 16px 20px; border-radius: 18px 18px 0 0; }
+  .modal-body { padding: 18px 20px calc(24px + env(safe-area-inset-bottom)); }
+  .modal-meta-grid { grid-template-columns: 1fr 1fr; }
+  .modal-cta { min-height: 48px; display: flex; align-items: center; justify-content: center; }
+}
+
+@media (max-width: 430px) {
+  .header-stats .hstat:nth-child(7) { display: none; }
+  .search-row { flex-direction: column; }
+  .btn-filter-toggle { justify-content: center; }
+  .donut-wrap { align-items: flex-start; flex-direction: column; }
+  .modal-meta-grid { grid-template-columns: 1fr; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
 </style>
 </head>
 <body>
@@ -1345,7 +1460,11 @@ const DATA = [{"name": "D-Prize Global Competition", "description": "Is seeking 
 const MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
 const MONTH_FULL = ['January','February','March','April','May','June','July','August','September','October','November','December'];
 const MONTH_ORD = {Jan:1,Feb:2,Mar:3,Apr:4,May:5,Jun:6,Jul:7,Aug:8,Sep:9,Oct:10,Nov:11,Dec:12};
-const PAGE_SIZE = 48;
+function getPageSize() {
+  if (window.innerWidth < 720) return 12;
+  if (window.innerWidth < 1100) return 24;
+  return 36;
+}
 const TYPE_COLORS = {
   'Grant': '#0EA5E9',
   'Fellowship': '#8B5CF6',
@@ -1575,10 +1694,11 @@ function renderCards() {
   noRes.style.display = 'none';
 
   const total = filtered.length;
-  const pages = Math.ceil(total / PAGE_SIZE);
+  const pageSize = getPageSize();
+  const pages = Math.ceil(total / pageSize);
   currentPage = Math.min(currentPage, pages);
-  const start = (currentPage-1)*PAGE_SIZE;
-  const slice = filtered.slice(start, start+PAGE_SIZE);
+  const start = (currentPage-1)*pageSize;
+  const slice = filtered.slice(start, start+pageSize);
 
   rc.innerHTML = `<strong>${total}</strong> program${total!==1?'s':''} found`;
 
