@@ -1559,12 +1559,6 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   .header-stats { margin-left: auto; }
 }
 
-.intro-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-top: 22px;
-}
 .btn-primary,
 .btn-secondary {
   display: inline-flex;
@@ -1643,9 +1637,42 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   text-align: center;
 }
 
+.contribution-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 24px 26px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  box-shadow: var(--shadow-sm);
+}
+.contribution-panel h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+.contribution-panel p {
+  max-width: 720px;
+  margin-top: 7px;
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.contribution-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
 @media (max-width: 720px) {
-  .intro-actions { flex-direction: column; align-items: stretch; padding-right: 42px; }
-  .btn-primary, .btn-secondary { width: 100%; }
+  .contribution-panel { grid-template-columns: 1fr; gap: 18px; padding: 22px 20px; }
+  .contribution-actions { flex-direction: column; align-items: stretch; }
+  .contribution-actions .btn-primary, .contribution-actions .btn-secondary { width: 100%; }
 }
 </style>
 </head>
@@ -1710,10 +1737,6 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
     <span class="intro-eyebrow">A commons resource from EdZola</span>
     <h1 id="page-title">Funding for the work that matters.</h1>
     <p>Search grants, fellowships, prizes, and accelerator programmes gathered over years of working alongside nonprofits and shared as a public commons.</p>
-    <div class="intro-actions">
-      <a class="btn-primary" href="https://github.com/akshayedzola/ngotechgrants/issues/new?template=add-grant.yml" target="_blank" rel="noopener noreferrer">Add a grant</a>
-      <a class="btn-secondary" href="https://github.com/akshayedzola/ngotechgrants/issues/new?template=correct-grant.yml" target="_blank" rel="noopener noreferrer">Suggest a correction</a>
-    </div>
   </div>
   <aside class="intro-guidance" aria-label="Data guidance">
     <strong>Trust the evidence label</strong>
@@ -1965,6 +1988,17 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 </main>
 
 <footer class="site-footer">
+  <section class="contribution-panel" aria-labelledby="contribution-title">
+    <div>
+      <span class="credit-kicker">Community maintained</span>
+      <h2 id="contribution-title">Help keep this directory accurate.</h2>
+      <p>Know about a new opportunity or a detail that has changed? Share an official source and we will review it before updating the directory.</p>
+    </div>
+    <div class="contribution-actions">
+      <a class="btn-primary" href="https://github.com/akshayedzola/ngotechgrants/issues/new?template=add-grant.yml" target="_blank" rel="noopener noreferrer">Add a grant</a>
+      <a class="btn-secondary" href="https://github.com/akshayedzola/ngotechgrants/issues/new?template=correct-grant.yml" target="_blank" rel="noopener noreferrer">Suggest a correction</a>
+    </div>
+  </section>
   <div class="credit-panel">
     <div>
       <span class="credit-kicker">A commons resource from EdZola</span>
