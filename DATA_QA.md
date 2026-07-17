@@ -2,16 +2,16 @@
 
 Last full classification: **17 July 2026**
 
-The directory contains **646 deduplicated records** consolidated from EdZola’s historical funding research, including opportunities surfaced in Fast Forward funding emails. Every record has a trust state; a historical record is never presented as currently open without dated official evidence.
+The directory contains **646 deduplicated records** consolidated from EdZola’s historical repository, including opportunities surfaced in Fast Forward funding emails. The repository accumulated through years of working alongside nonprofits; it was not created as a funding research project. Every record has a trust state, and a historical record is never presented as currently open without dated official evidence.
 
 ## Classification results
 
 | Trust state | Records | Meaning |
 | --- | ---: | --- |
 | Open now | 8 | Checked against an official source on 17 July 2026 |
-| Historically recurring | 106 | Repeated in past research; current applications are not implied |
+| Historically recurring | 106 | Repeated in historical source material; current applications are not implied |
 | Needs verification | 148 | Recent or potentially relevant, but current official evidence is incomplete |
-| Historical archive | 380 | Older one-time or unclear opportunity retained for research context |
+| Historical archive | 380 | Older one-time or unclear opportunity retained for historical context |
 | Closed | 3 | No open public cycle confirmed, or the programme ended |
 | Invitation-only | 1 | No public application process |
 

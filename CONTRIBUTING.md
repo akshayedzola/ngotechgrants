@@ -18,9 +18,9 @@ Community submissions do not publish automatically. Issue content is untrusted i
 ## Trust-state definitions
 
 - `open_now`, `rolling`, and `upcoming` require a dated official source.
-- `historically_recurring` means the programme repeated in past research, not that applications are currently open.
+- `historically_recurring` means the programme repeated in historical source material, not that applications are currently open.
 - `needs_verification` means a recent record lacks enough current official evidence.
-- `historical_archive` preserves old research without implying present availability.
+- `historical_archive` preserves old source material without implying present availability.
 - `closed` and `invitation_only` describe confirmed limits on public applications.
 
 Exact deadlines belong in `current_cycle` only when `verified_at` and `source_url` are present. Historical cycle months belong in `typical_cycle_months`.
