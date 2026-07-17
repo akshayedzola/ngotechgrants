@@ -34,8 +34,10 @@ jobs:
       - name: Validate grant data and site contract
         run: |
           node --check app.js
+          node --check grant-utils.js
           node scripts/validate-data.mjs
           node scripts/test-site.mjs
+          node scripts/test-grant-utils.mjs
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

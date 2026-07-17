@@ -21,7 +21,9 @@ jobs:
       - name: Validate grant data
         run: |
           node --check app.js
+          node --check grant-utils.js
           node scripts/validate-data.mjs
           node scripts/test-site.mjs
+          node scripts/test-grant-utils.mjs
       - name: Check official-source links
         run: node scripts/check-links.mjs
