@@ -160,7 +160,7 @@ function deadlineOrder(record) {
 function countActiveFilters() {
   const filters = getFilters();
   const fields = [filters.geo, filters.sector, filters.rec, filters.month];
-  if (filters.status && filters.status !== 'recommended') fields.push(filters.status);
+  if (filters.status && filters.status !== 'open_now') fields.push(filters.status);
   return fields.filter(Boolean).length + (filters.q ? 1 : 0) + (typeSel ? 1 : 0);
 }
 
@@ -174,12 +174,13 @@ function applyFilters() {
   badge.textContent = count;
   badge.classList.toggle('show', count > 0);
   document.getElementById('tc-browse').textContent = filtered.length;
+  document.getElementById('historical-paths').hidden = filters.status !== 'open_now';
 }
 
 function resetAll() {
   document.getElementById('s-search').value = '';
   ['f-geo', 'f-sector', 'f-rec', 'f-month'].forEach(id => { document.getElementById(id).value = ''; });
-  document.getElementById('f-status').value = 'recommended';
+  document.getElementById('f-status').value = 'open_now';
   typeSel = '';
   profileMinAmt = 0;
   profileActive = '';
@@ -192,6 +193,18 @@ function resetAll() {
 function showFullArchive() {
   resetAll();
   document.getElementById('f-status').value = '';
+  profileActive = 'archive';
+  document.querySelectorAll('.profile-pill').forEach(button => button.classList.remove('on'));
+  syncPressedStates();
+  applyFilters();
+}
+
+function showRecurringPatterns() {
+  resetAll();
+  document.getElementById('f-status').value = 'historically_recurring';
+  profileActive = 'recurring-patterns';
+  document.querySelectorAll('.profile-pill').forEach(button => button.classList.remove('on'));
+  syncPressedStates();
   applyFilters();
 }
 
@@ -503,4 +516,4 @@ function esc(value) {
   return String(value ?? '').replaceAll('&', '&amp;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll('"', '&quot;').replaceAll("'", '&#039;');
 }
 
-Object.assign(window, { gotoTab, debouncedFilter, applyFilters, resetAll, showFullArchive, toggleAdvanced, setType, applyProfile, goPage, applyTableFilter, sortTableCol, filterByType, jumpCal, jumpToCalFilter, openModal, closeModal, closeModalIfBg, exportCSV });
+Object.assign(window, { gotoTab, debouncedFilter, applyFilters, resetAll, showFullArchive, showRecurringPatterns, toggleAdvanced, setType, applyProfile, goPage, applyTableFilter, sortTableCol, filterByType, jumpCal, jumpToCalFilter, openModal, closeModal, closeModalIfBg, exportCSV });

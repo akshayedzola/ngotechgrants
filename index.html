@@ -1668,11 +1668,45 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   justify-content: flex-end;
   gap: 10px;
 }
+.historical-paths {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 28px;
+  align-items: center;
+  margin-top: 24px;
+  padding: 24px 26px;
+  border: 1px solid #eadbcf;
+  border-radius: 14px;
+  background: #fff4ea;
+}
+.historical-paths[hidden] { display: none; }
+.historical-paths h2 {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 1.15;
+}
+.historical-paths p {
+  max-width: 760px;
+  margin-top: 7px;
+  color: var(--text-2);
+  font-size: 14px;
+  line-height: 1.6;
+}
+.historical-path-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px;
+}
 
 @media (max-width: 720px) {
   .contribution-panel { grid-template-columns: 1fr; gap: 18px; padding: 22px 20px; }
   .contribution-actions { flex-direction: column; align-items: stretch; }
   .contribution-actions .btn-primary, .contribution-actions .btn-secondary { width: 100%; }
+  .historical-paths { grid-template-columns: 1fr; gap: 18px; padding: 22px 20px; }
+  .historical-path-actions { flex-direction: column; align-items: stretch; }
+  .historical-path-actions .btn-primary, .historical-path-actions .btn-secondary { width: 100%; }
 }
 </style>
 </head>
@@ -1802,8 +1836,6 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
       <div class="af-group">
         <label class="af-label" for="f-status">Status</label>
         <select class="af-select" id="f-status" onchange="applyFilters()">
-          <option value="recommended">Recommended: current + recurring</option>
-          <option value="">All records</option>
           <option value="open_now">Open now</option>
           <option value="rolling">Rolling</option>
           <option value="upcoming">Upcoming</option>
@@ -1812,6 +1844,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
           <option value="closed">Closed</option>
           <option value="historical_archive">Historical archive</option>
           <option value="needs_verification">Needs verification</option>
+          <option value="">All records</option>
         </select>
       </div>
       <div class="af-group">
@@ -1874,6 +1907,17 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
     <p>Try broadening your search or resetting filters.</p>
   </div>
   <div class="pagination" id="pagination"></div>
+  <section class="historical-paths" id="historical-paths" aria-labelledby="historical-paths-title">
+    <div>
+      <span class="credit-kicker">Beyond today’s deadlines</span>
+      <h2 id="historical-paths-title">Explore historical grant cycles.</h2>
+      <p>Review 106 programmes that appeared repeatedly in the historical repository, or browse all 646 records. These patterns are planning signals, not confirmed open applications.</p>
+    </div>
+    <div class="historical-path-actions">
+      <button type="button" class="btn-primary" onclick="showRecurringPatterns()">Explore recurring cycles</button>
+      <button type="button" class="btn-secondary" onclick="showFullArchive()">Browse all records</button>
+    </div>
+  </section>
 </section>
 
 <!-- ========== DASHBOARD ========== -->
