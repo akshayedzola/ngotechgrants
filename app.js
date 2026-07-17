@@ -1,4 +1,5 @@
 let DATA = [];
+const { amountValue } = window.GrantUtils;
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 const MONTH_FULL = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -142,11 +143,6 @@ function effectiveTrustState(record, today = new Date().toISOString().slice(0, 1
   if (closesOn && closesOn < today && ['open_now', 'upcoming'].includes(record.trust_state)) return 'closed';
   if (record.trust_state === 'upcoming' && (!opensOn || opensOn <= today)) return 'open_now';
   return record.trust_state;
-}
-
-function amountValue(value) {
-  const numbers = (value || '').match(/[\d,]+/g) || [];
-  return numbers.reduce((max, number) => Math.max(max, Number(number.replaceAll(',', '')) || 0), 0);
 }
 
 function sortData(records, by) {
