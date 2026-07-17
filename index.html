@@ -464,7 +464,7 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   transition: none;
   max-height: 0;
 }
-.advanced-filters.open { max-height: 300px; }
+.advanced-filters.open { max-height: 380px; }
 .af-inner {
   padding: 20px 24px;
   display: grid;
@@ -473,6 +473,14 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
   border-top: 2px solid var(--bg);
 }
 .af-group { display: flex; flex-direction: column; gap: 5px; }
+.af-type-group {
+  grid-column: 1 / -1;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.af-type-group .type-filter-row { margin-top: 8px; }
 .af-label { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--text-3); }
 .af-select {
   padding: 8px 10px;
@@ -1798,31 +1806,28 @@ button:focus-visible, input:focus-visible, select:focus-visible, a:focus-visible
 
     <div class="profile-row">
       <span class="profile-label">Quick filter:</span>
-      <button class="profile-pill" onclick="applyProfile('us-np')">US Nonprofits</button>
-      <button class="profile-pill" onclick="applyProfile('global')">Global Orgs</button>
-      <button class="profile-pill" onclick="applyProfile('fellow')">Fellowships</button>
-      <button class="profile-pill" onclick="applyProfile('big')">$100k+ Grants</button>
-      <button class="profile-pill" onclick="applyProfile('edtech')">EdTech</button>
-      <button class="profile-pill" onclick="applyProfile('climate')">Climate</button>
-      <button class="profile-pill" onclick="applyProfile('recurring')">Recurring Only</button>
-      <button class="profile-pill" onclick="showFullArchive()">Full Archive</button>
-    </div>
-
-    <div class="type-filter-row">
-      <span class="type-label">Type:</span>
-      <button class="type-pill on" data-val="" onclick="setType(this)">All</button>
-      <button class="type-pill" data-val="Grant" onclick="setType(this)">Grants</button>
-      <button class="type-pill" data-val="Fellowship" onclick="setType(this)">Fellowships</button>
-      <button class="type-pill" data-val="Competition/Prize/Award" onclick="setType(this)">Prizes</button>
-      <button class="type-pill" data-val="Accelerator/Incubator" onclick="setType(this)">Accelerators</button>
-      <button class="type-pill" data-val="Program/Cohort" onclick="setType(this)">Programs</button>
-      <button class="type-pill" data-val="Grant (LOI Stage)" onclick="setType(this)">LOI Grants</button>
+      <button class="profile-pill on" data-profile="open" onclick="applyProfile('open')">Open now</button>
+      <button class="profile-pill" data-profile="global" onclick="applyProfile('global')">Global</button>
+      <button class="profile-pill" data-profile="big" onclick="applyProfile('big')">$100K+</button>
+      <button class="profile-pill" data-profile="closing" onclick="applyProfile('closing')">Closing soon</button>
     </div>
   </div>
 
   <!-- Advanced filters (hidden by default) -->
   <div class="advanced-filters" id="adv-filters">
     <div class="af-inner">
+      <fieldset class="af-type-group">
+        <legend class="af-label">Opportunity type</legend>
+        <div class="type-filter-row">
+          <button type="button" class="type-pill on" data-val="" onclick="setType(this)">All</button>
+          <button type="button" class="type-pill" data-val="Grant" onclick="setType(this)">Grants</button>
+          <button type="button" class="type-pill" data-val="Fellowship" onclick="setType(this)">Fellowships</button>
+          <button type="button" class="type-pill" data-val="Competition/Prize/Award" onclick="setType(this)">Prizes</button>
+          <button type="button" class="type-pill" data-val="Accelerator/Incubator" onclick="setType(this)">Accelerators</button>
+          <button type="button" class="type-pill" data-val="Program/Cohort" onclick="setType(this)">Programs</button>
+          <button type="button" class="type-pill" data-val="Grant (LOI Stage)" onclick="setType(this)">LOI Grants</button>
+        </div>
+      </fieldset>
       <div class="af-group">
         <label class="af-label" for="f-geo">Geography</label>
         <select class="af-select" id="f-geo" onchange="applyFilters()">

@@ -33,8 +33,9 @@ let tableSortCol = null;
 let tableSortDir = 1;
 let advOpen = false;
 let typeSel = '';
-let profileActive = '';
+let profileActive = 'open';
 let profileMinAmt = 0;
+let profileClosingDays = 0;
 let debounceTimer = null;
 let lastFocusedElement = null;
 
@@ -106,6 +107,7 @@ function getFilters() {
     rec: document.getElementById('f-rec').value,
     month: document.getElementById('f-month').value,
     minAmt: profileMinAmt,
+    closingDays: profileClosingDays,
   };
 }
 
@@ -123,6 +125,14 @@ function matches(record, filters) {
   if (filters.rec && String(record.is_recurring) !== filters.rec) return false;
   if (filters.month && !(record.typical_cycle_months || []).includes(filters.month)) return false;
   if (filters.minAmt > 0 && amountValue(record.grant_amount) < filters.minAmt) return false;
+  if (filters.closingDays > 0) {
+    const closesOn = record.current_cycle?.closes_on;
+    if (!closesOn) return false;
+    const today = new Date(`${new Date().toISOString().slice(0, 10)}T12:00:00Z`);
+    const deadline = new Date(`${closesOn}T12:00:00Z`);
+    const daysRemaining = Math.ceil((deadline - today) / 86400000);
+    if (daysRemaining < 0 || daysRemaining > filters.closingDays) return false;
+  }
   return true;
 }
 
@@ -161,7 +171,7 @@ function countActiveFilters() {
   const filters = getFilters();
   const fields = [filters.geo, filters.sector, filters.rec, filters.month];
   if (filters.status && filters.status !== 'open_now') fields.push(filters.status);
-  return fields.filter(Boolean).length + (filters.q ? 1 : 0) + (typeSel ? 1 : 0);
+  return fields.filter(Boolean).length + (filters.q ? 1 : 0) + (typeSel ? 1 : 0) + (filters.closingDays ? 1 : 0);
 }
 
 function applyFilters() {
@@ -183,9 +193,10 @@ function resetAll() {
   document.getElementById('f-status').value = 'open_now';
   typeSel = '';
   profileMinAmt = 0;
-  profileActive = '';
+  profileClosingDays = 0;
+  profileActive = 'open';
   document.querySelectorAll('.type-pill').forEach(button => button.classList.toggle('on', button.dataset.val === ''));
-  document.querySelectorAll('.profile-pill').forEach(button => button.classList.remove('on'));
+  document.querySelectorAll('.profile-pill').forEach(button => button.classList.toggle('on', button.dataset.profile === 'open'));
   syncPressedStates();
   applyFilters();
 }
@@ -222,9 +233,10 @@ function setType(button) {
 }
 
 const PROFILES = {
-  'us-np': { geo: 'US Only' }, global: { geo: 'Global' }, se: { type: 'Accelerator/Incubator' },
-  fellow: { type: 'Fellowship' }, big: { minAmt: 100000 }, edtech: { sector: 'Education/EdTech' },
-  climate: { sector: 'Climate/Environment' }, recurring: { rec: 'true' },
+  open: {},
+  global: { geo: 'Global' },
+  big: { minAmt: 100000 },
+  closing: { closingDays: 30 },
 };
 
 function applyProfile(key) {
@@ -240,9 +252,9 @@ function applyProfile(key) {
     document.querySelectorAll('.type-pill').forEach(button => button.classList.toggle('on', button.dataset.val === profile.type));
   }
   profileMinAmt = profile.minAmt || 0;
-  document.querySelectorAll('.profile-pill').forEach(button => button.classList.toggle('on', button.getAttribute('onclick').includes(`'${key}'`)));
+  profileClosingDays = profile.closingDays || 0;
+  document.querySelectorAll('.profile-pill').forEach(button => button.classList.toggle('on', button.dataset.profile === key));
   syncPressedStates();
-  if (!advOpen && (profile.geo || profile.sector || profile.rec)) toggleAdvanced();
   applyFilters();
 }
 
