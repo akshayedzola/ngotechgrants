@@ -1,0 +1,69 @@
+name: Add a grant
+description: Suggest a new funding opportunity for the public directory.
+title: "[ADD] Grant name"
+labels:
+  - grant submission
+  - needs review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping nonprofits find trustworthy funding. Please use an official funder page as the source. A maintainer will review the submission before it appears in the directory.
+  - type: input
+    id: name
+    attributes:
+      label: Grant or programme name
+      placeholder: Example Foundation Technology Grant
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official programme URL
+      description: Link to the funder or programme owner, not an aggregator.
+      placeholder: https://example.org/grants/programme
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What does it fund?
+      description: Include who can apply, geography, amount, and technology focus when known.
+    validations:
+      required: true
+  - type: input
+    id: deadline
+    attributes:
+      label: Current deadline or cycle
+      description: Use an exact date only if the official page states it. Otherwise say rolling, invitation-only, or typical month.
+      placeholder: 2026-10-31, rolling, or typically October
+    validations:
+      required: true
+  - type: dropdown
+    id: applicant
+    attributes:
+      label: Who can apply?
+      options:
+        - Nonprofit organisations
+        - Individuals or fellows
+        - Social enterprises or startups
+        - Academic or research institutions
+        - Multiple or unclear
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and notes
+      description: Paste the relevant official wording or explain where the deadline and eligibility appear.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I checked the official source and believe this information is current.
+          required: true
+        - label: I understand this suggestion is public and will be reviewed before publication.
+          required: true

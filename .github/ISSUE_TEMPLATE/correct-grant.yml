@@ -1,0 +1,64 @@
+name: Correct or verify a grant
+description: Report an inaccurate record, closed cycle, changed deadline, or verified update.
+title: "[CORRECTION] Grant id — Grant name"
+labels:
+  - grant correction
+  - needs review
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for improving the directory. Community reports are public and auditable; maintainers verify the official source before editing the data.
+  - type: input
+    id: record
+    attributes:
+      label: Grant name or record id
+      description: Copy this from the grant details panel or issue title.
+    validations:
+      required: true
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: What changed?
+      options:
+        - Current deadline or application window
+        - Eligibility or geography
+        - Funding amount or benefits
+        - Programme is closed or discontinued
+        - Official URL
+        - Duplicate record
+        - I verified the existing information is correct
+        - Other factual correction
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correct information
+      description: Tell us exactly what the directory should say.
+    validations:
+      required: true
+  - type: input
+    id: official_url
+    attributes:
+      label: Official evidence URL
+      description: Link directly to the funder or programme page that supports the correction.
+      placeholder: https://example.org/grants/programme
+    validations:
+      required: true
+  - type: input
+    id: checked_on
+    attributes:
+      label: Date checked
+      placeholder: 2026-07-17
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Submission checks
+      options:
+        - label: I checked the official source linked above.
+          required: true
+        - label: I understand this report is public and subject to maintainer review.
+          required: true

@@ -1,0 +1,44 @@
+name: Validate grant submission
+
+on:
+  issues:
+    types: [opened, edited]
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  validate:
+    if: contains(github.event.issue.labels.*.name, 'grant submission') || contains(github.event.issue.labels.*.name, 'grant correction')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check evidence and official URL
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = context.payload.issue.body || '';
+            const urls = body.match(/https?:\/\/[^\s)]+/g) || [];
+            const officialUrl = urls.find(url => !url.includes('github.com'));
+            const hasCheckedDate = /\b20\d{2}-\d{2}-\d{2}\b/.test(body);
+            const isCorrection = context.payload.issue.labels.some(label => label.name === 'grant correction');
+            const problems = [];
+
+            if (!officialUrl) problems.push('Add a direct official funder or programme URL.');
+            if (isCorrection && !hasCheckedDate) problems.push('Add the date you checked the source in YYYY-MM-DD format.');
+            if (body.length < 180) problems.push('Add enough detail for a maintainer to verify the claim.');
+
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            const issue_number = context.issue.number;
+            if (problems.length) {
+              try { await github.rest.issues.removeLabel({ owner, repo, issue_number, name: 'ready for verification' }); } catch (error) { if (error.status !== 404) throw error; }
+              await github.rest.issues.addLabels({ owner, repo, issue_number, labels: ['needs information'] });
+              await github.rest.issues.createComment({
+                owner, repo, issue_number,
+                body: `Thanks for contributing. Before this can be reviewed:\n\n${problems.map(problem => `- ${problem}`).join('\n')}\n\nPlease edit the issue; this check will run again automatically.`
+              });
+            } else {
+              try { await github.rest.issues.removeLabel({ owner, repo, issue_number, name: 'needs information' }); } catch (error) { if (error.status !== 404) throw error; }
+              await github.rest.issues.addLabels({ owner, repo, issue_number, labels: ['ready for verification'] });
+            }
