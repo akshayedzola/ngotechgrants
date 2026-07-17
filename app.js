@@ -185,6 +185,29 @@ function applyFilters() {
   badge.classList.toggle('show', count > 0);
   document.getElementById('tc-browse').textContent = filtered.length;
   document.getElementById('historical-paths').hidden = filters.status !== 'open_now';
+  updateResultsContext(filters);
+}
+
+function updateResultsContext(filters) {
+  const heading = document.getElementById('results-heading');
+  const trust = document.getElementById('results-trust');
+  if (filters.status === 'historically_recurring') {
+    heading.textContent = 'Recurring grant cycle patterns';
+    trust.dataset.tone = 'historical';
+    trust.textContent = 'Historical patterns can help with planning, but they do not mean applications are currently open.';
+    return;
+  }
+  if (!filters.status) {
+    heading.textContent = 'The full historical directory';
+    trust.dataset.tone = 'historical';
+    trust.textContent = 'Historical records are preserved for context and clearly separated from verified current opportunities.';
+    return;
+  }
+  heading.textContent = filters.status === 'open_now' ? 'Verified open opportunities' : 'Funding opportunities';
+  trust.dataset.tone = 'current';
+  const openRecords = DATA.filter(record => effectiveTrustState(record) === 'open_now');
+  const lastChecked = openRecords.map(record => record.current_cycle?.verified_at).filter(Boolean).sort().at(-1);
+  trust.textContent = `${openRecords.length} opportunities verified against official sources${lastChecked ? ` · Last checked ${formatDate(lastChecked)}` : ''}.`;
 }
 
 function resetAll() {
