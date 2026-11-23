@@ -1,0 +1,6069 @@
+{
+  "generated_on": "2026-11-23",
+  "funders": [
+    {
+      "id": "kcdf",
+      "name": "Kenya Community Development Foundation (KCDF)",
+      "funder_type": "community_foundation",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "kcdf-funding-grants"
+      ]
+    },
+    {
+      "id": "safaricom-foundation",
+      "name": "Safaricom Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "safaricom-foundation-ndoto-zetu"
+      ]
+    },
+    {
+      "id": "uganda-communications-commission",
+      "name": "Uganda Communications Commission (UCUSAF)",
+      "funder_type": "government_domestic",
+      "hq_country": "UG",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "government_scheme",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "ucc-ucusaf-grant-calls"
+      ]
+    },
+    {
+      "id": "urgent-action-fund-africa",
+      "name": "Urgent Action Fund-Africa",
+      "funder_type": "feminist_or_identity_fund",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "uaf-africa-rapid-response"
+      ]
+    },
+    {
+      "id": "michael-susan-dell-foundation",
+      "name": "Michael & Susan Dell Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia",
+        "east_africa",
+        "southern_africa",
+        "north_america",
+        "mena"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "dell-foundation-share-a-project"
+      ]
+    },
+    {
+      "id": "azim-premji-foundation",
+      "name": "Azim Premji Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "fellowship",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "azim-premji-foundation-grants",
+        "azim-premji-social-startups-programme"
+      ]
+    },
+    {
+      "id": "give-india",
+      "name": "Give (GiveIndia)",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "give-do-ngo-fundraising"
+      ]
+    },
+    {
+      "id": "hclfoundation",
+      "name": "HCLFoundation (HCLTech)",
+      "funder_type": "corporate_foundation",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "hcltech-grant"
+      ]
+    },
+    {
+      "id": "infosys-foundation",
+      "name": "Infosys Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "csr_partnership",
+        "award_recognition",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "infosys-foundation-grant-portal",
+        "infosys-aarohan-awards"
+      ]
+    },
+    {
+      "id": "niti-aayog",
+      "name": "NITI Aayog",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "capacity_building",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "ngo-darpan-registration",
+        "niti-women-entrepreneurship-platform"
+      ]
+    },
+    {
+      "id": "project-tech4dev",
+      "name": "Project Tech4Dev",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "IN",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "capacity_building",
+        "accelerator_incubator",
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "project-tech4dev-programmes"
+      ]
+    },
+    {
+      "id": "sbi-foundation",
+      "name": "SBI Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "sbi-foundation-calls-for-proposals"
+      ]
+    },
+    {
+      "id": "dpiit-startup-india",
+      "name": "DPIIT, Startup India",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "grant",
+        "concessional_loan"
+      ],
+      "source_ids": [
+        "startup-india-seed-fund-scheme"
+      ]
+    },
+    {
+      "id": "the-nudge-institute",
+      "name": "The/Nudge Institute",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "prize_challenge",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "nudge-institute-incubator"
+      ]
+    },
+    {
+      "id": "villgro",
+      "name": "Villgro",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "villgro-incubation"
+      ]
+    },
+    {
+      "id": "dbs-foundation",
+      "name": "DBS Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "SG",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southeast_asia",
+        "south_asia",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "india",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "dbs-foundation-grant"
+      ]
+    },
+    {
+      "id": "paul-hamlyn-foundation",
+      "name": "Paul Hamlyn Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia",
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "india",
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "phf-india-fund",
+        "phf-uk-funds"
+      ]
+    },
+    {
+      "id": "global-affairs-canada",
+      "name": "Global Affairs Canada",
+      "funder_type": "bilateral_agency",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "latin_america",
+        "global",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "gac-cfli",
+        "gac-funding-opportunities"
+      ]
+    },
+    {
+      "id": "commonwealth-foundation",
+      "name": "Commonwealth Foundation",
+      "funder_type": "multilateral",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "commonwealth-foundation-grants"
+      ]
+    },
+    {
+      "id": "bmz-developpp",
+      "name": "German Federal Ministry for Economic Cooperation and Development (BMZ) - develoPPP",
+      "funder_type": "bilateral_agency",
+      "hq_country": "DE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "matching_funds",
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "bmz-developpp"
+      ]
+    },
+    {
+      "id": "dfat-australia",
+      "name": "Australian Department of Foreign Affairs and Trade (DFAT)",
+      "funder_type": "bilateral_agency",
+      "hq_country": "AU",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "south_asia",
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "dfat-dap-india",
+        "dfat-dap-kenya"
+      ]
+    },
+    {
+      "id": "european-union",
+      "name": "European Union (European Commission, EU Delegations/EEAS)",
+      "funder_type": "multilateral",
+      "hq_country": "BE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global",
+        "europe_central_asia"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "indonesia",
+        "global",
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding",
+        "prize_challenge",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "eeas-eu-delegation-grants",
+        "eu-ft-portal-calls",
+        "eu-ft-portal-tenders",
+        "ted-search-api"
+      ]
+    },
+    {
+      "id": "uk-fcdo",
+      "name": "UK Foreign, Commonwealth & Development Office (FCDO)",
+      "funder_type": "bilateral_agency",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "uk",
+        "india",
+        "east_africa",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "govuk-international-development-funding"
+      ]
+    },
+    {
+      "id": "grand-challenges-canada",
+      "name": "Grand Challenges Canada",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "indonesia",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "grand-challenges-canada-funding"
+      ]
+    },
+    {
+      "id": "idrc",
+      "name": "International Development Research Centre (IDRC)",
+      "funder_type": "research_council",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "research_funding",
+        "fellowship",
+        "grant"
+      ],
+      "source_ids": [
+        "idrc-funding"
+      ]
+    },
+    {
+      "id": "iki-germany",
+      "name": "International Climate Initiative (IKI), German Federal Government",
+      "funder_type": "bilateral_agency",
+      "hq_country": "DE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "iki-small-grants"
+      ]
+    },
+    {
+      "id": "mofa-japan",
+      "name": "Ministry of Foreign Affairs of Japan (embassy grassroots grants)",
+      "funder_type": "bilateral_agency",
+      "hq_country": "JP",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "japan-ggp-kenya",
+        "japan-ggp-india"
+      ]
+    },
+    {
+      "id": "united-nations",
+      "name": "United Nations system (shared partner and procurement portals)",
+      "funder_type": "multilateral",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "indonesia",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "un-partner-portal",
+        "ungm-notices"
+      ]
+    },
+    {
+      "id": "unicef",
+      "name": "UNICEF",
+      "funder_type": "multilateral",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "unicef-venture-fund"
+      ]
+    },
+    {
+      "id": "ashoka",
+      "name": "Ashoka",
+      "funder_type": "fellowship_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk"
+      ],
+      "opportunity_types": [
+        "fellowship"
+      ],
+      "source_ids": [
+        "ashoka-fellowship-nominations",
+        "ashoka-fellowship-recommend"
+      ]
+    },
+    {
+      "id": "benevity",
+      "name": "Benevity",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "matching_funds",
+        "grant",
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "benevity-causes-portal"
+      ]
+    },
+    {
+      "id": "global-citizen",
+      "name": "Global Citizen",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "hardware_connectivity",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "cisco-youth-leadership-award",
+        "waislitz-global-citizen-awards"
+      ]
+    },
+    {
+      "id": "d-prize",
+      "name": "D-Prize",
+      "funder_type": "prize_challenge_body",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "grant"
+      ],
+      "source_ids": [
+        "d-prize-competition"
+      ]
+    },
+    {
+      "id": "drk-foundation",
+      "name": "Draper Richards Kaplan Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "impact_investment",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "drk-foundation-apply"
+      ]
+    },
+    {
+      "id": "echoing-green",
+      "name": "Echoing Green",
+      "funder_type": "fellowship_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "recoverable_grant"
+      ],
+      "source_ids": [
+        "echoing-green-fellowship"
+      ]
+    },
+    {
+      "id": "globalgiving",
+      "name": "GlobalGiving",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "crowdfunding",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "globalgiving-pathway"
+      ]
+    },
+    {
+      "id": "miller-center",
+      "name": "Miller Center for Global Impact, Santa Clara University",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "capacity_building",
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "miller-center-accelerator"
+      ]
+    },
+    {
+      "id": "mit-solve",
+      "name": "MIT Solve",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "accelerator_incubator",
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "mit-solve-global-challenges"
+      ]
+    },
+    {
+      "id": "pollination-project",
+      "name": "The Pollination Project",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "pollination-project-seed-grants"
+      ]
+    },
+    {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "funder_type": "tech_company_programme",
+      "hq_country": "AU",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "ai_credits"
+      ],
+      "source_ids": [
+        "atlassian-social-impact-license"
+      ]
+    },
+    {
+      "id": "aws",
+      "name": "Amazon Web Services",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global",
+        "north_america",
+        "uk_ireland",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "cloud_credits",
+        "ai_credits",
+        "capacity_building",
+        "grant"
+      ],
+      "source_ids": [
+        "aws-education-equity-initiative",
+        "aws-health-impact-initiative",
+        "aws-nonprofit-credit-program",
+        "aws-activate",
+        "aws-imagine-grant"
+      ]
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "ai_credits",
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "claude-for-nonprofits"
+      ]
+    },
+    {
+      "id": "fast-forward",
+      "name": "Fast Forward",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "grant"
+      ],
+      "source_ids": [
+        "fast-forward-accelerator"
+      ]
+    },
+    {
+      "id": "goodstack",
+      "name": "Goodstack",
+      "funder_type": "validation_service",
+      "hq_country": "GB",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "ai_credits"
+      ],
+      "source_ids": [
+        "goodstack-software-discounts"
+      ]
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "ai_credits",
+        "cloud_credits"
+      ],
+      "source_ids": [
+        "google-ad-grants",
+        "google-for-nonprofits",
+        "google-for-startups-cloud-program"
+      ]
+    },
+    {
+      "id": "google-org",
+      "name": "Google.org",
+      "funder_type": "corporate_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "accelerator_incubator",
+        "cloud_credits",
+        "pro_bono_services",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "google-org-news"
+      ]
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "cloud_credits",
+        "ai_credits",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "microsoft-nonprofit-offers",
+        "microsoft-for-startups"
+      ]
+    },
+    {
+      "id": "nasscom-foundation",
+      "name": "Nasscom Foundation",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "IN",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "pro_bono_services",
+        "grant",
+        "award_recognition",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "techsoup-india-nasscom-foundation",
+        "nasscom-foundation-programmes"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "ai_credits",
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "openai-for-nonprofits"
+      ]
+    },
+    {
+      "id": "salesforce",
+      "name": "Salesforce",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "grant",
+        "accelerator_incubator",
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "salesforce-power-of-us",
+        "slack-for-nonprofits",
+        "salesforce-accelerator-news"
+      ]
+    },
+    {
+      "id": "taproot-foundation",
+      "name": "Taproot Foundation",
+      "funder_type": "pro_bono_marketplace",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "north_america",
+        "south_asia",
+        "uk_ireland",
+        "europe_central_asia"
+      ],
+      "edzola_markets": [
+        "india",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "taproot-plus"
+      ]
+    },
+    {
+      "id": "tech-to-the-rescue",
+      "name": "Tech To The Rescue",
+      "funder_type": "pro_bono_marketplace",
+      "hq_country": "PL",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "pro_bono_services",
+        "accelerator_incubator",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "tech-to-the-rescue"
+      ]
+    },
+    {
+      "id": "techsoup",
+      "name": "TechSoup",
+      "funder_type": "validation_service",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "hardware_connectivity",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "techsoup-global-network"
+      ]
+    },
+    {
+      "id": "zoho",
+      "name": "Zoho Corporation",
+      "funder_type": "tech_company_programme",
+      "hq_country": "IN",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global",
+        "south_asia",
+        "southeast_asia",
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena",
+        "latin_america_caribbean",
+        "north_america",
+        "uk_ireland",
+        "europe_central_asia",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "zoho-for-nonprofits",
+        "zoho-for-startups"
+      ]
+    },
+    {
+      "id": "aecf",
+      "name": "AECF (Africa Enterprise Challenge Fund)",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "aecf-funding-opportunities"
+      ]
+    },
+    {
+      "id": "africa-no-filter",
+      "name": "Africa No Filter",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "africa-no-filter-grants"
+      ]
+    },
+    {
+      "id": "royal-academy-of-engineering",
+      "name": "Royal Academy of Engineering",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "raeng-africa-prize"
+      ]
+    },
+    {
+      "id": "jack-ma-foundation",
+      "name": "Jack Ma Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "CN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "africas-business-heroes"
+      ]
+    },
+    {
+      "id": "african-collaborative",
+      "name": "African Collaborative",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "african-collaborative-grantmaking"
+      ]
+    },
+    {
+      "id": "ai4d-funders-collaborative",
+      "name": "AI4D Funders Collaborative (IDRC, FCDO, Sida, Community Jameel)",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": null,
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "south_asia",
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "india",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "research_funding",
+        "grant",
+        "fellowship",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "ai4d-calls"
+      ]
+    },
+    {
+      "id": "anzisha-prize",
+      "name": "Anzisha Prize (African Leadership Academy)",
+      "funder_type": "fellowship_body",
+      "hq_country": "ZA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "award_recognition",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "anzisha-prize-fellowship"
+      ]
+    },
+    {
+      "id": "african-womens-development-fund",
+      "name": "African Women's Development Fund (AWDF)",
+      "funder_type": "feminist_or_identity_fund",
+      "hq_country": "GH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "awdf-grants"
+      ]
+    },
+    {
+      "id": "catalyst-fund",
+      "name": "Catalyst Fund",
+      "funder_type": "impact_investor",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "impact_investment",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "catalyst-fund-pitch"
+      ]
+    },
+    {
+      "id": "cipesa",
+      "name": "CIPESA (Collaboration on International ICT Policy for East and Southern Africa)",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "UG",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "cipesa-africa-digital-rights-fund"
+      ]
+    },
+    {
+      "id": "dg-murray-trust",
+      "name": "DG Murray Trust",
+      "funder_type": "private_foundation",
+      "hq_country": "ZA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "southern_africa"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "dgmt-apply-for-funding"
+      ]
+    },
+    {
+      "id": "foundation-for-civil-society-tz",
+      "name": "Foundation for Civil Society (FCS)",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "TZ",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "fcs-tanzania-grantmaking"
+      ]
+    },
+    {
+      "id": "mastercard-foundation",
+      "name": "Mastercard Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "CA",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "accelerator_incubator",
+        "grant"
+      ],
+      "source_ids": [
+        "ihub-future-of-learning-edtech-kenya",
+        "mastercard-foundation-edtech-fellowship"
+      ]
+    },
+    {
+      "id": "global-fund-for-community-foundations",
+      "name": "Global Fund for Community Foundations (GFCF)",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "ZA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena",
+        "south_asia",
+        "southeast_asia",
+        "east_asia_pacific",
+        "latin_america_caribbean",
+        "europe_central_asia"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "india",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "gfcf-community-philanthropy-grants"
+      ]
+    },
+    {
+      "id": "kenya-climate-innovation-center",
+      "name": "Kenya Climate Innovation Center (KCIC)",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "prize_challenge",
+        "grant"
+      ],
+      "source_ids": [
+        "kcic-programmes"
+      ]
+    },
+    {
+      "id": "lacuna-fund",
+      "name": "Lacuna Fund",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "KE",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena",
+        "south_asia",
+        "southeast_asia",
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "india",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding"
+      ],
+      "source_ids": [
+        "lacuna-fund-rfps"
+      ]
+    },
+    {
+      "id": "costech-tanzania",
+      "name": "Tanzania Commission for Science and Technology (COSTECH)",
+      "funder_type": "government_domestic",
+      "hq_country": "TZ",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "government_scheme",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "makisatu-tanzania"
+      ]
+    },
+    {
+      "id": "national-lotteries-commission-za",
+      "name": "National Lotteries Commission (South Africa)",
+      "funder_type": "government_domestic",
+      "hq_country": "ZA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "southern_africa"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "nlc-south-africa-funding"
+      ]
+    },
+    {
+      "id": "opportunities-for-africans",
+      "name": "Opportunities For Africans",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "fellowship",
+        "prize_challenge",
+        "accelerator_incubator",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "opportunities-for-africans"
+      ]
+    },
+    {
+      "id": "opportunity-desk",
+      "name": "Opportunity Desk",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena",
+        "global"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "fellowship",
+        "prize_challenge",
+        "accelerator_incubator",
+        "research_funding"
+      ],
+      "source_ids": [
+        "opportunity-desk-africa",
+        "opportunity-desk-grants"
+      ]
+    },
+    {
+      "id": "pbora-kenya",
+      "name": "Public Benefit Organizations Regulatory Authority (PBORA)",
+      "funder_type": "government_domestic",
+      "hq_country": "KE",
+      "funds_digital_capacity": false,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "government_scheme"
+      ],
+      "source_ids": [
+        "pbora-kenya"
+      ]
+    },
+    {
+      "id": "sab-foundation",
+      "name": "SAB Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "ZA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southern_africa"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "award_recognition",
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "sab-foundation-social-innovation-awards"
+      ]
+    },
+    {
+      "id": "tony-elumelu-foundation",
+      "name": "Tony Elumelu Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "NG",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "tef-entrepreneurship-programme"
+      ]
+    },
+    {
+      "id": "trustafrica",
+      "name": "TrustAfrica",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "SN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "west_central_africa",
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "trustafrica-calls"
+      ]
+    },
+    {
+      "id": "vc4a",
+      "name": "VC4A",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena",
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment",
+        "prize_challenge",
+        "grant"
+      ],
+      "source_ids": [
+        "vc4a-programs"
+      ]
+    },
+    {
+      "id": "villgro-africa",
+      "name": "Villgro Africa",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment",
+        "grant"
+      ],
+      "source_ids": [
+        "villgro-africa-incubation"
+      ]
+    },
+    {
+      "id": "arcadia-fund",
+      "name": "Arcadia",
+      "funder_type": "private_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding"
+      ],
+      "source_ids": [
+        "arcadia-grant-programmes"
+      ]
+    },
+    {
+      "id": "asha-for-education",
+      "name": "Asha for Education",
+      "funder_type": "diaspora_philanthropy",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "asha-for-education-proposals"
+      ]
+    },
+    {
+      "id": "caf-america",
+      "name": "CAF America",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "caf-america-foreign-nonprofits"
+      ]
+    },
+    {
+      "id": "canadahelps",
+      "name": "CanadaHelps",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "canadahelps"
+      ]
+    },
+    {
+      "id": "candid",
+      "name": "Candid",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "north_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding",
+        "fellowship",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "candid-apis",
+        "candid-search-funding"
+      ]
+    },
+    {
+      "id": "community-foundations-of-canada",
+      "name": "Community Foundations of Canada",
+      "funder_type": "network_association",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "community-foundations-of-canada"
+      ]
+    },
+    {
+      "id": "gates-foundation",
+      "name": "Gates Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "gates-grand-challenges-grant-opportunities",
+        "gates-foundation-committed-grants-database",
+        "gates-foundation-rfp-portal"
+      ]
+    },
+    {
+      "id": "give2asia",
+      "name": "Give2Asia",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia",
+        "southeast_asia",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "india",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "give2asia-india"
+      ]
+    },
+    {
+      "id": "global-fund-for-children",
+      "name": "Global Fund for Children",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "global-fund-for-children-cbo-directory"
+      ]
+    },
+    {
+      "id": "grantstation",
+      "name": "GrantStation",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america",
+        "global"
+      ],
+      "edzola_markets": [
+        "north_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "government_scheme",
+        "research_funding"
+      ],
+      "source_ids": [
+        "grantstation-insider"
+      ]
+    },
+    {
+      "id": "india-philanthropy-alliance",
+      "name": "India Philanthropy Alliance",
+      "funder_type": "network_association",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america",
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "north_america",
+        "india"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "india-philanthropy-alliance-india-giving-day"
+      ]
+    },
+    {
+      "id": "lever-for-change",
+      "name": "Lever for Change",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "north_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "lever-for-change-open-calls"
+      ]
+    },
+    {
+      "id": "ngosource",
+      "name": "NGOsource",
+      "funder_type": "validation_service",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "ngosource-equivalency-determination"
+      ]
+    },
+    {
+      "id": "oak-foundation",
+      "name": "Oak Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "CH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "oak-foundation-letter-of-enquiry"
+      ]
+    },
+    {
+      "id": "ontario-trillium-foundation",
+      "name": "Ontario Trillium Foundation",
+      "funder_type": "government_domestic",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "ontario-trillium-foundation-grants"
+      ]
+    },
+    {
+      "id": "robert-wood-johnson-foundation",
+      "name": "Robert Wood Johnson Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding"
+      ],
+      "source_ids": [
+        "rwjf-funding-opportunities"
+      ]
+    },
+    {
+      "id": "wellcome",
+      "name": "Wellcome",
+      "funder_type": "private_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "uk"
+      ],
+      "opportunity_types": [
+        "research_funding",
+        "fellowship",
+        "grant"
+      ],
+      "source_ids": [
+        "wellcome-funding-schemes"
+      ]
+    },
+    {
+      "id": "wikimedia-foundation",
+      "name": "Wikimedia Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "wikimedia-community-fund-rapid-fund"
+      ]
+    },
+    {
+      "id": "acumen-academy",
+      "name": "Acumen Academy",
+      "funder_type": "fellowship_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "uk"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "acumen-india-fellows"
+      ]
+    },
+    {
+      "id": "agami",
+      "name": "Agami",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "award_recognition",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "agami-prize"
+      ]
+    },
+    {
+      "id": "birac",
+      "name": "BIRAC (Department of Biotechnology)",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "birac-calls-for-proposals"
+      ]
+    },
+    {
+      "id": "devnetjobsindia",
+      "name": "DevNetJobsIndia",
+      "funder_type": "aggregator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "tender_rfp",
+        "grant"
+      ],
+      "source_ids": [
+        "devnetjobsindia-rfps"
+      ]
+    },
+    {
+      "id": "hdfc-bank-parivartan",
+      "name": "HDFC Bank Parivartan",
+      "funder_type": "corporate_csr",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "hdfc-bank-parivartan-startup-grants"
+      ]
+    },
+    {
+      "id": "karnataka-startup-cell",
+      "name": "Karnataka Startup Cell (Dept of IT, BT and S&T)",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "grant"
+      ],
+      "source_ids": [
+        "karnataka-startup-elevate"
+      ]
+    },
+    {
+      "id": "kerala-startup-mission",
+      "name": "Kerala Startup Mission",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "kerala-startup-mission-schemes"
+      ]
+    },
+    {
+      "id": "ketto",
+      "name": "Ketto",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "ketto-ngo-fundraising"
+      ]
+    },
+    {
+      "id": "mca-india",
+      "name": "Ministry of Corporate Affairs",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "national-csr-portal-data"
+      ]
+    },
+    {
+      "id": "meity-startup-hub",
+      "name": "MeitY Startup Hub (Ministry of Electronics and IT)",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "accelerator_incubator",
+        "grant"
+      ],
+      "source_ids": [
+        "meity-startup-hub"
+      ]
+    },
+    {
+      "id": "milaap",
+      "name": "Milaap",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "milaap-crowdfunding"
+      ]
+    },
+    {
+      "id": "msje-india",
+      "name": "Ministry of Social Justice & Empowerment",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "grant"
+      ],
+      "source_ids": [
+        "msje-grant-in-aid-portal"
+      ]
+    },
+    {
+      "id": "national-foundation-for-india",
+      "name": "National Foundation for India",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "fellowship",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "national-foundation-for-india-calls"
+      ]
+    },
+    {
+      "id": "rainmatter-foundation",
+      "name": "Rainmatter Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "rainmatter-foundation"
+      ]
+    },
+    {
+      "id": "rao-family-trust",
+      "name": "Rao Family Trust",
+      "funder_type": "family_philanthropy",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "rao-family-trust"
+      ]
+    },
+    {
+      "id": "social-alpha",
+      "name": "Social Alpha",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "prize_challenge",
+        "grant",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "social-alpha-programmes"
+      ]
+    },
+    {
+      "id": "startup-grants-india",
+      "name": "Startup Grants India",
+      "funder_type": "aggregator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "government_scheme",
+        "accelerator_incubator",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "startup-grants-india"
+      ]
+    },
+    {
+      "id": "startuptn",
+      "name": "StartupTN (Tamil Nadu Startup and Innovation Mission)",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "startuptn-schemes"
+      ]
+    },
+    {
+      "id": "tata-trusts",
+      "name": "Tata Trusts",
+      "funder_type": "private_foundation",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "tata-trusts-grants"
+      ]
+    },
+    {
+      "id": "the-csr-universe",
+      "name": "The CSR Universe",
+      "funder_type": "aggregator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "csr_partnership",
+        "grant",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "csr-universe-news"
+      ]
+    },
+    {
+      "id": "threesixtygiving",
+      "name": "360Giving",
+      "funder_type": "aggregator",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "threesixtygiving-api",
+        "threesixtygiving-grantnav"
+      ]
+    },
+    {
+      "id": "artemisia",
+      "name": "Artemisia",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "artemisia-impact-business-programmes"
+      ]
+    },
+    {
+      "id": "avpn",
+      "name": "AVPN",
+      "funder_type": "network_association",
+      "hq_country": "SG",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southeast_asia",
+        "south_asia",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "indonesia",
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "avpn-asia"
+      ]
+    },
+    {
+      "id": "bbc-children-in-need",
+      "name": "BBC Children in Need",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "bbc-children-in-need-grants"
+      ]
+    },
+    {
+      "id": "bndes",
+      "name": "BNDES (Banco Nacional de Desenvolvimento Econômico e Social)",
+      "funder_type": "development_bank",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "bndes-periferias"
+      ]
+    },
+    {
+      "id": "alcaldia-de-bogota",
+      "name": "Alcaldía de Bogotá",
+      "funder_type": "government_domestic",
+      "hq_country": "CO",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "fellowship",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "bogota-boletin-oferta-internacional"
+      ]
+    },
+    {
+      "id": "charity-digital",
+      "name": "Charity Digital",
+      "funder_type": "pro_bono_marketplace",
+      "hq_country": "GB",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "charity-digital-marketplace"
+      ]
+    },
+    {
+      "id": "gobierno-de-chile-fondos",
+      "name": "Gobierno de Chile (Ministerio Secretaría General de Gobierno)",
+      "funder_type": "government_domestic",
+      "hq_country": "CL",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "chile-fondos-gob"
+      ]
+    },
+    {
+      "id": "comic-relief",
+      "name": "Comic Relief",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "GB",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "uk_ireland",
+        "west_central_africa"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "comic-relief-funding-opportunities"
+      ]
+    },
+    {
+      "id": "esmee-fairbairn-foundation",
+      "name": "Esmée Fairbairn Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "esmee-fairbairn-funding"
+      ]
+    },
+    {
+      "id": "fondo-accion",
+      "name": "Fondo Acción",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "CO",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "fondo-accion-convocatorias"
+      ]
+    },
+    {
+      "id": "fundacao-banco-do-brasil",
+      "name": "Fundação Banco do Brasil",
+      "funder_type": "corporate_foundation",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "fbb-editais"
+      ]
+    },
+    {
+      "id": "fundo-baoba",
+      "name": "Fundo Baobá para Equidade Racial",
+      "funder_type": "feminist_or_identity_fund",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "fundo-baoba-editais"
+      ]
+    },
+    {
+      "id": "fundo-brasil-direitos-humanos",
+      "name": "Fundo Brasil de Direitos Humanos",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "fundo-brasil-editais"
+      ]
+    },
+    {
+      "id": "garfield-weston-foundation",
+      "name": "Garfield Weston Foundation",
+      "funder_type": "family_philanthropy",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "garfield-weston-grants"
+      ]
+    },
+    {
+      "id": "gife",
+      "name": "GIFE (Grupo de Institutos, Fundações e Empresas)",
+      "funder_type": "network_association",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "award_recognition",
+        "fellowship",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "gife-editais",
+        "gife-news"
+      ]
+    },
+    {
+      "id": "uk-government-find-a-grant",
+      "name": "UK Government (Find a Grant service)",
+      "funder_type": "government_domestic",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "uk-find-a-grant"
+      ]
+    },
+    {
+      "id": "innovate-uk",
+      "name": "Innovate UK",
+      "funder_type": "government_domestic",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "innovate-uk-ifs-competitions"
+      ]
+    },
+    {
+      "id": "itau-social",
+      "name": "Itaú Social",
+      "funder_type": "corporate_foundation",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "itau-social-editais"
+      ]
+    },
+    {
+      "id": "kitabisa",
+      "name": "Kitabisa",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "ID",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "kitabisa-crowdfunding"
+      ]
+    },
+    {
+      "id": "lloyds-bank-foundation",
+      "name": "Lloyds Bank Foundation for England and Wales",
+      "funder_type": "corporate_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "lloyds-bank-foundation-funding"
+      ]
+    },
+    {
+      "id": "nesst",
+      "name": "NESsT",
+      "funder_type": "impact_investor",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "latin_america_caribbean",
+        "europe_central_asia"
+      ],
+      "edzola_markets": [
+        "latin_america",
+        "brazil"
+      ],
+      "opportunity_types": [
+        "impact_investment",
+        "concessional_loan",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "nesst-latam-social-enterprise-finance"
+      ]
+    },
+    {
+      "id": "philanthropy-asia-alliance",
+      "name": "Philanthropy Asia Alliance",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "SG",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "paa-sustainable-land-use-grant-call"
+      ]
+    },
+    {
+      "id": "prosas",
+      "name": "Prosas",
+      "funder_type": "aggregator",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "government_scheme",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "prosas-editais"
+      ]
+    },
+    {
+      "id": "social-investment-business",
+      "name": "Social Investment Business",
+      "funder_type": "impact_investor",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "impact_investment",
+        "concessional_loan",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "sib-funds"
+      ]
+    },
+    {
+      "id": "national-lottery-community-fund",
+      "name": "The National Lottery Community Fund",
+      "funder_type": "government_domestic",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "tnlcf-funding-programmes"
+      ]
+    },
+    {
+      "id": "brazil-transferegov",
+      "name": "Governo Federal do Brasil (Transferegov.br)",
+      "funder_type": "government_domestic",
+      "hq_country": "BR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "brazil"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "grant"
+      ],
+      "source_ids": [
+        "transferegov-open-data-api"
+      ]
+    },
+    {
+      "id": "ukri",
+      "name": "UK Research and Innovation (UKRI)",
+      "funder_type": "research_council",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "research_funding",
+        "grant",
+        "fellowship",
+        "concessional_loan"
+      ],
+      "source_ids": [
+        "ukri-funding-finder"
+      ]
+    },
+    {
+      "id": "unltd",
+      "name": "UnLtd",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "unltd-awards"
+      ]
+    },
+    {
+      "id": "gef-sgp",
+      "name": "GEF Small Grants Programme (implemented by UNDP)",
+      "funder_type": "multilateral",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "latin_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "gef-small-grants-programme"
+      ]
+    },
+    {
+      "id": "us-federal-government",
+      "name": "US Federal Government (Grants.gov)",
+      "funder_type": "bilateral_agency",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "north_america",
+        "india",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding"
+      ],
+      "source_ids": [
+        "grants-gov-api"
+      ]
+    },
+    {
+      "id": "idb",
+      "name": "Inter-American Development Bank (IDB, incl. IDB Lab)",
+      "funder_type": "development_bank",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america",
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "impact_investment",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "idb-calls-for-proposals",
+        "idb-procurement-data"
+      ]
+    },
+    {
+      "id": "un-women",
+      "name": "UN Women - UN Trust Fund to End Violence against Women",
+      "funder_type": "multilateral",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "untf-evaw-call"
+      ]
+    },
+    {
+      "id": "unesco",
+      "name": "UNESCO",
+      "funder_type": "multilateral",
+      "hq_country": "FR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "unesco-ifcd"
+      ]
+    },
+    {
+      "id": "us-department-of-state",
+      "name": "US Department of State - US Mission to India",
+      "funder_type": "bilateral_agency",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "us-mission-india-nofos"
+      ]
+    },
+    {
+      "id": "wfp",
+      "name": "World Food Programme (WFP)",
+      "funder_type": "multilateral",
+      "hq_country": "IT",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "global"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "wfp-innovation-accelerator"
+      ]
+    },
+    {
+      "id": "acumen",
+      "name": "Acumen",
+      "funder_type": "impact_investor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "south_asia",
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "impact_investment"
+      ],
+      "source_ids": [
+        "acumen-investment-intake"
+      ]
+    },
+    {
+      "id": "ashden",
+      "name": "Ashden",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "ashden-awards"
+      ]
+    },
+    {
+      "id": "cartier-womens-initiative",
+      "name": "Cartier Women's Initiative",
+      "funder_type": "corporate_csr",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "fellowship"
+      ],
+      "source_ids": [
+        "cartier-womens-initiative"
+      ]
+    },
+    {
+      "id": "elevate-prize-foundation",
+      "name": "Elevate Prize Foundation",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "elevate-prize-nominations"
+      ]
+    },
+    {
+      "id": "fundsforngos",
+      "name": "FundsforNGOs",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "fellowship"
+      ],
+      "source_ids": [
+        "fundsforngos-feed"
+      ]
+    },
+    {
+      "id": "hult-prize",
+      "name": "Hult Prize Foundation",
+      "funder_type": "prize_challenge_body",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "accelerator_incubator",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "hult-prize"
+      ]
+    },
+    {
+      "id": "kiva",
+      "name": "Kiva",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "crowdfunding",
+        "concessional_loan"
+      ],
+      "source_ids": [
+        "kiva-lending-partners"
+      ]
+    },
+    {
+      "id": "nextbillion",
+      "name": "NextBillion",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "accelerator_incubator",
+        "grant",
+        "impact_investment",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "nextbillion-bizdev"
+      ]
+    },
+    {
+      "id": "obama-foundation",
+      "name": "Obama Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "south_asia",
+        "southeast_asia",
+        "east_asia_pacific",
+        "europe_central_asia",
+        "uk_ireland",
+        "north_america"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "obama-foundation-leaders"
+      ]
+    },
+    {
+      "id": "root-capital",
+      "name": "Root Capital",
+      "funder_type": "impact_investor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "latin_america_caribbean",
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "impact_investment"
+      ],
+      "source_ids": [
+        "root-capital-loans"
+      ]
+    },
+    {
+      "id": "schwab-foundation",
+      "name": "Schwab Foundation for Social Entrepreneurship",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "CH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "award_recognition"
+      ],
+      "source_ids": [
+        "schwab-foundation-social-innovation-awards"
+      ]
+    },
+    {
+      "id": "seedstars",
+      "name": "Seedstars",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "CH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "seedstars-programs"
+      ]
+    },
+    {
+      "id": "terraviva-grants",
+      "name": "Terra Viva Grants Directory",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "fellowship",
+        "research_funding"
+      ],
+      "source_ids": [
+        "terraviva-grants-funding-news"
+      ]
+    },
+    {
+      "id": "village-capital",
+      "name": "Village Capital",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "village-capital-programs"
+      ]
+    },
+    {
+      "id": "yunus-and-youth",
+      "name": "Yunus & Youth",
+      "funder_type": "fellowship_body",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "yunus-and-youth-fellowship"
+      ]
+    },
+    {
+      "id": "zayed-sustainability-prize",
+      "name": "Zayed Sustainability Prize",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "AE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "zayed-sustainability-prize"
+      ]
+    },
+    {
+      "id": "airtable",
+      "name": "Airtable",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "airtable-nonprofit-plan"
+      ]
+    },
+    {
+      "id": "canva",
+      "name": "Canva",
+      "funder_type": "tech_company_programme",
+      "hq_country": "AU",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "canva-for-nonprofits"
+      ]
+    },
+    {
+      "id": "cloudflare",
+      "name": "Cloudflare",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "cloudflare-project-galileo"
+      ]
+    },
+    {
+      "id": "data-org",
+      "name": "data.org",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "fellowship",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "data-org-funding-opportunities"
+      ]
+    },
+    {
+      "id": "esri",
+      "name": "Esri",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "esri-nonprofit-program"
+      ]
+    },
+    {
+      "id": "github",
+      "name": "GitHub",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "cloud_credits",
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "github-for-nonprofits",
+        "github-secure-open-source-fund"
+      ]
+    },
+    {
+      "id": "gsma",
+      "name": "GSMA",
+      "funder_type": "network_association",
+      "hq_country": "GB",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "south_asia",
+        "southeast_asia",
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "latin_america_caribbean",
+        "mena"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "gsma-innovation-fund"
+      ]
+    },
+    {
+      "id": "hubspot",
+      "name": "HubSpot",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "north_america",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "hubspot-for-nonprofits"
+      ]
+    },
+    {
+      "id": "ibm",
+      "name": "IBM",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "in_kind_software",
+        "cloud_credits",
+        "pro_bono_services"
+      ],
+      "source_ids": [
+        "ibm-impact-accelerator"
+      ]
+    },
+    {
+      "id": "mozilla-foundation",
+      "name": "Mozilla Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "fellowship",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "mozilla-foundation-grantmaking"
+      ]
+    },
+    {
+      "id": "notion",
+      "name": "Notion",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "ai_credits"
+      ],
+      "source_ids": [
+        "notion-for-nonprofits"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "name": "NVIDIA",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "cloud_credits",
+        "accelerator_incubator",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "nvidia-inception"
+      ]
+    },
+    {
+      "id": "okta",
+      "name": "Okta",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software"
+      ],
+      "source_ids": [
+        "okta-for-good-nonprofits"
+      ]
+    },
+    {
+      "id": "openai-foundation",
+      "name": "OpenAI Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "openai-people-first-ai-fund"
+      ]
+    },
+    {
+      "id": "twilio",
+      "name": "Twilio",
+      "funder_type": "tech_company_programme",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "in_kind_software",
+        "cloud_credits"
+      ],
+      "source_ids": [
+        "twilio-org-impact-access"
+      ]
+    },
+    {
+      "id": "afac",
+      "name": "Arab Fund for Arts and Culture (AFAC)",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "LB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "mena"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "afac-programs"
+      ]
+    },
+    {
+      "id": "eac-youth-agribusiness-portal",
+      "name": "EAC Youth Agribusiness Portal",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "impact_investment",
+        "concessional_loan"
+      ],
+      "source_ids": [
+        "eac-youth-agribusiness-portal"
+      ]
+    },
+    {
+      "id": "east-africa-philanthropy-network",
+      "name": "East Africa Philanthropy Network (EAPN)",
+      "funder_type": "network_association",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "award_recognition",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "eapn-east-africa-philanthropy-network"
+      ]
+    },
+    {
+      "id": "flat6labs",
+      "name": "Flat6Labs",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "EG",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "mena"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "flat6labs-programs"
+      ]
+    },
+    {
+      "id": "innovation-bridge-portal",
+      "name": "Innovation Bridge Portal (DSI and DSBD, South Africa)",
+      "funder_type": "government_domestic",
+      "hq_country": "ZA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southern_africa"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant",
+        "impact_investment",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "innovation-bridge-portal-za"
+      ]
+    },
+    {
+      "id": "kenya-national-innovation-agency",
+      "name": "Kenya National Innovation Agency (KeNIA)",
+      "funder_type": "government_domestic",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "accelerator_incubator",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "kenia-innovation-agency"
+      ]
+    },
+    {
+      "id": "mest-africa",
+      "name": "MEST Africa (Meltwater Entrepreneurial School of Technology)",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "GH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "capacity_building",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "mest-ai-startup-program"
+      ]
+    },
+    {
+      "id": "minict-rwanda",
+      "name": "Ministry of ICT and Innovation (MINICT), Rwanda",
+      "funder_type": "government_domestic",
+      "hq_country": "RW",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "rwanda-minict-news"
+      ]
+    },
+    {
+      "id": "science-for-africa-foundation",
+      "name": "Science for Africa Foundation",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "research_funding",
+        "grant"
+      ],
+      "source_ids": [
+        "sfa-foundation-funding"
+      ]
+    },
+    {
+      "id": "segal-family-foundation",
+      "name": "Segal Family Foundation",
+      "funder_type": "family_philanthropy",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "southern_africa",
+        "west_central_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "segal-family-foundation"
+      ]
+    },
+    {
+      "id": "star-ghana-foundation",
+      "name": "STAR-Ghana Foundation",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "GH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "west_central_africa"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "star-ghana-expressions-of-interest"
+      ]
+    },
+    {
+      "id": "ty-danjuma-foundation",
+      "name": "TY Danjuma Foundation",
+      "funder_type": "family_philanthropy",
+      "hq_country": "NG",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "west_central_africa"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "ty-danjuma-foundation-grants"
+      ]
+    },
+    {
+      "id": "women-fund-tanzania-trust",
+      "name": "Women Fund Tanzania Trust (WFT-T)",
+      "funder_type": "feminist_or_identity_fund",
+      "hq_country": "TZ",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "women-fund-tanzania-trust"
+      ]
+    },
+    {
+      "id": "youth-enterprise-development-fund-ke",
+      "name": "Youth Enterprise Development Fund",
+      "funder_type": "government_domestic",
+      "hq_country": "KE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "concessional_loan",
+        "government_scheme"
+      ],
+      "source_ids": [
+        "kenya-youth-enterprise-development-fund"
+      ]
+    },
+    {
+      "id": "bezos-earth-fund",
+      "name": "Bezos Earth Fund",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "bezos-earth-fund-news"
+      ]
+    },
+    {
+      "id": "bloomberg-philanthropies",
+      "name": "Bloomberg Philanthropies",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "latin_america",
+        "north_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "bloomberg-philanthropies"
+      ]
+    },
+    {
+      "id": "ciff",
+      "name": "Children's Investment Fund Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia",
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "ciff-what-we-fund"
+      ]
+    },
+    {
+      "id": "conrad-n-hilton-foundation",
+      "name": "Conrad N. Hilton Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "southern_africa",
+        "north_america"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "hilton-foundation-grants"
+      ]
+    },
+    {
+      "id": "council-on-foundations",
+      "name": "Council on Foundations",
+      "funder_type": "network_association",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "council-on-foundations-community-foundation-locator"
+      ]
+    },
+    {
+      "id": "fondation-botnar",
+      "name": "Fondation Botnar",
+      "funder_type": "private_foundation",
+      "hq_country": "CH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "fondation-botnar-funding"
+      ]
+    },
+    {
+      "id": "ford-foundation",
+      "name": "Ford Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "brazil",
+        "indonesia",
+        "north_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "ford-foundation-grant-opportunities"
+      ]
+    },
+    {
+      "id": "global-fund-for-women",
+      "name": "Global Fund for Women",
+      "funder_type": "feminist_or_identity_fund",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "global-fund-for-women-how-we-fund"
+      ]
+    },
+    {
+      "id": "imagine-canada",
+      "name": "Imagine Canada",
+      "funder_type": "aggregator",
+      "hq_country": "CA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "grant-connect-imagine-canada"
+      ]
+    },
+    {
+      "id": "hewlett-foundation",
+      "name": "William and Flora Hewlett Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "hewlett-foundation-grants-database"
+      ]
+    },
+    {
+      "id": "ikea-foundation",
+      "name": "IKEA Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "NL",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "ikea-foundation-grants"
+      ]
+    },
+    {
+      "id": "instrumentl",
+      "name": "Instrumentl",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "instrumentl"
+      ]
+    },
+    {
+      "id": "jacobs-foundation",
+      "name": "Jacobs Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "CH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "west_central_africa",
+        "latin_america_caribbean",
+        "europe_central_asia"
+      ],
+      "edzola_markets": [
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "research_funding",
+        "fellowship",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "jacobs-foundation-work-with-us"
+      ]
+    },
+    {
+      "id": "macarthur-foundation",
+      "name": "John D. and Catherine T. MacArthur Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "prize_challenge"
+      ],
+      "source_ids": [
+        "macarthur-100-and-change"
+      ]
+    },
+    {
+      "id": "omidyar-network",
+      "name": "Omidyar Network",
+      "funder_type": "impact_investor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "north_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "omidyar-network"
+      ]
+    },
+    {
+      "id": "open-society-foundations",
+      "name": "Open Society Foundations",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant",
+        "fellowship"
+      ],
+      "source_ids": [
+        "open-society-foundations-grants"
+      ]
+    },
+    {
+      "id": "packard-foundation",
+      "name": "David and Lucile Packard Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "packard-foundation-funding-opportunities"
+      ]
+    },
+    {
+      "id": "propublica",
+      "name": "ProPublica",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "propublica-nonprofit-explorer-api"
+      ]
+    },
+    {
+      "id": "rockefeller-foundation",
+      "name": "The Rockefeller Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "tender_rfp",
+        "grant"
+      ],
+      "source_ids": [
+        "rockefeller-foundation-rfps"
+      ]
+    },
+    {
+      "id": "atal-innovation-mission",
+      "name": "Atal Innovation Mission, NITI Aayog",
+      "funder_type": "government_domestic",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "government_scheme",
+        "prize_challenge",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "atal-innovation-mission"
+      ]
+    },
+    {
+      "id": "danamojo",
+      "name": "Danamojo",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "danamojo-ngo-donations"
+      ]
+    },
+    {
+      "id": "edelgive-foundation",
+      "name": "EdelGive Foundation",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "IN",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "edelgive-foundation-ngo-partnerships",
+        "edelgive-grow-fund"
+      ]
+    },
+    {
+      "id": "india-csr",
+      "name": "India CSR",
+      "funder_type": "aggregator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "csr_partnership",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "india-csr-news"
+      ]
+    },
+    {
+      "id": "ngobox",
+      "name": "NGOBOX (CSRBOX group)",
+      "funder_type": "aggregator",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "ngobox-grants-rfps"
+      ]
+    },
+    {
+      "id": "rohini-nilekani-philanthropies",
+      "name": "Rohini Nilekani Philanthropies",
+      "funder_type": "family_philanthropy",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "rohini-nilekani-philanthropies"
+      ]
+    },
+    {
+      "id": "sankalp-forum",
+      "name": "Sankalp Forum (Intellecap)",
+      "funder_type": "network_association",
+      "hq_country": "IN",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "south_asia",
+        "east_africa",
+        "west_central_africa",
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "award_recognition",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "sankalp-forum-awards"
+      ]
+    },
+    {
+      "id": "upaya-social-ventures",
+      "name": "Upaya Social Ventures",
+      "funder_type": "impact_investor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "south_asia"
+      ],
+      "edzola_markets": [
+        "india"
+      ],
+      "opportunity_types": [
+        "impact_investment",
+        "accelerator_incubator",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "upaya-social-ventures"
+      ]
+    },
+    {
+      "id": "charity-commission-england-wales",
+      "name": "Charity Commission for England and Wales",
+      "funder_type": "government_domestic",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "charity-commission-register-api"
+      ]
+    },
+    {
+      "id": "euclid-network",
+      "name": "Euclid Network",
+      "funder_type": "network_association",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "europe_central_asia"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "euclid-network-news"
+      ]
+    },
+    {
+      "id": "filantropi-indonesia",
+      "name": "Perhimpunan Filantropi Indonesia",
+      "funder_type": "network_association",
+      "hq_country": "ID",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "csr_partnership"
+      ],
+      "source_ids": [
+        "filantropi-indonesia"
+      ]
+    },
+    {
+      "id": "fondation-de-france",
+      "name": "Fondation de France",
+      "funder_type": "private_foundation",
+      "hq_country": "FR",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "europe_central_asia"
+      ],
+      "edzola_markets": [],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "fondation-de-france-appels-a-projets"
+      ]
+    },
+    {
+      "id": "fondo-semillas",
+      "name": "Fondo Semillas",
+      "funder_type": "feminist_or_identity_fund",
+      "hq_country": "MX",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "fondo-semillas"
+      ]
+    },
+    {
+      "id": "fundacion-avina",
+      "name": "Fundación Avina",
+      "funder_type": "private_foundation",
+      "hq_country": "PA",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america",
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "avina-foundation"
+      ]
+    },
+    {
+      "id": "indika-foundation",
+      "name": "Indika Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "ID",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "grant",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "indika-foundation-impact-grant"
+      ]
+    },
+    {
+      "id": "inter-american-foundation",
+      "name": "Inter-American Foundation",
+      "funder_type": "bilateral_agency",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america",
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "inter-american-foundation"
+      ]
+    },
+    {
+      "id": "latimpacto",
+      "name": "Latimpacto",
+      "funder_type": "network_association",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "latin_america_caribbean"
+      ],
+      "edzola_markets": [
+        "latin_america",
+        "brazil"
+      ],
+      "opportunity_types": [
+        "grant",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "latimpacto-network"
+      ]
+    },
+    {
+      "id": "philea",
+      "name": "Philea (Philanthropy Europe Association)",
+      "funder_type": "network_association",
+      "hq_country": "BE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "europe_central_asia"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "philea-news"
+      ]
+    },
+    {
+      "id": "adb",
+      "name": "Asian Development Bank (ADB)",
+      "funder_type": "development_bank",
+      "hq_country": "PH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "south_asia",
+        "southeast_asia",
+        "east_asia_pacific"
+      ],
+      "edzola_markets": [
+        "india",
+        "indonesia"
+      ],
+      "opportunity_types": [
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "adb-consulting-notices"
+      ]
+    },
+    {
+      "id": "afdb",
+      "name": "African Development Bank (AfDB)",
+      "funder_type": "development_bank",
+      "hq_country": "CI",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "mena"
+      ],
+      "edzola_markets": [
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "afdb-procurement"
+      ]
+    },
+    {
+      "id": "developmentaid",
+      "name": "DevelopmentAid",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "developmentaid-grants"
+      ]
+    },
+    {
+      "id": "devex",
+      "name": "Devex",
+      "funder_type": "aggregator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "tender_rfp",
+        "grant"
+      ],
+      "source_ids": [
+        "devex-funding"
+      ]
+    },
+    {
+      "id": "giz",
+      "name": "Deutsche Gesellschaft fuer Internationale Zusammenarbeit (GIZ)",
+      "funder_type": "bilateral_agency",
+      "hq_country": "DE",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "giz-vergabemarktplatz"
+      ]
+    },
+    {
+      "id": "iati",
+      "name": "International Aid Transparency Initiative (IATI)",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "latin_america",
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "iati-datastore-api"
+      ]
+    },
+    {
+      "id": "norad",
+      "name": "Norad (Norwegian Agency for Development Cooperation)",
+      "funder_type": "bilateral_agency",
+      "hq_country": "NO",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "norad-calls"
+      ]
+    },
+    {
+      "id": "uk-government-procurement",
+      "name": "UK Government public procurement (Find a Tender service)",
+      "funder_type": "government_domestic",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "uk_ireland"
+      ],
+      "edzola_markets": [
+        "uk"
+      ],
+      "opportunity_types": [
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "find-a-tender-uk"
+      ]
+    },
+    {
+      "id": "un-democracy-fund",
+      "name": "United Nations Democracy Fund (UNDEF)",
+      "funder_type": "multilateral",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "undef-calls"
+      ]
+    },
+    {
+      "id": "world-bank",
+      "name": "World Bank",
+      "funder_type": "development_bank",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "india",
+        "east_africa",
+        "global"
+      ],
+      "opportunity_types": [
+        "tender_rfp"
+      ],
+      "source_ids": [
+        "world-bank-procurement"
+      ]
+    },
+    {
+      "id": "catalyst-now",
+      "name": "Catalyst Now",
+      "funder_type": "network_association",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "capacity_building"
+      ],
+      "source_ids": [
+        "catalyst-now-network"
+      ]
+    },
+    {
+      "id": "chuffed",
+      "name": "Chuffed.org",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "uk_ireland",
+        "north_america",
+        "europe_central_asia",
+        "east_asia_pacific",
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "chuffed-crowdfunding"
+      ]
+    },
+    {
+      "id": "earthshot-prize",
+      "name": "The Earthshot Prize",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "award_recognition"
+      ],
+      "source_ids": [
+        "earthshot-prize"
+      ]
+    },
+    {
+      "id": "every-org",
+      "name": "Every.org",
+      "funder_type": "crowdfunding_platform",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "north_america"
+      ],
+      "edzola_markets": [
+        "north_america"
+      ],
+      "opportunity_types": [
+        "crowdfunding"
+      ],
+      "source_ids": [
+        "every-org-nonprofits"
+      ]
+    },
+    {
+      "id": "giin",
+      "name": "Global Impact Investing Network (GIIN)",
+      "funder_type": "network_association",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "impact_investment"
+      ],
+      "source_ids": [
+        "giin-network-intel"
+      ]
+    },
+    {
+      "id": "givingtuesday",
+      "name": "GivingTuesday",
+      "funder_type": "network_association",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "crowdfunding",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "givingtuesday-movement"
+      ]
+    },
+    {
+      "id": "global-innovation-fund",
+      "name": "Global Innovation Fund",
+      "funder_type": "impact_investor",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa"
+      ],
+      "opportunity_types": [
+        "grant",
+        "impact_investment"
+      ],
+      "source_ids": [
+        "global-innovation-fund-apply"
+      ]
+    },
+    {
+      "id": "impactalpha",
+      "name": "ImpactAlpha",
+      "funder_type": "aggregator",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "impact_investment"
+      ],
+      "source_ids": [
+        "impactalpha-news"
+      ]
+    },
+    {
+      "id": "mulago-foundation",
+      "name": "Mulago Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "fellowship",
+        "grant"
+      ],
+      "source_ids": [
+        "mulago-fellowship-referrals"
+      ]
+    },
+    {
+      "id": "shell-foundation",
+      "name": "Shell Foundation",
+      "funder_type": "corporate_foundation",
+      "hq_country": "GB",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "east_africa",
+        "west_central_africa",
+        "southern_africa",
+        "south_asia",
+        "southeast_asia"
+      ],
+      "edzola_markets": [
+        "east_africa",
+        "india"
+      ],
+      "opportunity_types": [
+        "impact_investment",
+        "capacity_building"
+      ],
+      "source_ids": [
+        "shell-foundation-partnerships"
+      ]
+    },
+    {
+      "id": "skoll-foundation",
+      "name": "Skoll Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "award_recognition",
+        "grant"
+      ],
+      "source_ids": [
+        "skoll-award"
+      ]
+    },
+    {
+      "id": "audacious-project",
+      "name": "The Audacious Project",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "audacious-project-eoi"
+      ]
+    },
+    {
+      "id": "unreasonable-group",
+      "name": "Unreasonable Group",
+      "funder_type": "accelerator_incubator",
+      "hq_country": "US",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": false,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "accelerator_incubator",
+        "fellowship"
+      ],
+      "source_ids": [
+        "unreasonable-fellowship"
+      ]
+    },
+    {
+      "id": "wef-uplink",
+      "name": "World Economic Forum UpLink",
+      "funder_type": "prize_challenge_body",
+      "hq_country": "CH",
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global"
+      ],
+      "opportunity_types": [
+        "prize_challenge",
+        "accelerator_incubator"
+      ],
+      "source_ids": [
+        "wef-uplink-innovation-challenges"
+      ]
+    },
+    {
+      "id": "co-develop",
+      "name": "Co-Develop",
+      "funder_type": "intermediary_regrantor",
+      "hq_country": null,
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "co-develop-dpi-fund"
+      ]
+    },
+    {
+      "id": "digital-public-goods-alliance",
+      "name": "Digital Public Goods Alliance",
+      "funder_type": "network_association",
+      "hq_country": null,
+      "funds_digital_capacity": null,
+      "accepts_unsolicited": true,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "award_recognition"
+      ],
+      "source_ids": [
+        "digital-public-goods-registry"
+      ]
+    },
+    {
+      "id": "patrick-j-mcgovern-foundation",
+      "name": "Patrick J. McGovern Foundation",
+      "funder_type": "private_foundation",
+      "hq_country": "US",
+      "funds_digital_capacity": true,
+      "accepts_unsolicited": null,
+      "regions_funded": [
+        "global"
+      ],
+      "edzola_markets": [
+        "global",
+        "india",
+        "east_africa",
+        "latin_america",
+        "brazil",
+        "indonesia",
+        "uk",
+        "north_america"
+      ],
+      "opportunity_types": [
+        "grant"
+      ],
+      "source_ids": [
+        "patrick-j-mcgovern-foundation-grants"
+      ]
+    }
+  ]
+}

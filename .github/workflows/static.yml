@@ -36,6 +36,7 @@ jobs:
           node --check app.js
           node --check grant-utils.js
           node scripts/validate-data.mjs
+          node scripts/validate-sources.mjs
           node scripts/test-site.mjs
           node scripts/test-grant-utils.mjs
       - name: Setup Pages

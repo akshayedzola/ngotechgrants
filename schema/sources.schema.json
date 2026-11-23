@@ -1,0 +1,830 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://akshayedzola.github.io/ngotechgrants/schema/sources.schema.json",
+  "title": "EdZola funding source registry",
+  "description": "Generated from data/taxonomy.json. Do not edit enums here; edit the taxonomy and regenerate.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "registry_version",
+    "generated_on",
+    "taxonomy",
+    "summary",
+    "sources"
+  ],
+  "properties": {
+    "registry_version": {
+      "type": "string"
+    },
+    "generated_on": {
+      "type": "string",
+      "format": "date"
+    },
+    "taxonomy": {
+      "type": "string"
+    },
+    "summary": {
+      "type": "object"
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    }
+  },
+  "$defs": {
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 2
+        },
+        "funder_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+        },
+        "funder": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "funder_type": {
+              "type": "string",
+              "enum": [
+                "private_foundation",
+                "family_philanthropy",
+                "corporate_foundation",
+                "corporate_csr",
+                "community_foundation",
+                "feminist_or_identity_fund",
+                "multilateral",
+                "bilateral_agency",
+                "development_bank",
+                "government_domestic",
+                "research_council",
+                "intermediary_regrantor",
+                "tech_company_programme",
+                "accelerator_incubator",
+                "impact_investor",
+                "prize_challenge_body",
+                "fellowship_body",
+                "crowdfunding_platform",
+                "aggregator",
+                "pro_bono_marketplace",
+                "network_association",
+                "diaspora_philanthropy",
+                "validation_service"
+              ]
+            },
+            "hq_country": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[A-Z]{2}$"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "funds_digital_capacity": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "accepts_unsolicited": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "name",
+            "funder_type",
+            "hq_country",
+            "funds_digital_capacity",
+            "accepts_unsolicited"
+          ]
+        },
+        "source_kind": {
+          "type": "string",
+          "enum": [
+            "funder_open_calls",
+            "programme_page",
+            "funder_news",
+            "aggregator_listing",
+            "procurement_portal",
+            "government_portal",
+            "open_data_api",
+            "crowdfunding_platform",
+            "in_kind_catalogue",
+            "newsletter",
+            "network_directory"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "maxLength": 400
+        },
+        "opportunity_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "grant",
+              "recoverable_grant",
+              "concessional_loan",
+              "impact_investment",
+              "prize_challenge",
+              "award_recognition",
+              "fellowship",
+              "accelerator_incubator",
+              "capacity_building",
+              "in_kind_software",
+              "cloud_credits",
+              "ai_credits",
+              "hardware_connectivity",
+              "pro_bono_services",
+              "csr_partnership",
+              "government_scheme",
+              "crowdfunding",
+              "matching_funds",
+              "tender_rfp",
+              "research_funding"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "eligible_org_types": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "nonprofit_registered",
+              "community_based_org",
+              "social_enterprise_for_profit",
+              "social_enterprise_hybrid",
+              "tech_for_good_startup",
+              "cooperative",
+              "academic_research",
+              "public_sector",
+              "faith_based_org",
+              "individual",
+              "consortium",
+              "private_vendor"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "org_stage": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "idea",
+              "early",
+              "growth",
+              "scale",
+              "any"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "org_size": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "micro",
+              "small",
+              "medium",
+              "large",
+              "any"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "geography": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "scope": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "enum": [
+                    "global",
+                    "multi_region",
+                    "regional",
+                    "national",
+                    "subnational"
+                  ]
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "regions": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "global",
+                  "south_asia",
+                  "southeast_asia",
+                  "east_asia_pacific",
+                  "east_africa",
+                  "west_central_africa",
+                  "southern_africa",
+                  "mena",
+                  "latin_america_caribbean",
+                  "north_america",
+                  "uk_ireland",
+                  "europe_central_asia"
+                ]
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "countries": {
+              "type": "array",
+              "items": {
+                "anyOf": [
+                  {
+                    "type": "string",
+                    "pattern": "^[A-Z]{2}$"
+                  },
+                  {
+                    "const": "*"
+                  }
+                ]
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "country_groups": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "enum": [
+                  "LMIC",
+                  "LDC",
+                  "ODA_ELIGIBLE",
+                  "SSA",
+                  "EU27",
+                  "COMMONWEALTH",
+                  "SIDS"
+                ]
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "excluded_countries": {
+              "type": "array",
+              "items": {
+                "type": "string",
+                "pattern": "^[A-Z]{2}$"
+              },
+              "minItems": 0,
+              "uniqueItems": true
+            },
+            "subnational": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "scope",
+            "regions",
+            "countries",
+            "country_groups",
+            "excluded_countries",
+            "subnational"
+          ]
+        },
+        "edzola_markets": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "india",
+              "east_africa",
+              "latin_america",
+              "brazil",
+              "indonesia",
+              "uk",
+              "north_america",
+              "global"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "themes": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "general_multi_sector",
+              "education",
+              "health",
+              "livelihoods_economic_opportunity",
+              "social_justice_human_rights",
+              "climate_environment",
+              "youth_children",
+              "gender_equity",
+              "arts_culture",
+              "democracy_civic",
+              "food_agriculture",
+              "community_development",
+              "housing_urban",
+              "justice_reform",
+              "digital_inclusion",
+              "migration_refugees",
+              "disability_inclusion",
+              "wash",
+              "humanitarian",
+              "financial_inclusion",
+              "nonprofit_capacity_digital",
+              "data_ai_for_good",
+              "digital_public_infrastructure",
+              "open_source",
+              "mel_evidence",
+              "energy_access"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "tech_focus": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "general_tech_digital",
+              "ai_ml",
+              "cloud_infrastructure",
+              "data_analytics",
+              "digital_platforms_software",
+              "blockchain",
+              "connectivity",
+              "cybersecurity_privacy",
+              "open_source",
+              "civic_tech",
+              "hardware_iot",
+              "none"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "registration_requirements": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "IN_FCRA",
+              "IN_80G",
+              "IN_12A_12AB",
+              "IN_CSR1",
+              "IN_DARPAN",
+              "IN_SECTION8",
+              "IN_DPIIT_STARTUP",
+              "US_501C3",
+              "US_ED_OR_FISCAL_SPONSOR",
+              "UK_REGISTERED_CHARITY",
+              "UK_CIC",
+              "KE_NGO_PBO",
+              "BR_OSC_CNPJ",
+              "ID_YAYASAN",
+              "EU_PIC",
+              "UNGM_REGISTRATION",
+              "US_SAM_UEI",
+              "GOODSTACK_VALIDATION",
+              "TECHSOUP_VALIDATION",
+              "LOCAL_LEGAL_REGISTRATION",
+              "NONE_STATED"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z]{2}$"
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "typical_award": {
+          "anyOf": [
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "min": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "max": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "currency": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "pattern": "^[A-Z]{3}$"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string",
+                      "enum": [
+                        "per_award",
+                        "per_year",
+                        "total_programme",
+                        "credits",
+                        "discount_percent",
+                        "in_kind_value"
+                      ]
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "usd_min": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "usd_max": {
+                  "type": [
+                    "number",
+                    "null"
+                  ]
+                },
+                "fx_as_of": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "note": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                }
+              },
+              "required": [
+                "min",
+                "max",
+                "currency",
+                "unit"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "application_mode": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "open_call",
+                "rolling_open",
+                "invitation_only",
+                "nomination",
+                "registration_portal",
+                "marketplace_listing"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "deadline_pattern": {
+          "anyOf": [
+            {
+              "type": "string",
+              "enum": [
+                "fixed_annual",
+                "fixed_multiple_rounds",
+                "rolling",
+                "loi_then_invite",
+                "cohort_intake",
+                "always_open",
+                "ad_hoc_calls",
+                "invitation_only"
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "typical_cycle_months": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Jan",
+              "Feb",
+              "Mar",
+              "Apr",
+              "May",
+              "Jun",
+              "Jul",
+              "Aug",
+              "Sep",
+              "Oct",
+              "Nov",
+              "Dec"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "fetch": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "method": {
+              "type": "string",
+              "enum": [
+                "api",
+                "rss",
+                "atom",
+                "sitemap",
+                "page_watch",
+                "newsletter",
+                "manual"
+              ]
+            },
+            "listing_url": {
+              "type": "string",
+              "pattern": "^https?://"
+            },
+            "feed_url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^https?://"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "feed_status": {
+              "type": "string",
+              "enum": [
+                "ok",
+                "failed",
+                "not_found",
+                "not_applicable"
+              ]
+            },
+            "api_endpoint": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^https?://"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "api_docs_url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^https?://"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "auth": {
+              "type": "string",
+              "enum": [
+                "none",
+                "free_key",
+                "login",
+                "paid"
+              ]
+            },
+            "format": {
+              "type": "string",
+              "enum": [
+                "html",
+                "rss",
+                "atom",
+                "json",
+                "xml",
+                "csv",
+                "pdf"
+              ]
+            },
+            "change_signal": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "newsletter_url": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^https?://"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            }
+          },
+          "required": [
+            "method",
+            "listing_url",
+            "feed_url",
+            "feed_status",
+            "api_endpoint",
+            "api_docs_url",
+            "auth",
+            "format",
+            "change_signal",
+            "newsletter_url"
+          ]
+        },
+        "check_frequency": {
+          "type": "string",
+          "enum": [
+            "daily",
+            "weekly",
+            "fortnightly",
+            "monthly",
+            "quarterly"
+          ]
+        },
+        "next_check_due": {
+          "type": "string",
+          "format": "date"
+        },
+        "outputs": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "public_directory",
+              "internal_bd"
+            ]
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "priority": {
+          "type": "string",
+          "enum": [
+            "p1",
+            "p2",
+            "p3"
+          ]
+        },
+        "owner": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "risk_flags": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "programme_paused",
+              "closed_to_new_applicants",
+              "funding_cuts_2025",
+              "invitation_only",
+              "us_money_needs_fcra",
+              "policy_change",
+              "site_blocks_bots",
+              "low_signal",
+              "aggregator_secondary_source"
+            ]
+          },
+          "minItems": 0,
+          "uniqueItems": true
+        },
+        "verification": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "url_status": {
+              "type": "string",
+              "enum": [
+                "ok",
+                "failed",
+                "redirected",
+                "blocked_by_tool"
+              ]
+            },
+            "checked_on": {
+              "type": "string",
+              "format": "date"
+            },
+            "evidence": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "required": [
+            "url_status",
+            "checked_on",
+            "evidence"
+          ]
+        },
+        "notes": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "segment": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "funder_id",
+        "funder",
+        "source_kind",
+        "description",
+        "opportunity_types",
+        "eligible_org_types",
+        "org_stage",
+        "org_size",
+        "geography",
+        "edzola_markets",
+        "themes",
+        "tech_focus",
+        "registration_requirements",
+        "languages",
+        "typical_award",
+        "application_mode",
+        "deadline_pattern",
+        "typical_cycle_months",
+        "fetch",
+        "check_frequency",
+        "next_check_due",
+        "outputs",
+        "priority",
+        "owner",
+        "risk_flags",
+        "verification",
+        "notes",
+        "segment"
+      ]
+    }
+  }
+}
