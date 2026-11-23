@@ -70,7 +70,7 @@ function setCounts() {
   const values = {
     'hs-total': DATA.length, 'hs-active': open.length, 'hs-recurring': patterns.length,
     'k-total': DATA.length, 'k-active': open.length, 'k-recurring': patterns.length, 'k-global': global.length,
-    'tc-table': DATA.length,
+    'tc-table': DATA.length, 'hp-recurring': patterns.length, 'hp-total': DATA.length,
   };
   Object.entries(values).forEach(([id, value]) => { document.getElementById(id).textContent = value; });
 }

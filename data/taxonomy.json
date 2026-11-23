@@ -1614,7 +1614,10 @@
       "Individuals or teams": [
         "individual"
       ],
-      "Not Specified": []
+      "Not Specified": [],
+      "Civil society leader": [
+        "individual"
+      ]
     },
     "geography": {
       "Global": {
@@ -1688,6 +1691,852 @@
           "US"
         ],
         "subnational": "<state name>"
+      },
+      "US Only. & Canada": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US",
+          "CA"
+        ]
+      },
+      "US Only. and Canada": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US",
+          "CA"
+        ]
+      },
+      "North America": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US",
+          "CA"
+        ]
+      },
+      "US Only. & India": {
+        "scope": "multi_region",
+        "regions": [
+          "north_america",
+          "south_asia"
+        ],
+        "countries": [
+          "US",
+          "IN"
+        ]
+      },
+      "US Only.: Southeast": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Southeastern US"
+      },
+      "US Only.: Indianapolis & New England": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Indianapolis and New England"
+      },
+      "Eastern US Only": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Eastern US"
+      },
+      "New York (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New York"
+      },
+      "New York (US) & NJ": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New York and New Jersey"
+      },
+      "Brooklyn": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Brooklyn, New York"
+      },
+      "California (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "California"
+      },
+      "Los Angeles": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Los Angeles, California"
+      },
+      "Bay Area": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "San Francisco Bay Area, California"
+      },
+      "San Diego": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "San Diego, California"
+      },
+      "San Mateo County": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "San Mateo County, California"
+      },
+      "Chula Vista": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Chula Vista, California"
+      },
+      "D.C. Region": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington, D.C. region"
+      },
+      "D.C": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington, D.C."
+      },
+      "DC Metro": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington, D.C. metro area"
+      },
+      "Arizona (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Arizona"
+      },
+      "Pennsylvania (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Pennsylvania"
+      },
+      "Philadelphia": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Philadelphia, Pennsylvania"
+      },
+      "Washington (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington State"
+      },
+      "Colorado (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Colorado"
+      },
+      "Oregon": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Oregon"
+      },
+      "Texas": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas"
+      },
+      "Texas & surrounding states": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas and surrounding states"
+      },
+      "Texas and surrounding states": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas and surrounding states"
+      },
+      "Dallas": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Dallas, Texas"
+      },
+      "Houston": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Houston, Texas"
+      },
+      "Chicago": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Chicago, Illinois"
+      },
+      "Detroit": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Detroit, Michigan"
+      },
+      "AL": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Alabama"
+      },
+      "CT": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Connecticut"
+      },
+      "DE": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Delaware"
+      },
+      "FL": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Florida"
+      },
+      "GA": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Georgia (US state)"
+      },
+      "and GA": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Georgia (US state)"
+      },
+      "HI": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Hawaii"
+      },
+      "ID": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Idaho"
+      },
+      "MA": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Massachusetts"
+      },
+      "MD": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Maryland"
+      },
+      "MN": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Minnesota"
+      },
+      "MO": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Missouri"
+      },
+      "NC": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "North Carolina"
+      },
+      "ND": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "North Dakota"
+      },
+      "NJ": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New Jersey"
+      },
+      "NM": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New Mexico"
+      },
+      "NV": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Nevada"
+      },
+      "OH": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Ohio"
+      },
+      "OK": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Oklahoma"
+      },
+      "OR": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Oregon"
+      },
+      "SC": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "South Carolina"
+      },
+      "TN": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Tennessee"
+      },
+      "TX": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas"
+      },
+      "and WV": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "West Virginia"
+      },
+      "Georgia": {
+        "ambiguous": true,
+        "note": "Either the US state or the country. Confirm on the funder page."
+      },
+      "Kenya": {
+        "scope": "national",
+        "regions": [
+          "east_africa"
+        ],
+        "countries": [
+          "KE"
+        ]
+      },
+      "Nigeria": {
+        "scope": "national",
+        "regions": [
+          "west_central_africa"
+        ],
+        "countries": [
+          "NG"
+        ]
+      },
+      "Senegal": {
+        "scope": "national",
+        "regions": [
+          "west_central_africa"
+        ],
+        "countries": [
+          "SN"
+        ]
+      },
+      "South Africa": {
+        "scope": "national",
+        "regions": [
+          "southern_africa"
+        ],
+        "countries": [
+          "ZA"
+        ]
+      },
+      "or South Africa": {
+        "scope": "national",
+        "regions": [
+          "southern_africa"
+        ],
+        "countries": [
+          "ZA"
+        ]
+      },
+      "Brazil": {
+        "scope": "national",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "countries": [
+          "BR"
+        ]
+      },
+      "Mexico": {
+        "scope": "national",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "countries": [
+          "MX"
+        ]
+      },
+      "Haiti": {
+        "scope": "national",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "countries": [
+          "HT"
+        ]
+      },
+      "Malaysia": {
+        "scope": "national",
+        "regions": [
+          "southeast_asia"
+        ],
+        "countries": [
+          "MY"
+        ]
+      },
+      "Australia": {
+        "scope": "national",
+        "regions": [
+          "east_asia_pacific"
+        ],
+        "countries": [
+          "AU"
+        ]
+      },
+      "UK": {
+        "scope": "national",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "GB"
+        ]
+      },
+      "U.K": {
+        "scope": "national",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "GB"
+        ]
+      },
+      "Ireland": {
+        "scope": "national",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "IE"
+        ]
+      },
+      "Scotland": {
+        "scope": "subnational",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "GB"
+        ],
+        "subnational": "Scotland"
+      },
+      "LATAM": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ]
+      },
+      "LatAm": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ]
+      },
+      "Central": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "note": "Part of \"Central, North, South Americas\"."
+      },
+      "North": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "note": "Part of \"Central, North, South Americas\"."
+      },
+      "South Americas": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "note": "Part of \"Central, North, South Americas\"."
+      },
+      "Middle East": {
+        "scope": "regional",
+        "regions": [
+          "mena"
+        ]
+      },
+      "Europe": {
+        "scope": "multi_region",
+        "regions": [
+          "europe_central_asia",
+          "uk_ireland"
+        ]
+      },
+      "EU Member States": {
+        "scope": "regional",
+        "regions": [
+          "europe_central_asia"
+        ],
+        "country_groups": [
+          "EU27"
+        ]
+      },
+      "EMEA": {
+        "scope": "multi_region",
+        "regions": [
+          "europe_central_asia",
+          "uk_ireland",
+          "mena",
+          "east_africa",
+          "west_central_africa",
+          "southern_africa"
+        ]
+      },
+      "APJ": {
+        "scope": "multi_region",
+        "regions": [
+          "south_asia",
+          "southeast_asia",
+          "east_asia_pacific"
+        ]
+      },
+      "Asia": {
+        "scope": "multi_region",
+        "regions": [
+          "south_asia",
+          "southeast_asia",
+          "east_asia_pacific"
+        ]
+      },
+      "Pacific Islands": {
+        "scope": "regional",
+        "regions": [
+          "east_asia_pacific"
+        ],
+        "country_groups": [
+          "SIDS"
+        ]
+      },
+      "African Union": {
+        "scope": "multi_region",
+        "regions": [
+          "east_africa",
+          "west_central_africa",
+          "southern_africa",
+          "mena"
+        ],
+        "country_groups": [
+          "SSA"
+        ],
+        "note": "All African Union members, including North Africa."
+      },
+      "LMIC": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "LMICs": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "LMIC’s": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "Event": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "Conference": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "Webinar": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "In-Person": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "Virtual": {
+        "ignore": true,
+        "note": "Delivery format, not geography."
+      },
+      "Fellowship": {
+        "ignore": true,
+        "note": "Opportunity type, not geography."
+      },
+      "Accelerator": {
+        "ignore": true,
+        "note": "Opportunity type, not geography."
+      },
+      "Free consulting": {
+        "ignore": true,
+        "note": "Opportunity type, not geography."
       }
     },
     "sector": {
@@ -1720,6 +2569,7 @@
       "Open Source": "open_source",
       "Civic Tech": "civic_tech",
       "Hardware/IoT": "hardware_iot"
-    }
+    },
+    "geography_rules": "Split a v1 geography string on commas, trim each part and look it up here. Union the regions, countries and country groups. Parts marked ignore are not geography. Parts marked ambiguous, and \"Not Specified\", send the record to review. \"*(US state)\" documents the pattern used for US states and cities."
   }
 }

@@ -2404,10 +2404,7 @@
         "south_asia"
       ],
       "edzola_markets": [
-        "india",
-        "east_africa",
-        "latin_america",
-        "uk"
+        "india"
       ],
       "opportunity_types": [
         "fellowship",
@@ -4398,7 +4395,8 @@
       "funds_digital_capacity": null,
       "accepts_unsolicited": null,
       "regions_funded": [
-        "east_africa"
+        "east_africa",
+        "west_central_africa"
       ],
       "edzola_markets": [
         "east_africa"

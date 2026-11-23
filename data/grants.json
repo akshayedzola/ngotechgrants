@@ -866,19 +866,20 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
-    "current_cycle": {
+    "trust_state": "historically_recurring",
+    "current_cycle": null,
+    "official_url": "https://www.morganstanley.com/about-us/giving-back/childrens-mental-health-awards",
+    "research_notes": "",
+    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails",
+    "previous_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": "2026-06-08",
       "closes_on": "2026-07-24",
       "verified_at": "2026-07-17",
       "source_url": "https://www.morganstanley.com/about-us/giving-back/childrens-mental-health-awards-faqs",
-      "note": "2027 Innovation Awards call currently accepting U.S. nonprofit applications."
-    },
-    "official_url": "https://www.morganstanley.com/about-us/giving-back/childrens-mental-health-awards",
-    "research_notes": "",
-    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+      "note": "2026 cycle closed on 2026-07-24; moved from open_now by the freshness job on 2026-11-23."
+    }
   },
   {
     "id": "gitlab-foundation",
@@ -1639,19 +1640,20 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
-    "current_cycle": {
+    "trust_state": "historically_recurring",
+    "current_cycle": null,
+    "official_url": "https://climatebase.org/fellowship",
+    "research_notes": "",
+    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails",
+    "previous_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": null,
       "closes_on": "2026-08-24",
       "verified_at": "2026-07-17",
       "source_url": "https://climatebase.org/fellowship",
-      "note": "Cohort 10 applications are open with rolling admissions through the final deadline."
-    },
-    "official_url": "https://climatebase.org/fellowship",
-    "research_notes": "",
-    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+      "note": "2026 cycle closed on 2026-08-24; moved from open_now by the freshness job on 2026-11-23."
+    }
   },
   {
     "id": "responsible-technology-youth-power-fund",
@@ -5772,15 +5774,15 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
+    "trust_state": "closed",
     "current_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": "2026-06-11",
       "closes_on": "2026-10-31",
       "verified_at": "2026-07-17",
       "source_url": "https://upsun.oneyoungworld.com/scholarship/leading-scholarship-2026",
-      "note": "Leading Scholarship 2026 is accepting applications for the Cape Town Summit."
+      "note": "2026 cycle closed on 2026-10-31; moved from open_now by the freshness job on 2026-11-23."
     },
     "official_url": "https://upsun.oneyoungworld.com/scholarship/leading-scholarship-2026",
     "research_notes": "",
@@ -5809,15 +5811,15 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
+    "trust_state": "closed",
     "current_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": null,
       "closes_on": "2026-07-31",
       "verified_at": "2026-07-17",
       "source_url": "https://www.nasdaq.com/nasdaq-foundation/grant-program",
-      "note": "The second 2026 Expression of Interest deadline is July 31."
+      "note": "2026 cycle closed on 2026-07-31; moved from open_now by the freshness job on 2026-11-23."
     },
     "official_url": "https://www.nasdaq.com/nasdaq-foundation/grant-program",
     "research_notes": "",
@@ -7343,15 +7345,15 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
+    "trust_state": "closed",
     "current_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": null,
       "closes_on": "2026-07-31",
       "verified_at": "2026-07-17",
       "source_url": "https://foresight.org/prizes/norm-hardy-prize/",
-      "note": "The 2026 usable-security prize is accepting submissions."
+      "note": "2026 cycle closed on 2026-07-31; moved from open_now by the freshness job on 2026-11-23."
     },
     "official_url": "https://foresight.org/prizes/norm-hardy-prize/",
     "research_notes": "",
@@ -7477,15 +7479,15 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
+    "trust_state": "closed",
     "current_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": null,
       "closes_on": "2026-07-24",
       "verified_at": "2026-07-17",
       "source_url": "https://techimpact.org/techforward/awards",
-      "note": "The 2026 Technology Innovation Awards application window is open."
+      "note": "2026 cycle closed on 2026-07-24; moved from open_now by the freshness job on 2026-11-23."
     },
     "official_url": "https://techimpact.org/techforward/awards",
     "research_notes": "",
@@ -7511,15 +7513,15 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
+    "trust_state": "closed",
     "current_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": null,
       "closes_on": "2026-07-19",
       "verified_at": "2026-07-17",
       "source_url": "https://www.riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-program-in-kenya/",
-      "note": "The 2026 Kenya Leadership and Advocacy Accelerator is accepting applications."
+      "note": "2026 cycle closed on 2026-07-19; moved from open_now by the freshness job on 2026-11-23."
     },
     "official_url": "https://www.riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-program-in-kenya/",
     "research_notes": "",
@@ -7647,15 +7649,15 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "open_now",
+    "trust_state": "closed",
     "current_cycle": {
       "year": 2026,
-      "status": "open_now",
+      "status": "closed",
       "opens_on": null,
       "closes_on": "2026-08-03",
       "verified_at": "2026-07-17",
       "source_url": "https://cliffamilyfoundation.org/",
-      "note": "The second 2026 Open Call cycle is open for U.S. nonprofits."
+      "note": "2026 cycle closed on 2026-08-03; moved from open_now by the freshness job on 2026-11-23."
     },
     "official_url": "https://cliffamilyfoundation.org/grants-program",
     "research_notes": "",

@@ -36,11 +36,11 @@
     },
     "by_edzola_market": {
       "india": 139,
-      "east_africa": 124,
+      "east_africa": 123,
       "global": 119,
-      "latin_america": 77,
+      "latin_america": 76,
       "north_america": 69,
-      "uk": 68,
+      "uk": 67,
       "brazil": 64,
       "indonesia": 62
     },
@@ -48,7 +48,7 @@
       "global": 125,
       "south_asia": 65,
       "east_africa": 51,
-      "west_central_africa": 37,
+      "west_central_africa": 38,
       "southern_africa": 34,
       "latin_america_caribbean": 28,
       "uk_ireland": 22,
@@ -10357,10 +10357,7 @@
         "subnational": null
       },
       "edzola_markets": [
-        "india",
-        "east_africa",
-        "latin_america",
-        "uk"
+        "india"
       ],
       "themes": [
         "general_multi_sector"
@@ -14133,7 +14130,9 @@
       ],
       "priority": "p2",
       "owner": null,
-      "risk_flags": [],
+      "risk_flags": [
+        "aggregator_secondary_source"
+      ],
       "verification": {
         "url_status": "ok",
         "checked_on": "2026-11-23",
@@ -20584,7 +20583,8 @@
       "geography": {
         "scope": "regional",
         "regions": [
-          "east_africa"
+          "east_africa",
+          "west_central_africa"
         ],
         "countries": [
           "KE",

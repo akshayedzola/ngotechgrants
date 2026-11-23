@@ -33,9 +33,19 @@ Serve the repository over HTTP so the page can load its JSON file:
 python3 -m http.server 4173
 ```
 
-Then run the data validator:
+Then run the checks (the same ones CI runs before every deploy):
 
 ```sh
 node scripts/validate-data.mjs
+node scripts/validate-sources.mjs
+node scripts/build-registry.mjs --check
+node scripts/build-grants-v2.mjs --check
+node scripts/validate-grants-v2.mjs
+node scripts/test-registry.mjs
 node scripts/test-site.mjs
+node scripts/test-grant-utils.mjs
 ```
+
+After editing `data/grants.json`, rebuild the v2 records with `node scripts/build-grants-v2.mjs`. After editing
+`data/sources.json`, re-derive the funders and summary with `node scripts/build-registry.mjs`. When a verified deadline
+passes, run `node scripts/refresh-freshness.mjs` and then rebuild the v2 records. See `docs/SOURCES.md`.
