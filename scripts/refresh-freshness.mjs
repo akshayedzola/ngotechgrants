@@ -18,6 +18,7 @@ if (!/^\d{4}-\d{2}-\d{2}$/.test(today ?? '')) {
   process.exit(2);
 }
 
+const MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 const dataUrl = new URL('../data/grants.json', import.meta.url);
 const grants = JSON.parse(await readFile(dataUrl, 'utf8'));
 const moved = [];
@@ -26,14 +27,23 @@ for (const grant of grants) {
   const cycle = grant.current_cycle;
   if (!['open_now', 'upcoming'].includes(grant.trust_state) || !cycle?.closes_on || cycle.closes_on >= today) continue;
   const from = grant.trust_state;
-  const note = `${cycle.year ?? cycle.closes_on.slice(0, 4)} cycle closed on ${cycle.closes_on}; moved from ${from} by the freshness job on ${today}.`;
+  const year = cycle.year ?? cycle.closes_on.slice(0, 4);
+  const note = `${year} cycle closed on ${cycle.closes_on}; moved from ${from} by the freshness job on ${today}.`;
+  // The summary was written while the cycle was open ("is accepting applications"). Replace it so the page never
+  // says "open" next to a closed label, and keep the old wording on the cycle for reference.
+  const [y, m, d] = cycle.closes_on.split('-').map(Number);
+  const closedOn = `${d} ${MONTHS[m - 1]} ${y}`;
+  const closed = { ...cycle, status: 'closed', note, summary_when_open: grant.summary };
+  grant.summary = grant.is_recurring
+    ? `The ${year} cycle closed on ${closedOn}. This programme has run in more than one year; check the official page for the next call.`
+    : `The ${year} cycle closed on ${closedOn}. Check the official page for any future call.`;
   if (grant.is_recurring) {
     grant.trust_state = 'historically_recurring';
-    grant.previous_cycle = { ...cycle, status: 'closed', note };
+    grant.previous_cycle = closed;
     grant.current_cycle = null;
   } else {
     grant.trust_state = 'closed';
-    grant.current_cycle = { ...cycle, status: 'closed', note };
+    grant.current_cycle = closed;
   }
   moved.push(`${grant.id}: ${from} -> ${grant.trust_state} (closed ${cycle.closes_on})`);
 }

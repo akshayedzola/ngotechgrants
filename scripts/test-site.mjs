@@ -34,6 +34,17 @@ for (const grant of grants.filter(item => item.previous_cycle)) {
 for (const grant of grants.filter(item => item.trust_state === 'closed' && item.current_cycle)) {
   assert.equal(grant.current_cycle.status, 'closed', `${grant.name}: closed record with a non-closed cycle`);
 }
+// A record the freshness job moved must not still describe itself as open.
+const OPEN_WORDING = /currently accepting|is accepting|are accepting|applications are open|window is open|is open for|cycle is open|now open|accepting submissions/i;
+for (const grant of grants) {
+  const cycle = grant.current_cycle ?? grant.previous_cycle;
+  if (cycle?.status !== 'closed') continue;
+  assert.doesNotMatch(grant.summary, OPEN_WORDING, `${grant.name}: closed cycle but the summary still reads as open`);
+  assert.ok(cycle.summary_when_open || !/freshness job/.test(cycle.note ?? ''), `${grant.name}: freshness job must keep the original summary`);
+}
+// The modal only calls a summary "current" for current records.
+assert.match(html, /id="modal-desc-title"/, 'modal summary heading needs an id');
+assert.match(app, /modal-desc-title'\)\.textContent = CURRENT_STATES\.has/, 'modal summary heading must depend on the trust state');
 
 // Headline counts are filled from the data, not typed into the page.
 for (const id of ['hs-total', 'hs-recurring', 'k-recurring', 'hp-recurring', 'hp-total']) {

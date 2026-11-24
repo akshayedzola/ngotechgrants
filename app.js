@@ -491,6 +491,8 @@ function openModal(index) {
     ['Last verified', verified],
   ].map(([label, value]) => `<div class="meta-chip"><div class="mc-label">${label}</div><div class="mc-val">${esc(value)}</div></div>`).join('');
   document.getElementById('modal-desc').textContent = record.summary || 'No summary available.';
+  // Only records with a verified current cycle get "Current"; older summaries may still say "accepting applications".
+  document.getElementById('modal-desc-title').textContent = CURRENT_STATES.has(effectiveTrustState(record)) ? 'Current summary' : 'Summary (from the historical record)';
   document.getElementById('modal-history').textContent = record.historical_context || 'No historical context available.';
   const notes = document.getElementById('modal-notes-wrap');
   notes.style.display = record.research_notes ? '' : 'none';
