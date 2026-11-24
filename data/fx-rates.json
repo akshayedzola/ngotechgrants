@@ -1,0 +1,15 @@
+{
+  "as_of": "2026-11-23",
+  "basis": "Indicative mid-market rates, the same ones used for typical_award in data/sources.json. USD value of one unit of each currency. Refresh together with the registry.",
+  "usd_per_unit": {
+    "USD": 1,
+    "GBP": 1.3127,
+    "EUR": 1.1002,
+    "AUD": 0.665,
+    "SGD": 0.7756,
+    "BRL": 0.1677,
+    "ZAR": 0.0574,
+    "INR": 0.0108,
+    "KES": 0.0077
+  }
+}

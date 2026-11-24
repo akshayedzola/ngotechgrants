@@ -1,0 +1,2575 @@
+{
+  "taxonomy_version": "2.0.0",
+  "updated_on": "2026-11-23",
+  "purpose": "One shared list of regions, markets and categories. Language editions, pricing zones, grant eligibility, CRM region tags and chat routing should all read from this file.",
+  "regions": [
+    {
+      "id": "global",
+      "label": "Global",
+      "countries": [],
+      "definition": "Open to applicants anywhere, subject to listed exclusions"
+    },
+    {
+      "id": "south_asia",
+      "label": "South Asia",
+      "countries": [
+        "AF",
+        "BD",
+        "BT",
+        "IN",
+        "LK",
+        "MV",
+        "NP",
+        "PK"
+      ]
+    },
+    {
+      "id": "southeast_asia",
+      "label": "Southeast Asia",
+      "countries": [
+        "BN",
+        "ID",
+        "KH",
+        "LA",
+        "MM",
+        "MY",
+        "PH",
+        "SG",
+        "TH",
+        "TL",
+        "VN"
+      ]
+    },
+    {
+      "id": "east_asia_pacific",
+      "label": "East Asia and Pacific",
+      "countries": [
+        "AU",
+        "CN",
+        "FJ",
+        "FM",
+        "HK",
+        "JP",
+        "KI",
+        "KP",
+        "KR",
+        "MH",
+        "MN",
+        "MO",
+        "NR",
+        "NZ",
+        "PG",
+        "PW",
+        "SB",
+        "TO",
+        "TV",
+        "TW",
+        "VU",
+        "WS"
+      ]
+    },
+    {
+      "id": "east_africa",
+      "label": "East Africa and the Horn",
+      "countries": [
+        "BI",
+        "DJ",
+        "ER",
+        "ET",
+        "KE",
+        "RW",
+        "SD",
+        "SO",
+        "SS",
+        "TZ",
+        "UG"
+      ]
+    },
+    {
+      "id": "west_central_africa",
+      "label": "West and Central Africa",
+      "countries": [
+        "BF",
+        "BJ",
+        "CD",
+        "CF",
+        "CG",
+        "CI",
+        "CM",
+        "CV",
+        "GA",
+        "GH",
+        "GM",
+        "GN",
+        "GQ",
+        "GW",
+        "LR",
+        "ML",
+        "MR",
+        "NE",
+        "NG",
+        "SL",
+        "SN",
+        "ST",
+        "TD",
+        "TG"
+      ]
+    },
+    {
+      "id": "southern_africa",
+      "label": "Southern Africa and Indian Ocean",
+      "countries": [
+        "AO",
+        "BW",
+        "KM",
+        "LS",
+        "MG",
+        "MU",
+        "MW",
+        "MZ",
+        "NA",
+        "SC",
+        "SZ",
+        "ZA",
+        "ZM",
+        "ZW"
+      ]
+    },
+    {
+      "id": "mena",
+      "label": "Middle East and North Africa",
+      "countries": [
+        "AE",
+        "BH",
+        "DZ",
+        "EG",
+        "IL",
+        "IQ",
+        "IR",
+        "JO",
+        "KW",
+        "LB",
+        "LY",
+        "MA",
+        "OM",
+        "PS",
+        "QA",
+        "SA",
+        "SY",
+        "TN",
+        "YE"
+      ]
+    },
+    {
+      "id": "latin_america_caribbean",
+      "label": "Latin America and the Caribbean",
+      "countries": [
+        "AG",
+        "AR",
+        "BB",
+        "BO",
+        "BR",
+        "BS",
+        "BZ",
+        "CL",
+        "CO",
+        "CR",
+        "CU",
+        "DM",
+        "DO",
+        "EC",
+        "GD",
+        "GT",
+        "GY",
+        "HN",
+        "HT",
+        "JM",
+        "KN",
+        "LC",
+        "MX",
+        "NI",
+        "PA",
+        "PE",
+        "PR",
+        "PY",
+        "SR",
+        "SV",
+        "TT",
+        "UY",
+        "VC",
+        "VE"
+      ]
+    },
+    {
+      "id": "north_america",
+      "label": "North America",
+      "countries": [
+        "CA",
+        "US"
+      ]
+    },
+    {
+      "id": "uk_ireland",
+      "label": "UK and Ireland",
+      "countries": [
+        "GB",
+        "IE"
+      ]
+    },
+    {
+      "id": "europe_central_asia",
+      "label": "Europe and Central Asia",
+      "countries": [
+        "AD",
+        "AL",
+        "AM",
+        "AT",
+        "AZ",
+        "BA",
+        "BE",
+        "BG",
+        "BY",
+        "CH",
+        "CY",
+        "CZ",
+        "DE",
+        "DK",
+        "EE",
+        "ES",
+        "FI",
+        "FR",
+        "GE",
+        "GR",
+        "HR",
+        "HU",
+        "IS",
+        "IT",
+        "KG",
+        "KZ",
+        "LI",
+        "LT",
+        "LU",
+        "LV",
+        "MC",
+        "MD",
+        "ME",
+        "MK",
+        "MT",
+        "NL",
+        "NO",
+        "PL",
+        "PT",
+        "RO",
+        "RS",
+        "RU",
+        "SE",
+        "SI",
+        "SK",
+        "SM",
+        "TJ",
+        "TM",
+        "TR",
+        "UA",
+        "UZ",
+        "XK"
+      ]
+    }
+  ],
+  "country_to_region": {
+    "AD": "europe_central_asia",
+    "AE": "mena",
+    "AF": "south_asia",
+    "AG": "latin_america_caribbean",
+    "AL": "europe_central_asia",
+    "AM": "europe_central_asia",
+    "AO": "southern_africa",
+    "AR": "latin_america_caribbean",
+    "AT": "europe_central_asia",
+    "AU": "east_asia_pacific",
+    "AZ": "europe_central_asia",
+    "BA": "europe_central_asia",
+    "BB": "latin_america_caribbean",
+    "BD": "south_asia",
+    "BE": "europe_central_asia",
+    "BF": "west_central_africa",
+    "BG": "europe_central_asia",
+    "BH": "mena",
+    "BI": "east_africa",
+    "BJ": "west_central_africa",
+    "BN": "southeast_asia",
+    "BO": "latin_america_caribbean",
+    "BR": "latin_america_caribbean",
+    "BS": "latin_america_caribbean",
+    "BT": "south_asia",
+    "BW": "southern_africa",
+    "BY": "europe_central_asia",
+    "BZ": "latin_america_caribbean",
+    "CA": "north_america",
+    "CD": "west_central_africa",
+    "CF": "west_central_africa",
+    "CG": "west_central_africa",
+    "CH": "europe_central_asia",
+    "CI": "west_central_africa",
+    "CL": "latin_america_caribbean",
+    "CM": "west_central_africa",
+    "CN": "east_asia_pacific",
+    "CO": "latin_america_caribbean",
+    "CR": "latin_america_caribbean",
+    "CU": "latin_america_caribbean",
+    "CV": "west_central_africa",
+    "CY": "europe_central_asia",
+    "CZ": "europe_central_asia",
+    "DE": "europe_central_asia",
+    "DJ": "east_africa",
+    "DK": "europe_central_asia",
+    "DM": "latin_america_caribbean",
+    "DO": "latin_america_caribbean",
+    "DZ": "mena",
+    "EC": "latin_america_caribbean",
+    "EE": "europe_central_asia",
+    "EG": "mena",
+    "ER": "east_africa",
+    "ES": "europe_central_asia",
+    "ET": "east_africa",
+    "FI": "europe_central_asia",
+    "FJ": "east_asia_pacific",
+    "FM": "east_asia_pacific",
+    "FR": "europe_central_asia",
+    "GA": "west_central_africa",
+    "GB": "uk_ireland",
+    "GD": "latin_america_caribbean",
+    "GE": "europe_central_asia",
+    "GH": "west_central_africa",
+    "GM": "west_central_africa",
+    "GN": "west_central_africa",
+    "GQ": "west_central_africa",
+    "GR": "europe_central_asia",
+    "GT": "latin_america_caribbean",
+    "GW": "west_central_africa",
+    "GY": "latin_america_caribbean",
+    "HK": "east_asia_pacific",
+    "HN": "latin_america_caribbean",
+    "HR": "europe_central_asia",
+    "HT": "latin_america_caribbean",
+    "HU": "europe_central_asia",
+    "ID": "southeast_asia",
+    "IE": "uk_ireland",
+    "IL": "mena",
+    "IN": "south_asia",
+    "IQ": "mena",
+    "IR": "mena",
+    "IS": "europe_central_asia",
+    "IT": "europe_central_asia",
+    "JM": "latin_america_caribbean",
+    "JO": "mena",
+    "JP": "east_asia_pacific",
+    "KE": "east_africa",
+    "KG": "europe_central_asia",
+    "KH": "southeast_asia",
+    "KI": "east_asia_pacific",
+    "KM": "southern_africa",
+    "KN": "latin_america_caribbean",
+    "KP": "east_asia_pacific",
+    "KR": "east_asia_pacific",
+    "KW": "mena",
+    "KZ": "europe_central_asia",
+    "LA": "southeast_asia",
+    "LB": "mena",
+    "LC": "latin_america_caribbean",
+    "LI": "europe_central_asia",
+    "LK": "south_asia",
+    "LR": "west_central_africa",
+    "LS": "southern_africa",
+    "LT": "europe_central_asia",
+    "LU": "europe_central_asia",
+    "LV": "europe_central_asia",
+    "LY": "mena",
+    "MA": "mena",
+    "MC": "europe_central_asia",
+    "MD": "europe_central_asia",
+    "ME": "europe_central_asia",
+    "MG": "southern_africa",
+    "MH": "east_asia_pacific",
+    "MK": "europe_central_asia",
+    "ML": "west_central_africa",
+    "MM": "southeast_asia",
+    "MN": "east_asia_pacific",
+    "MO": "east_asia_pacific",
+    "MR": "west_central_africa",
+    "MT": "europe_central_asia",
+    "MU": "southern_africa",
+    "MV": "south_asia",
+    "MW": "southern_africa",
+    "MX": "latin_america_caribbean",
+    "MY": "southeast_asia",
+    "MZ": "southern_africa",
+    "NA": "southern_africa",
+    "NE": "west_central_africa",
+    "NG": "west_central_africa",
+    "NI": "latin_america_caribbean",
+    "NL": "europe_central_asia",
+    "NO": "europe_central_asia",
+    "NP": "south_asia",
+    "NR": "east_asia_pacific",
+    "NZ": "east_asia_pacific",
+    "OM": "mena",
+    "PA": "latin_america_caribbean",
+    "PE": "latin_america_caribbean",
+    "PG": "east_asia_pacific",
+    "PH": "southeast_asia",
+    "PK": "south_asia",
+    "PL": "europe_central_asia",
+    "PR": "latin_america_caribbean",
+    "PS": "mena",
+    "PT": "europe_central_asia",
+    "PW": "east_asia_pacific",
+    "PY": "latin_america_caribbean",
+    "QA": "mena",
+    "RO": "europe_central_asia",
+    "RS": "europe_central_asia",
+    "RU": "europe_central_asia",
+    "RW": "east_africa",
+    "SA": "mena",
+    "SB": "east_asia_pacific",
+    "SC": "southern_africa",
+    "SD": "east_africa",
+    "SE": "europe_central_asia",
+    "SG": "southeast_asia",
+    "SI": "europe_central_asia",
+    "SK": "europe_central_asia",
+    "SL": "west_central_africa",
+    "SM": "europe_central_asia",
+    "SN": "west_central_africa",
+    "SO": "east_africa",
+    "SR": "latin_america_caribbean",
+    "SS": "east_africa",
+    "ST": "west_central_africa",
+    "SV": "latin_america_caribbean",
+    "SY": "mena",
+    "SZ": "southern_africa",
+    "TD": "west_central_africa",
+    "TG": "west_central_africa",
+    "TH": "southeast_asia",
+    "TJ": "europe_central_asia",
+    "TL": "southeast_asia",
+    "TM": "europe_central_asia",
+    "TN": "mena",
+    "TO": "east_asia_pacific",
+    "TR": "europe_central_asia",
+    "TT": "latin_america_caribbean",
+    "TV": "east_asia_pacific",
+    "TW": "east_asia_pacific",
+    "TZ": "east_africa",
+    "UA": "europe_central_asia",
+    "UG": "east_africa",
+    "US": "north_america",
+    "UY": "latin_america_caribbean",
+    "UZ": "europe_central_asia",
+    "VC": "latin_america_caribbean",
+    "VE": "latin_america_caribbean",
+    "VN": "southeast_asia",
+    "VU": "east_asia_pacific",
+    "WS": "east_asia_pacific",
+    "XK": "europe_central_asia",
+    "YE": "mena",
+    "ZA": "southern_africa",
+    "ZM": "southern_africa",
+    "ZW": "southern_africa"
+  },
+  "edzola_markets": [
+    {
+      "id": "india",
+      "label": "India",
+      "regions": [
+        "south_asia"
+      ],
+      "countries": [
+        "IN"
+      ],
+      "site_locales": [
+        "en",
+        "hi-in",
+        "ta-in"
+      ]
+    },
+    {
+      "id": "east_africa",
+      "label": "East Africa (Kenya first)",
+      "regions": [
+        "east_africa"
+      ],
+      "countries": [
+        "KE",
+        "UG",
+        "TZ",
+        "RW"
+      ],
+      "site_locales": [
+        "en",
+        "sw-ke"
+      ]
+    },
+    {
+      "id": "latin_america",
+      "label": "Latin America (Spanish)",
+      "regions": [
+        "latin_america_caribbean"
+      ],
+      "countries": [
+        "MX",
+        "CO",
+        "PE",
+        "CL",
+        "AR",
+        "EC",
+        "GT",
+        "BO",
+        "DO",
+        "CR",
+        "PY",
+        "UY",
+        "SV",
+        "HN",
+        "NI",
+        "PA"
+      ],
+      "site_locales": [
+        "es"
+      ]
+    },
+    {
+      "id": "brazil",
+      "label": "Brazil",
+      "regions": [
+        "latin_america_caribbean"
+      ],
+      "countries": [
+        "BR"
+      ],
+      "site_locales": [
+        "pt-br"
+      ]
+    },
+    {
+      "id": "indonesia",
+      "label": "Indonesia",
+      "regions": [
+        "southeast_asia"
+      ],
+      "countries": [
+        "ID"
+      ],
+      "site_locales": [
+        "id-id"
+      ]
+    },
+    {
+      "id": "uk",
+      "label": "United Kingdom",
+      "regions": [
+        "uk_ireland"
+      ],
+      "countries": [
+        "GB"
+      ],
+      "site_locales": [
+        "en"
+      ]
+    },
+    {
+      "id": "north_america",
+      "label": "North America",
+      "regions": [
+        "north_america"
+      ],
+      "countries": [
+        "US",
+        "CA"
+      ],
+      "site_locales": [
+        "en"
+      ]
+    },
+    {
+      "id": "global",
+      "label": "Global",
+      "regions": [
+        "global"
+      ],
+      "countries": [
+        "*"
+      ],
+      "site_locales": [
+        "en"
+      ]
+    }
+  ],
+  "country_groups": [
+    {
+      "id": "LMIC",
+      "label": "Low- and middle-income countries",
+      "definition": "World Bank low, lower-middle and upper-middle income economies. Resolve membership at build time from the World Bank country classification (updated each July)."
+    },
+    {
+      "id": "LDC",
+      "label": "Least developed countries",
+      "definition": "UN list of least developed countries."
+    },
+    {
+      "id": "ODA_ELIGIBLE",
+      "label": "ODA-eligible countries",
+      "definition": "OECD DAC list of ODA recipients."
+    },
+    {
+      "id": "SSA",
+      "label": "Sub-Saharan Africa",
+      "definition": "Union of east_africa, west_central_africa and southern_africa except SD."
+    },
+    {
+      "id": "EU27",
+      "label": "European Union member states"
+    },
+    {
+      "id": "COMMONWEALTH",
+      "label": "Commonwealth countries",
+      "definition": "Commonwealth of Nations members; several UK and Commonwealth programmes use this."
+    },
+    {
+      "id": "SIDS",
+      "label": "Small island developing states",
+      "definition": "UN list."
+    }
+  ],
+  "country_group_members": {
+    "EU27": [
+      "AT",
+      "BE",
+      "BG",
+      "CY",
+      "CZ",
+      "DE",
+      "DK",
+      "EE",
+      "ES",
+      "FI",
+      "FR",
+      "GR",
+      "HR",
+      "HU",
+      "IE",
+      "IT",
+      "LT",
+      "LU",
+      "LV",
+      "MT",
+      "NL",
+      "PL",
+      "PT",
+      "RO",
+      "SE",
+      "SI",
+      "SK"
+    ]
+  },
+  "funder_types": [
+    {
+      "id": "private_foundation",
+      "label": "Private foundation"
+    },
+    {
+      "id": "family_philanthropy",
+      "label": "Family philanthropy",
+      "definition": "Family foundations and family offices, including India family foundations."
+    },
+    {
+      "id": "corporate_foundation",
+      "label": "Corporate foundation"
+    },
+    {
+      "id": "corporate_csr",
+      "label": "Corporate CSR",
+      "definition": "Company CSR budgets, including India Companies Act Section 135 spend."
+    },
+    {
+      "id": "community_foundation",
+      "label": "Community foundation"
+    },
+    {
+      "id": "feminist_or_identity_fund",
+      "label": "Feminist or identity-led fund",
+      "definition": "Women's funds, feminist funds, funds led by and for a specific community."
+    },
+    {
+      "id": "multilateral",
+      "label": "Multilateral (UN and similar)"
+    },
+    {
+      "id": "bilateral_agency",
+      "label": "Bilateral development agency",
+      "definition": "Government aid agencies and embassies."
+    },
+    {
+      "id": "development_bank",
+      "label": "Development bank or DFI"
+    },
+    {
+      "id": "government_domestic",
+      "label": "Domestic government",
+      "definition": "National or state schemes for organisations in that country."
+    },
+    {
+      "id": "research_council",
+      "label": "Research council"
+    },
+    {
+      "id": "intermediary_regrantor",
+      "label": "Intermediary or regranter",
+      "definition": "Funds money from others, or acts as fiscal sponsor or equivalency route."
+    },
+    {
+      "id": "tech_company_programme",
+      "label": "Tech company programme",
+      "definition": "In-kind software, credits, discounts and tech grants from technology companies."
+    },
+    {
+      "id": "accelerator_incubator",
+      "label": "Accelerator or incubator"
+    },
+    {
+      "id": "impact_investor",
+      "label": "Impact investor"
+    },
+    {
+      "id": "prize_challenge_body",
+      "label": "Prize or challenge body"
+    },
+    {
+      "id": "fellowship_body",
+      "label": "Fellowship body"
+    },
+    {
+      "id": "crowdfunding_platform",
+      "label": "Crowdfunding or giving platform"
+    },
+    {
+      "id": "aggregator",
+      "label": "Aggregator",
+      "definition": "Lists other funders' opportunities. Treat as a secondary source: confirm on the funder's own page."
+    },
+    {
+      "id": "pro_bono_marketplace",
+      "label": "Pro bono marketplace"
+    },
+    {
+      "id": "network_association",
+      "label": "Network or association",
+      "definition": "Intelligence on who funds what; rarely funds directly."
+    },
+    {
+      "id": "diaspora_philanthropy",
+      "label": "Diaspora philanthropy",
+      "definition": "For example US-based funders giving to Indian NGOs."
+    },
+    {
+      "id": "validation_service",
+      "label": "Validation service",
+      "definition": "Verifies nonprofit status for tech programmes (Goodstack, TechSoup)."
+    }
+  ],
+  "source_kinds": [
+    {
+      "id": "funder_open_calls",
+      "label": "Funder open-calls page"
+    },
+    {
+      "id": "programme_page",
+      "label": "Programme page",
+      "definition": "A single recurring programme."
+    },
+    {
+      "id": "funder_news",
+      "label": "Funder news or blog",
+      "definition": "Announcements that often precede calls."
+    },
+    {
+      "id": "aggregator_listing",
+      "label": "Aggregator listing"
+    },
+    {
+      "id": "procurement_portal",
+      "label": "Procurement or tender portal",
+      "definition": "Internal business development only."
+    },
+    {
+      "id": "government_portal",
+      "label": "Government portal",
+      "definition": "Schemes, registries and prerequisites."
+    },
+    {
+      "id": "open_data_api",
+      "label": "Open data API",
+      "definition": "Machine-readable grants or funding data."
+    },
+    {
+      "id": "crowdfunding_platform",
+      "label": "Crowdfunding platform"
+    },
+    {
+      "id": "in_kind_catalogue",
+      "label": "In-kind catalogue",
+      "definition": "Always-open software, credits or discounts."
+    },
+    {
+      "id": "newsletter",
+      "label": "Newsletter"
+    },
+    {
+      "id": "network_directory",
+      "label": "Network directory"
+    }
+  ],
+  "opportunity_types": [
+    {
+      "id": "grant",
+      "label": "Grant"
+    },
+    {
+      "id": "recoverable_grant",
+      "label": "Recoverable grant",
+      "definition": "Repaid only if the venture succeeds."
+    },
+    {
+      "id": "concessional_loan",
+      "label": "Concessional loan"
+    },
+    {
+      "id": "impact_investment",
+      "label": "Impact investment",
+      "definition": "Equity, quasi-equity or debt for social enterprises."
+    },
+    {
+      "id": "prize_challenge",
+      "label": "Prize or challenge"
+    },
+    {
+      "id": "award_recognition",
+      "label": "Award or recognition",
+      "definition": "Visibility and network, small or no cash."
+    },
+    {
+      "id": "fellowship",
+      "label": "Fellowship",
+      "definition": "Support for a founder or leader, often with organisational funding."
+    },
+    {
+      "id": "accelerator_incubator",
+      "label": "Accelerator or incubator"
+    },
+    {
+      "id": "capacity_building",
+      "label": "Capacity-building programme",
+      "definition": "Cohort, training or mentoring without core funding."
+    },
+    {
+      "id": "in_kind_software",
+      "label": "In-kind or discounted software"
+    },
+    {
+      "id": "cloud_credits",
+      "label": "Cloud credits"
+    },
+    {
+      "id": "ai_credits",
+      "label": "AI credits",
+      "definition": "Model or API credits from AI providers."
+    },
+    {
+      "id": "hardware_connectivity",
+      "label": "Hardware or connectivity"
+    },
+    {
+      "id": "pro_bono_services",
+      "label": "Pro bono services",
+      "definition": "Skilled volunteering, consulting or development."
+    },
+    {
+      "id": "csr_partnership",
+      "label": "CSR partnership"
+    },
+    {
+      "id": "government_scheme",
+      "label": "Government scheme"
+    },
+    {
+      "id": "crowdfunding",
+      "label": "Crowdfunding"
+    },
+    {
+      "id": "matching_funds",
+      "label": "Matching funds",
+      "definition": "Including payroll and employee giving matches."
+    },
+    {
+      "id": "tender_rfp",
+      "label": "Tender or RFP (procurement)",
+      "definition": "Paid contracts. Internal business development only."
+    },
+    {
+      "id": "research_funding",
+      "label": "Research funding"
+    }
+  ],
+  "eligible_org_types": [
+    {
+      "id": "nonprofit_registered",
+      "label": "Registered nonprofit",
+      "definition": "Trust, society, Section 8 company, 501(c)(3), registered charity, yayasan, OSC and equivalents."
+    },
+    {
+      "id": "community_based_org",
+      "label": "Community-based organisation",
+      "definition": "Includes informal or unregistered groups."
+    },
+    {
+      "id": "social_enterprise_for_profit",
+      "label": "For-profit social enterprise"
+    },
+    {
+      "id": "social_enterprise_hybrid",
+      "label": "Hybrid social enterprise",
+      "definition": "Nonprofit and for-profit arms, or a CIC."
+    },
+    {
+      "id": "tech_for_good_startup",
+      "label": "Tech-for-good startup"
+    },
+    {
+      "id": "cooperative",
+      "label": "Cooperative"
+    },
+    {
+      "id": "academic_research",
+      "label": "Academic or research institution"
+    },
+    {
+      "id": "public_sector",
+      "label": "Public sector body"
+    },
+    {
+      "id": "faith_based_org",
+      "label": "Faith-based organisation"
+    },
+    {
+      "id": "individual",
+      "label": "Individual",
+      "definition": "Founders, fellows, researchers."
+    },
+    {
+      "id": "consortium",
+      "label": "Consortium",
+      "definition": "Applications must be made as a partnership."
+    },
+    {
+      "id": "private_vendor",
+      "label": "Private vendor",
+      "definition": "Firms bidding on tenders."
+    }
+  ],
+  "org_stages": [
+    {
+      "id": "idea",
+      "label": "Idea"
+    },
+    {
+      "id": "early",
+      "label": "Early",
+      "definition": "Piloting, under about 3 years."
+    },
+    {
+      "id": "growth",
+      "label": "Growth"
+    },
+    {
+      "id": "scale",
+      "label": "Scale"
+    },
+    {
+      "id": "any",
+      "label": "Any stage"
+    }
+  ],
+  "org_sizes": [
+    {
+      "id": "micro",
+      "label": "Micro",
+      "definition": "Annual budget under USD 50k."
+    },
+    {
+      "id": "small",
+      "label": "Small",
+      "definition": "USD 50k to 500k."
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "definition": "USD 500k to 5M."
+    },
+    {
+      "id": "large",
+      "label": "Large",
+      "definition": "Over USD 5M."
+    },
+    {
+      "id": "any",
+      "label": "Any size"
+    }
+  ],
+  "themes": [
+    {
+      "id": "general_multi_sector",
+      "label": "General / multiple sectors",
+      "replaces_v1_sector": "General/Multiple Sectors"
+    },
+    {
+      "id": "education",
+      "label": "Education",
+      "replaces_v1_sector": "Education/EdTech"
+    },
+    {
+      "id": "health",
+      "label": "Health",
+      "replaces_v1_sector": "Health/HealthTech"
+    },
+    {
+      "id": "livelihoods_economic_opportunity",
+      "label": "Livelihoods and economic opportunity",
+      "replaces_v1_sector": "Economic Opportunity"
+    },
+    {
+      "id": "social_justice_human_rights",
+      "label": "Social justice and human rights",
+      "replaces_v1_sector": "Racial Equity/Social Justice"
+    },
+    {
+      "id": "climate_environment",
+      "label": "Climate and environment",
+      "replaces_v1_sector": "Climate/Environment"
+    },
+    {
+      "id": "youth_children",
+      "label": "Youth and children",
+      "replaces_v1_sector": "Youth"
+    },
+    {
+      "id": "gender_equity",
+      "label": "Gender equity",
+      "replaces_v1_sector": "Women/Gender Equity"
+    },
+    {
+      "id": "arts_culture",
+      "label": "Arts and culture",
+      "replaces_v1_sector": "Arts/Culture"
+    },
+    {
+      "id": "democracy_civic",
+      "label": "Democracy and civic life",
+      "replaces_v1_sector": "Democracy/Civic Tech"
+    },
+    {
+      "id": "food_agriculture",
+      "label": "Food and agriculture",
+      "replaces_v1_sector": "Food Security"
+    },
+    {
+      "id": "community_development",
+      "label": "Community development",
+      "replaces_v1_sector": "Community Development"
+    },
+    {
+      "id": "housing_urban",
+      "label": "Housing and urban",
+      "replaces_v1_sector": "Housing"
+    },
+    {
+      "id": "justice_reform",
+      "label": "Justice reform",
+      "replaces_v1_sector": "Criminal Justice"
+    },
+    {
+      "id": "digital_inclusion",
+      "label": "Digital inclusion",
+      "replaces_v1_sector": "Digital Inclusion"
+    },
+    {
+      "id": "migration_refugees",
+      "label": "Migration and refugees",
+      "replaces_v1_sector": "Immigration"
+    },
+    {
+      "id": "disability_inclusion",
+      "label": "Disability inclusion"
+    },
+    {
+      "id": "wash",
+      "label": "Water, sanitation and hygiene"
+    },
+    {
+      "id": "humanitarian",
+      "label": "Humanitarian"
+    },
+    {
+      "id": "financial_inclusion",
+      "label": "Financial inclusion"
+    },
+    {
+      "id": "nonprofit_capacity_digital",
+      "label": "Nonprofit digital capacity",
+      "definition": "Funding or in-kind support for an organisation's own systems, data and tools."
+    },
+    {
+      "id": "data_ai_for_good",
+      "label": "Data and AI for good"
+    },
+    {
+      "id": "digital_public_infrastructure",
+      "label": "Digital public infrastructure and goods"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source"
+    },
+    {
+      "id": "mel_evidence",
+      "label": "Monitoring, evaluation and evidence"
+    },
+    {
+      "id": "energy_access",
+      "label": "Energy access"
+    }
+  ],
+  "tech_focus": [
+    {
+      "id": "general_tech_digital",
+      "label": "General tech / digital",
+      "replaces_v1_tech_focus": "General Tech/Digital"
+    },
+    {
+      "id": "ai_ml",
+      "label": "AI / machine learning",
+      "replaces_v1_tech_focus": "AI/Machine Learning"
+    },
+    {
+      "id": "cloud_infrastructure",
+      "label": "Cloud / infrastructure",
+      "replaces_v1_tech_focus": "Cloud/Infrastructure"
+    },
+    {
+      "id": "data_analytics",
+      "label": "Data / analytics",
+      "replaces_v1_tech_focus": "Data/Analytics"
+    },
+    {
+      "id": "digital_platforms_software",
+      "label": "Digital platforms / software",
+      "replaces_v1_tech_focus": "Digital Platforms/Software"
+    },
+    {
+      "id": "blockchain",
+      "label": "Blockchain",
+      "replaces_v1_tech_focus": "Blockchain"
+    },
+    {
+      "id": "connectivity",
+      "label": "Broadband / connectivity",
+      "replaces_v1_tech_focus": "Broadband/Connectivity"
+    },
+    {
+      "id": "cybersecurity_privacy",
+      "label": "Cybersecurity / privacy",
+      "replaces_v1_tech_focus": "Cybersecurity/Privacy"
+    },
+    {
+      "id": "open_source",
+      "label": "Open source",
+      "replaces_v1_tech_focus": "Open Source"
+    },
+    {
+      "id": "civic_tech",
+      "label": "Civic tech",
+      "replaces_v1_tech_focus": "Civic Tech"
+    },
+    {
+      "id": "hardware_iot",
+      "label": "Hardware / IoT",
+      "replaces_v1_tech_focus": "Hardware/IoT"
+    },
+    {
+      "id": "none",
+      "label": "No tech focus"
+    }
+  ],
+  "registration_requirements": [
+    {
+      "id": "IN_FCRA",
+      "label": "India FCRA registration",
+      "country": "IN",
+      "definition": "Needed for an Indian NGO to receive any foreign contribution, including from US diaspora funders."
+    },
+    {
+      "id": "IN_80G",
+      "label": "India 80G certificate",
+      "country": "IN",
+      "definition": "Lets Indian donors claim tax deduction; many CSR and HNI donors expect it."
+    },
+    {
+      "id": "IN_12A_12AB",
+      "label": "India 12A / 12AB registration",
+      "country": "IN"
+    },
+    {
+      "id": "IN_CSR1",
+      "label": "India CSR-1 registration",
+      "country": "IN",
+      "definition": "MCA registration required to receive CSR funds."
+    },
+    {
+      "id": "IN_DARPAN",
+      "label": "NGO Darpan ID",
+      "country": "IN",
+      "definition": "NITI Aayog unique ID, required for most central government grants."
+    },
+    {
+      "id": "IN_SECTION8",
+      "label": "India Section 8 company",
+      "country": "IN"
+    },
+    {
+      "id": "IN_DPIIT_STARTUP",
+      "label": "DPIIT-recognised startup",
+      "country": "IN",
+      "definition": "Needed for Startup India schemes."
+    },
+    {
+      "id": "US_501C3",
+      "label": "US 501(c)(3)",
+      "country": "US"
+    },
+    {
+      "id": "US_ED_OR_FISCAL_SPONSOR",
+      "label": "US equivalency determination or fiscal sponsor",
+      "country": "US",
+      "definition": "Route for non-US organisations to receive US foundation grants."
+    },
+    {
+      "id": "UK_REGISTERED_CHARITY",
+      "label": "UK registered charity",
+      "country": "GB"
+    },
+    {
+      "id": "UK_CIC",
+      "label": "UK community interest company",
+      "country": "GB"
+    },
+    {
+      "id": "KE_NGO_PBO",
+      "label": "Kenya NGO / PBO registration",
+      "country": "KE",
+      "definition": "NGOs Co-ordination Board / Public Benefit Organisations regime."
+    },
+    {
+      "id": "BR_OSC_CNPJ",
+      "label": "Brazil OSC with CNPJ",
+      "country": "BR"
+    },
+    {
+      "id": "ID_YAYASAN",
+      "label": "Indonesia yayasan",
+      "country": "ID"
+    },
+    {
+      "id": "EU_PIC",
+      "label": "EU Participant Identification Code",
+      "country": null,
+      "definition": "Needed to apply on the EU Funding & Tenders Portal."
+    },
+    {
+      "id": "UNGM_REGISTRATION",
+      "label": "UNGM vendor registration",
+      "country": null,
+      "definition": "Needed to bid on UN tenders."
+    },
+    {
+      "id": "US_SAM_UEI",
+      "label": "US SAM.gov UEI",
+      "country": "US",
+      "definition": "Needed for US federal awards."
+    },
+    {
+      "id": "GOODSTACK_VALIDATION",
+      "label": "Goodstack validation",
+      "country": null,
+      "definition": "Used by Google for Nonprofits and other tech programmes outside the US."
+    },
+    {
+      "id": "TECHSOUP_VALIDATION",
+      "label": "TechSoup validation",
+      "country": null
+    },
+    {
+      "id": "LOCAL_LEGAL_REGISTRATION",
+      "label": "Local legal registration",
+      "country": null,
+      "definition": "Some legal registration in the country of operation, type unspecified."
+    },
+    {
+      "id": "NONE_STATED",
+      "label": "None stated",
+      "country": null
+    }
+  ],
+  "application_modes": [
+    {
+      "id": "open_call",
+      "label": "Open call"
+    },
+    {
+      "id": "rolling_open",
+      "label": "Rolling, always open"
+    },
+    {
+      "id": "invitation_only",
+      "label": "Invitation only"
+    },
+    {
+      "id": "nomination",
+      "label": "Nomination"
+    },
+    {
+      "id": "registration_portal",
+      "label": "Registration portal",
+      "definition": "Register once, then see or bid on notices."
+    },
+    {
+      "id": "marketplace_listing",
+      "label": "Marketplace listing",
+      "definition": "List the organisation or project to receive support."
+    }
+  ],
+  "deadline_patterns": [
+    {
+      "id": "fixed_annual",
+      "label": "Fixed, once a year"
+    },
+    {
+      "id": "fixed_multiple_rounds",
+      "label": "Fixed, several rounds a year"
+    },
+    {
+      "id": "rolling",
+      "label": "Rolling"
+    },
+    {
+      "id": "loi_then_invite",
+      "label": "Letter of intent, then invitation"
+    },
+    {
+      "id": "cohort_intake",
+      "label": "Cohort intake"
+    },
+    {
+      "id": "always_open",
+      "label": "Always open"
+    },
+    {
+      "id": "ad_hoc_calls",
+      "label": "Ad hoc calls",
+      "definition": "Calls appear without a predictable cycle."
+    },
+    {
+      "id": "invitation_only",
+      "label": "Invitation only"
+    }
+  ],
+  "fetch_methods": [
+    {
+      "id": "api",
+      "label": "API"
+    },
+    {
+      "id": "rss",
+      "label": "RSS feed"
+    },
+    {
+      "id": "atom",
+      "label": "Atom feed"
+    },
+    {
+      "id": "sitemap",
+      "label": "Sitemap"
+    },
+    {
+      "id": "page_watch",
+      "label": "Page watch",
+      "definition": "Fetch the listing page and diff it."
+    },
+    {
+      "id": "newsletter",
+      "label": "Newsletter",
+      "definition": "Subscribe a shared inbox and parse."
+    },
+    {
+      "id": "manual",
+      "label": "Manual review",
+      "definition": "A person checks on the cadence."
+    }
+  ],
+  "check_frequencies": [
+    {
+      "id": "daily",
+      "days": 1
+    },
+    {
+      "id": "weekly",
+      "days": 7
+    },
+    {
+      "id": "fortnightly",
+      "days": 14
+    },
+    {
+      "id": "monthly",
+      "days": 30
+    },
+    {
+      "id": "quarterly",
+      "days": 91
+    }
+  ],
+  "outputs": [
+    {
+      "id": "public_directory",
+      "label": "Public directory",
+      "definition": "Verified opportunities for NGOs and social enterprises, published through the reviewed GitHub flow."
+    },
+    {
+      "id": "internal_bd",
+      "label": "Internal business development",
+      "definition": "Tenders and funder intelligence for Zoho CRM. Reviewed by a person and never published."
+    }
+  ],
+  "priorities": [
+    {
+      "id": "p1",
+      "label": "P1",
+      "definition": "Open to applications or always-open in-kind; relevant to India, Africa or nonprofit digital capacity. Checked often."
+    },
+    {
+      "id": "p2",
+      "label": "P2",
+      "definition": "Relevant but narrower: one region, one theme, infrequent cycles, or another EdZola market."
+    },
+    {
+      "id": "p3",
+      "label": "P3",
+      "definition": "Watch or intelligence only: invitation-only, paused, tender intel, low-signal aggregators."
+    }
+  ],
+  "risk_flags": [
+    {
+      "id": "programme_paused",
+      "label": "Programme paused"
+    },
+    {
+      "id": "closed_to_new_applicants",
+      "label": "Closed to new applicants"
+    },
+    {
+      "id": "funding_cuts_2025",
+      "label": "Affected by 2025 aid cuts"
+    },
+    {
+      "id": "invitation_only",
+      "label": "Invitation only"
+    },
+    {
+      "id": "us_money_needs_fcra",
+      "label": "US money needs FCRA",
+      "definition": "Indian recipients need FCRA registration."
+    },
+    {
+      "id": "policy_change",
+      "label": "Recent policy change"
+    },
+    {
+      "id": "site_blocks_bots",
+      "label": "Site blocks automated fetches"
+    },
+    {
+      "id": "low_signal",
+      "label": "Low signal"
+    },
+    {
+      "id": "aggregator_secondary_source",
+      "label": "Secondary source",
+      "definition": "Confirm on the funder's own page before publishing."
+    }
+  ],
+  "trust_states": [
+    {
+      "id": "open_now",
+      "label": "Open now",
+      "definition": "Requires current_cycle with verified_at and source_url."
+    },
+    {
+      "id": "rolling",
+      "label": "Rolling",
+      "definition": "Requires a dated official source."
+    },
+    {
+      "id": "upcoming",
+      "label": "Upcoming",
+      "definition": "Requires a dated official source."
+    },
+    {
+      "id": "historically_recurring",
+      "label": "Historically recurring",
+      "definition": "Repeated in historical material; current applications not implied."
+    },
+    {
+      "id": "invitation_only",
+      "label": "Invitation only"
+    },
+    {
+      "id": "closed",
+      "label": "Closed"
+    },
+    {
+      "id": "historical_archive",
+      "label": "Historical archive"
+    },
+    {
+      "id": "needs_verification",
+      "label": "Needs verification"
+    }
+  ],
+  "v1_mappings": {
+    "opportunity_type": {
+      "Grant": {
+        "opportunity_types": [
+          "grant"
+        ]
+      },
+      "Grant (LOI Stage)": {
+        "opportunity_types": [
+          "grant"
+        ],
+        "deadline_pattern": "loi_then_invite"
+      },
+      "Competition/Prize/Award": {
+        "opportunity_types": [
+          "prize_challenge"
+        ]
+      },
+      "Fellowship": {
+        "opportunity_types": [
+          "fellowship"
+        ]
+      },
+      "Program/Cohort": {
+        "opportunity_types": [
+          "capacity_building"
+        ],
+        "deadline_pattern": "cohort_intake"
+      },
+      "Accelerator/Incubator": {
+        "opportunity_types": [
+          "accelerator_incubator"
+        ]
+      },
+      "RFP": {
+        "opportunity_types": [
+          "grant"
+        ],
+        "application_mode": "open_call",
+        "note": "v1 'RFP' records are funders' requests for proposals, not procurement tenders."
+      }
+    },
+    "eligibility_type": {
+      "Nonprofit": [
+        "nonprofit_registered"
+      ],
+      "Individual/Fellow": [
+        "individual"
+      ],
+      "Startup": [
+        "tech_for_good_startup",
+        "social_enterprise_for_profit"
+      ],
+      "For-Profit/Social Enterprise": [
+        "social_enterprise_for_profit"
+      ],
+      "Academic/Research": [
+        "academic_research"
+      ],
+      "Individuals or teams": [
+        "individual"
+      ],
+      "Not Specified": [],
+      "Civil society leader": [
+        "individual"
+      ]
+    },
+    "geography": {
+      "Global": {
+        "scope": "global",
+        "regions": [
+          "global"
+        ],
+        "countries": [
+          "*"
+        ]
+      },
+      "US Only": {
+        "scope": "national",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ]
+      },
+      "India": {
+        "scope": "national",
+        "regions": [
+          "south_asia"
+        ],
+        "countries": [
+          "IN"
+        ]
+      },
+      "Africa": {
+        "scope": "regional",
+        "regions": [
+          "east_africa",
+          "west_central_africa",
+          "southern_africa"
+        ],
+        "country_groups": [
+          "SSA"
+        ]
+      },
+      "Latin America": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ]
+      },
+      "Developing Countries": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "Canada": {
+        "scope": "national",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "CA"
+        ]
+      },
+      "Not Specified": {
+        "scope": null
+      },
+      "*(US state)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "<state name>"
+      },
+      "US Only. & Canada": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US",
+          "CA"
+        ]
+      },
+      "US Only. and Canada": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US",
+          "CA"
+        ]
+      },
+      "North America": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US",
+          "CA"
+        ]
+      },
+      "US Only. & India": {
+        "scope": "multi_region",
+        "regions": [
+          "north_america",
+          "south_asia"
+        ],
+        "countries": [
+          "US",
+          "IN"
+        ]
+      },
+      "US Only.: Southeast": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Southeastern US"
+      },
+      "US Only.: Indianapolis & New England": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Indianapolis and New England"
+      },
+      "Eastern US Only": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Eastern US"
+      },
+      "New York (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New York"
+      },
+      "New York (US) & NJ": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New York and New Jersey"
+      },
+      "Brooklyn": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Brooklyn, New York"
+      },
+      "California (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "California"
+      },
+      "Los Angeles": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Los Angeles, California"
+      },
+      "Bay Area": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "San Francisco Bay Area, California"
+      },
+      "San Diego": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "San Diego, California"
+      },
+      "San Mateo County": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "San Mateo County, California"
+      },
+      "Chula Vista": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Chula Vista, California"
+      },
+      "D.C. Region": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington, D.C. region"
+      },
+      "D.C": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington, D.C."
+      },
+      "DC Metro": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington, D.C. metro area"
+      },
+      "Arizona (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Arizona"
+      },
+      "Pennsylvania (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Pennsylvania"
+      },
+      "Philadelphia": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Philadelphia, Pennsylvania"
+      },
+      "Washington (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Washington State"
+      },
+      "Colorado (US)": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Colorado"
+      },
+      "Oregon": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Oregon"
+      },
+      "Texas": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas"
+      },
+      "Texas & surrounding states": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas and surrounding states"
+      },
+      "Texas and surrounding states": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas and surrounding states"
+      },
+      "Dallas": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Dallas, Texas"
+      },
+      "Houston": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Houston, Texas"
+      },
+      "Chicago": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Chicago, Illinois"
+      },
+      "Detroit": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Detroit, Michigan"
+      },
+      "AL": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Alabama"
+      },
+      "CT": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Connecticut"
+      },
+      "DE": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Delaware"
+      },
+      "FL": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Florida"
+      },
+      "GA": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Georgia (US state)"
+      },
+      "and GA": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Georgia (US state)"
+      },
+      "HI": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Hawaii"
+      },
+      "ID": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Idaho"
+      },
+      "MA": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Massachusetts"
+      },
+      "MD": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Maryland"
+      },
+      "MN": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Minnesota"
+      },
+      "MO": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Missouri"
+      },
+      "NC": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "North Carolina"
+      },
+      "ND": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "North Dakota"
+      },
+      "NJ": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New Jersey"
+      },
+      "NM": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "New Mexico"
+      },
+      "NV": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Nevada"
+      },
+      "OH": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Ohio"
+      },
+      "OK": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Oklahoma"
+      },
+      "OR": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Oregon"
+      },
+      "SC": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "South Carolina"
+      },
+      "TN": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Tennessee"
+      },
+      "TX": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "Texas"
+      },
+      "and WV": {
+        "scope": "subnational",
+        "regions": [
+          "north_america"
+        ],
+        "countries": [
+          "US"
+        ],
+        "subnational": "West Virginia"
+      },
+      "Georgia": {
+        "ambiguous": true,
+        "note": "Either the US state or the country. Confirm on the funder page."
+      },
+      "Kenya": {
+        "scope": "national",
+        "regions": [
+          "east_africa"
+        ],
+        "countries": [
+          "KE"
+        ]
+      },
+      "Nigeria": {
+        "scope": "national",
+        "regions": [
+          "west_central_africa"
+        ],
+        "countries": [
+          "NG"
+        ]
+      },
+      "Senegal": {
+        "scope": "national",
+        "regions": [
+          "west_central_africa"
+        ],
+        "countries": [
+          "SN"
+        ]
+      },
+      "South Africa": {
+        "scope": "national",
+        "regions": [
+          "southern_africa"
+        ],
+        "countries": [
+          "ZA"
+        ]
+      },
+      "or South Africa": {
+        "scope": "national",
+        "regions": [
+          "southern_africa"
+        ],
+        "countries": [
+          "ZA"
+        ]
+      },
+      "Brazil": {
+        "scope": "national",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "countries": [
+          "BR"
+        ]
+      },
+      "Mexico": {
+        "scope": "national",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "countries": [
+          "MX"
+        ]
+      },
+      "Haiti": {
+        "scope": "national",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "countries": [
+          "HT"
+        ]
+      },
+      "Malaysia": {
+        "scope": "national",
+        "regions": [
+          "southeast_asia"
+        ],
+        "countries": [
+          "MY"
+        ]
+      },
+      "Australia": {
+        "scope": "national",
+        "regions": [
+          "east_asia_pacific"
+        ],
+        "countries": [
+          "AU"
+        ]
+      },
+      "UK": {
+        "scope": "national",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "GB"
+        ]
+      },
+      "U.K": {
+        "scope": "national",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "GB"
+        ]
+      },
+      "Ireland": {
+        "scope": "national",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "IE"
+        ]
+      },
+      "Scotland": {
+        "scope": "subnational",
+        "regions": [
+          "uk_ireland"
+        ],
+        "countries": [
+          "GB"
+        ],
+        "subnational": "Scotland"
+      },
+      "LATAM": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ]
+      },
+      "LatAm": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ]
+      },
+      "Central": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "note": "Part of \"Central, North, South Americas\"."
+      },
+      "North": {
+        "scope": "regional",
+        "regions": [
+          "north_america"
+        ],
+        "note": "Part of \"Central, North, South Americas\"."
+      },
+      "South Americas": {
+        "scope": "regional",
+        "regions": [
+          "latin_america_caribbean"
+        ],
+        "note": "Part of \"Central, North, South Americas\"."
+      },
+      "Middle East": {
+        "scope": "regional",
+        "regions": [
+          "mena"
+        ]
+      },
+      "Europe": {
+        "scope": "multi_region",
+        "regions": [
+          "europe_central_asia",
+          "uk_ireland"
+        ]
+      },
+      "EU Member States": {
+        "scope": "regional",
+        "regions": [
+          "europe_central_asia"
+        ],
+        "country_groups": [
+          "EU27"
+        ]
+      },
+      "EMEA": {
+        "scope": "multi_region",
+        "regions": [
+          "europe_central_asia",
+          "uk_ireland",
+          "mena",
+          "east_africa",
+          "west_central_africa",
+          "southern_africa"
+        ]
+      },
+      "APJ": {
+        "scope": "multi_region",
+        "regions": [
+          "south_asia",
+          "southeast_asia",
+          "east_asia_pacific"
+        ]
+      },
+      "Asia": {
+        "scope": "multi_region",
+        "regions": [
+          "south_asia",
+          "southeast_asia",
+          "east_asia_pacific"
+        ]
+      },
+      "Pacific Islands": {
+        "scope": "regional",
+        "regions": [
+          "east_asia_pacific"
+        ],
+        "country_groups": [
+          "SIDS"
+        ]
+      },
+      "African Union": {
+        "scope": "multi_region",
+        "regions": [
+          "east_africa",
+          "west_central_africa",
+          "southern_africa",
+          "mena"
+        ],
+        "country_groups": [
+          "SSA"
+        ],
+        "note": "All African Union members, including North Africa."
+      },
+      "LMIC": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "LMICs": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "LMIC’s": {
+        "scope": "multi_region",
+        "country_groups": [
+          "LMIC"
+        ]
+      },
+      "Event": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "Conference": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "Webinar": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "In-Person": {
+        "ignore": true,
+        "note": "Event format, not geography."
+      },
+      "Virtual": {
+        "ignore": true,
+        "note": "Delivery format, not geography."
+      },
+      "Fellowship": {
+        "ignore": true,
+        "note": "Opportunity type, not geography."
+      },
+      "Accelerator": {
+        "ignore": true,
+        "note": "Opportunity type, not geography."
+      },
+      "Free consulting": {
+        "ignore": true,
+        "note": "Opportunity type, not geography."
+      }
+    },
+    "sector": {
+      "General/Multiple Sectors": "general_multi_sector",
+      "Education/EdTech": "education",
+      "Health/HealthTech": "health",
+      "Economic Opportunity": "livelihoods_economic_opportunity",
+      "Racial Equity/Social Justice": "social_justice_human_rights",
+      "Climate/Environment": "climate_environment",
+      "Youth": "youth_children",
+      "Women/Gender Equity": "gender_equity",
+      "Arts/Culture": "arts_culture",
+      "Democracy/Civic Tech": "democracy_civic",
+      "Food Security": "food_agriculture",
+      "Community Development": "community_development",
+      "Housing": "housing_urban",
+      "Criminal Justice": "justice_reform",
+      "Digital Inclusion": "digital_inclusion",
+      "Immigration": "migration_refugees"
+    },
+    "tech_focus": {
+      "General Tech/Digital": "general_tech_digital",
+      "AI/Machine Learning": "ai_ml",
+      "Cloud/Infrastructure": "cloud_infrastructure",
+      "Data/Analytics": "data_analytics",
+      "Digital Platforms/Software": "digital_platforms_software",
+      "Blockchain": "blockchain",
+      "Broadband/Connectivity": "connectivity",
+      "Cybersecurity/Privacy": "cybersecurity_privacy",
+      "Open Source": "open_source",
+      "Civic Tech": "civic_tech",
+      "Hardware/IoT": "hardware_iot"
+    },
+    "geography_rules": "Split a v1 geography string on commas, trim each part and look it up here. Union the regions, countries and country groups. Parts marked ignore are not geography. Parts marked ambiguous, and \"Not Specified\", send the record to review. \"*(US state)\" documents the pattern used for US states and cities."
+  }
+}
