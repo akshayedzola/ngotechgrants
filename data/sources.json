@@ -1912,8 +1912,8 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Index modified 4 Nov 2026 shows annual budget CAD 26.8m, average project about CAD 31k; only Solomon Islands, PNG and Vanuatu open (deadline 15 Dec 2026)."
+        "checked_on": "2026-11-24",
+        "evidence": "Calls are closed for India, Indonesia, Brazil and Latin America. Only the Solomon Islands, Papua New Guinea and Vanuatu were open (to 15 December 2026)."
       },
       "notes": "India page: cfli-fcil/india-nepal-bhoutan.aspx. No Kenya row appeared in the index table when checked. Local NGOs get most funding.",
       "segment": "multilateral_bilateral"
@@ -2018,8 +2018,8 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Page says the 2026 call ran 23 Sep-26 Oct 2026 and reopens in 2027; India (FCRA needed) and Kenya listed as eligible. Feed returned RSS items to 10 Nov 2026."
+        "checked_on": "2026-11-24",
+        "evidence": "The 2026 call closed on 26 October 2026; the page says grants will reopen in 2027."
       },
       "notes": "Needs 3+ years operating and income under GBP 2.5m; request capped at 70% of income. The RSS feed is general news, not grants-only.",
       "segment": "multilateral_bilateral"
@@ -2228,10 +2228,10 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Page shows 2026-27 New Delhi round, deadline 11 Nov 2026, up to INR 25,00,000, FCRA proof and two years of audits required, applications via SmartyGrants."
+        "checked_on": "2026-11-24",
+        "evidence": "The 2026-27 round closed on 11 November 2026, although the page still says \"now open\". Watch for the next round from October."
       },
-      "notes": "Each post covers set states (e.g. Chennai: TN, Kerala, AP, Odisha; Bengaluru: Karnataka, Telangana, MP, Chhattisgarh). Watch each post's DAP page.",
+      "notes": "Each post covers set states (e.g. Chennai: TN, Kerala, AP, Odisha; Bengaluru: Karnataka, Telangana, MP, Chhattisgarh). Watch each post's DAP page. The page can keep saying \"now open\" after the closing date; trust the stated date.",
       "segment": "multilateral_bilateral"
     },
     {
@@ -3690,14 +3690,15 @@
         "note": "Stipend over 18 months; recoverable grant for for-profit and hybrid ventures"
       },
       "application_mode": "open_call",
-      "deadline_pattern": "fixed_annual",
+      "deadline_pattern": "fixed_multiple_rounds",
       "typical_cycle_months": [
-        "Sep",
+        "Mar",
+        "Jul",
         "Oct"
       ],
       "fetch": {
         "method": "rss",
-        "listing_url": "https://echoinggreen.org/apply",
+        "listing_url": "https://echoinggreen.org/fellowship/talent-platform/",
         "feed_url": "https://echoinggreen.org/feed/",
         "feed_status": "ok",
         "api_endpoint": null,
@@ -3717,8 +3718,8 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Apply page says the 2026 cycle is closed and lists eligibility for nonprofit, for-profit and hybrid; homepage states USD 100k over 18 months; feed shows Nov 2026 posts."
+        "checked_on": "2026-11-24",
+        "evidence": "The Fellowship now starts with a free, year-round Talent Platform. First review window closes 31 March 2027; later windows tentatively July and October 2027. Fellowship selection dates to be announced in early 2027."
       },
       "notes": "Recoverable grants for for-profits are repaid only past set valuation or revenue-plus-profit thresholds within five years. Founder must work full time. Cycle months inferred from the 2025 deadline.",
       "segment": "social_enterprise_global"
@@ -5025,8 +5026,8 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Eligibility page lists about 190 countries incl. India, Kenya, Brazil, Indonesia, UK, US; Goodstack verifies status; government, hospitals and schools excluded."
+        "checked_on": "2026-11-24",
+        "evidence": "Eligibility page loaded on recheck; the 404 on 23 November was transient."
       },
       "notes": "Not every product is offered in every listed country. Charitable arms of hospitals and philanthropic arms of universities can qualify. Reviews take about 2-14 working days. Main page: google.com/nonprofits.",
       "segment": "tech_inkind"
@@ -12296,7 +12297,7 @@
       "typical_cycle_months": [],
       "fetch": {
         "method": "page_watch",
-        "listing_url": "https://www.tatatrusts.org/our-work/grants",
+        "listing_url": "https://www.tatatrusts.org/join-us/opportunities-for-grantees",
         "feed_url": null,
         "feed_status": "not_found",
         "api_endpoint": null,
@@ -12318,8 +12319,8 @@
       ],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Page lists focus areas, Fluxx grantee login and one scholarship call (25 Nov to 9 Dec 2026). /feed returned an error."
+        "checked_on": "2026-11-24",
+        "evidence": "The old grants URL now serves the homepage. The grantee page gives eligibility (society, trust or Section 8 company with PAN and 12AA) and registration on the Fluxx portal; no open calls listed."
       },
       "notes": "Does not say whether unsolicited proposals are accepted; most programme grants appear relationship-led. Student scholarships are out of scope for this directory.",
       "segment": "india"
@@ -12472,11 +12473,11 @@
       "typical_cycle_months": [],
       "fetch": {
         "method": "api",
-        "listing_url": "https://threesixtygiving.org/?p=6705",
+        "listing_url": "https://www.360giving.org/explore/technical/api/",
         "feed_url": null,
         "feed_status": "not_applicable",
         "api_endpoint": "https://api.threesixtygiving.org/api/v1/",
-        "api_docs_url": "https://threesixtygiving.org/?p=6705",
+        "api_docs_url": "https://www.360giving.org/api-docs/",
         "auth": "none",
         "format": "json",
         "change_signal": "New records in /org/<id>/grants_made/ for tracked funders (diff on grant id and award date)",
@@ -12493,8 +12494,8 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Docs page describes v1 endpoints (org list, org detail, grants_made, grants_received), no key, 2 requests/second per IP, JSON with limit/offset paging. API root URL itself returned a client error to the fetch tool."
+        "checked_on": "2026-11-24",
+        "evidence": "threesixtygiving.org now redirects to 360giving.org; API overview and reference moved there."
       },
       "notes": "Awarded-grants data, so it is prospecting intelligence, not open calls. Send Accept: application/json and stay under 2 req/s.",
       "segment": "latam_sea_uk_europe"
@@ -15077,7 +15078,7 @@
       "typical_cycle_months": [],
       "fetch": {
         "method": "page_watch",
-        "listing_url": "https://www.tnlcommunityfund.org.uk/funding/programmes",
+        "listing_url": "https://www.tnlcommunityfund.org.uk/funding/funding-programmes",
         "feed_url": null,
         "feed_status": "not_found",
         "api_endpoint": null,
@@ -15097,8 +15098,8 @@
       "risk_flags": [],
       "verification": {
         "url_status": "ok",
-        "checked_on": "2026-11-23",
-        "evidence": "Page lists 10 programmes incl. Awards for All England, Scotland, Wales and Northern Ireland at GBP 300-20,000 and Reaching Communities England from GBP 20,001; status filter present."
+        "checked_on": "2026-11-24",
+        "evidence": "Old /funding/programmes URL returns 404; the funding-programmes listing shows open programmes such as Awards for All England and Community Action."
       },
       "notes": "News feed guess (/news/feed) failed. 'Largest community funder' is commonly cited; check UK-wide vs nation-specific rules.",
       "segment": "latam_sea_uk_europe"

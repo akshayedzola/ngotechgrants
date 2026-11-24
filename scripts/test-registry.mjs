@@ -159,9 +159,17 @@ const golden = [
     assert.equal(r.last_verified_at, '2026-07-17');
   }],
   ['rise-up', r => {
-    assert.equal(r.trust_state, 'closed');
+    assert.equal(r.trust_state, 'historically_recurring');
+    assert.equal(r.previous_cycle.closes_on, '2026-07-19');
     assert.deepEqual(r.eligible_org_types, ['individual']);
     assert.deepEqual(r.edzola_markets, ['east_africa']);
+  }],
+  ['iki-small-grants-2026', r => {
+    assert.equal(r.trust_state, 'open_now');
+    assert.equal(r.current_cycle.closes_on, '2027-01-08');
+    assert.deepEqual(r.geography.country_groups, ['LMIC']);
+    assert.equal(r.amount.currency, 'EUR');
+    assert.equal(r.amount.usd_max, Math.round(200000 * fx.usd_per_unit.EUR));
   }],
 ];
 for (const [id, expect] of golden) {

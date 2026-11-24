@@ -2,7 +2,7 @@
   {
     "id": "d-prize-global-competition",
     "name": "D-Prize Global Competition",
-    "summary": "Is seeking proposals for new organizations that deliver a proven poverty intervention at scale. D-Prize will award up to 20 teams with $20K each to launch ventures tackling distribution challenges that keep life-changing products and services from the last mile. (early deadline) or June 5 (regular deadline).",
+    "summary": "D-Prize funds new organisations that distribute proven poverty interventions, with up to USD 20,000 to launch. The 2026 competition is open through an extension to 6 December 2026 (registration required).",
     "historical_context": "Is seeking proposals for new organizations that deliver a proven poverty intervention at scale. D-Prize will award up to 20 teams with $20K each to launch ventures tackling distribution challenges that keep life-changing products and services from the last mile. Apply by May 15 (early deadline) or June 5 (regular deadline).",
     "grant_amount": "$20,000",
     "typical_cycle_months": [
@@ -17,11 +17,20 @@
     "years_observed": [
       2022,
       2023,
-      2024
+      2024,
+      2026
     ],
-    "last_observed_year": 2024,
-    "trust_state": "historically_recurring",
-    "current_cycle": null,
+    "last_observed_year": 2026,
+    "trust_state": "open_now",
+    "current_cycle": {
+      "year": 2026,
+      "status": "open_now",
+      "opens_on": "2026-09-14",
+      "closes_on": "2026-12-06",
+      "verified_at": "2026-11-24",
+      "source_url": "https://www.d-prize.org/",
+      "note": "Launched 14 September 2026. The regular deadline (15 November) has passed; the extension runs to 6 December 2026 and needs registration through the extension link."
+    },
     "official_url": "https://d-prize.org",
     "research_notes": "For entrepreneurs launching new organizations in low/middle-income countries, less than 18 months old, less than $30k raised",
     "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
@@ -5794,18 +5803,19 @@
   {
     "id": "nasdaq-foundation",
     "name": "Nasdaq Foundation",
-    "summary": "The 2026 cycle closed on 31 July 2026. Check the official page for any future call.",
+    "summary": "The 2026 cycle closed on 31 July 2026. This programme has run in more than one year; check the official page for the next call.",
     "historical_context": "Supports diverse entrepreneurs with the resources to strengthen and scale their businesses and contribute to the prosperity of society. Average grant size is $75K. Apply by October 24.",
     "grant_amount": "Average $75K",
     "typical_cycle_months": [
-      "Oct"
+      "Jan",
+      "Jul"
     ],
     "geography": "US Only",
     "eligibility_type": "Nonprofit",
     "sector": "General/Multiple Sectors",
     "tech_focus": "General Tech/Digital",
     "opportunity_type": "Grant",
-    "is_recurring": false,
+    "is_recurring": true,
     "years_observed": [
       2022,
       2023,
@@ -5814,8 +5824,12 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "closed",
-    "current_cycle": {
+    "trust_state": "historically_recurring",
+    "current_cycle": null,
+    "official_url": "https://www.nasdaq.com/nasdaq-foundation/grant-program",
+    "research_notes": "A January 2027 cycle (EOI by 29 January) appears in published guidelines, but the official page was unavailable on 24 November 2026, so it is not marked upcoming.",
+    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails",
+    "previous_cycle": {
       "year": 2026,
       "status": "closed",
       "opens_on": null,
@@ -5823,11 +5837,9 @@
       "verified_at": "2026-07-17",
       "source_url": "https://www.nasdaq.com/nasdaq-foundation/grant-program",
       "note": "2026 cycle closed on 2026-07-31; moved from open_now by the freshness job on 2026-11-23.",
-      "summary_when_open": "The second 2026 Expression of Interest deadline is July 31."
-    },
-    "official_url": "https://www.nasdaq.com/nasdaq-foundation/grant-program",
-    "research_notes": "",
-    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+      "summary_when_open": "The second 2026 Expression of Interest deadline is July 31.",
+      "recurrence_evidence": "Grant guidelines are published for successive cycles (January 2026, January 2027). Checked 2026-11-24."
+    }
   },
   {
     "id": "cleveland-foundation",
@@ -7332,7 +7344,7 @@
   {
     "id": "norm-hardy-prize",
     "name": "Norm Hardy Prize",
-    "summary": "The 2026 cycle closed on 31 July 2026. Check the official page for any future call.",
+    "summary": "The 2026 cycle closed on 31 July 2026. This programme has run in more than one year; check the official page for the next call.",
     "historical_context": "Recognizes projects helping users understand security tacitly, introducing secure workflows, developing design principles making systems easier to use securely, or exploring 'theory of mind' in user interactions. The winning submission receives $10K. Apply by July 31.",
     "grant_amount": "$10K",
     "typical_cycle_months": [
@@ -7343,14 +7355,18 @@
     "sector": "General/Multiple Sectors",
     "tech_focus": "General Tech/Digital",
     "opportunity_type": "Competition/Prize/Award",
-    "is_recurring": false,
+    "is_recurring": true,
     "years_observed": [
       2024,
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "closed",
-    "current_cycle": {
+    "trust_state": "historically_recurring",
+    "current_cycle": null,
+    "official_url": "https://foresight.org/prizes/norm-hardy-prize/",
+    "research_notes": "",
+    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails",
+    "previous_cycle": {
       "year": 2026,
       "status": "closed",
       "opens_on": null,
@@ -7358,11 +7374,9 @@
       "verified_at": "2026-07-17",
       "source_url": "https://foresight.org/prizes/norm-hardy-prize/",
       "note": "2026 cycle closed on 2026-07-31; moved from open_now by the freshness job on 2026-11-23.",
-      "summary_when_open": "The 2026 usable-security prize is accepting submissions."
-    },
-    "official_url": "https://foresight.org/prizes/norm-hardy-prize/",
-    "research_notes": "",
-    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+      "summary_when_open": "The 2026 usable-security prize is accepting submissions.",
+      "recurrence_evidence": "The official page describes a \"$10,000 annual award\". Checked 2026-11-24."
+    }
   },
   {
     "id": "spectrum-digital-education-grant",
@@ -7502,7 +7516,7 @@
   {
     "id": "rise-up",
     "name": "Rise Up",
-    "summary": "The 2026 cycle closed on 19 July 2026. Check the official page for any future call.",
+    "summary": "The 2026 cycle closed on 19 July 2026. This programme has run in more than one year; check the official page for the next call.",
     "historical_context": "Leadership and Advocacy Accelerator : Seeks strong civil society leaders advancing gender equity across social justice issues. Grants up to $100K. Read the FAQ to learn more. Apply by July 15. UPCOMING DEADLINES ⌛",
     "grant_amount": "up to $100K",
     "typical_cycle_months": [
@@ -7513,14 +7527,18 @@
     "sector": "Racial Equity/Social Justice",
     "tech_focus": "General Tech/Digital",
     "opportunity_type": "Accelerator/Incubator",
-    "is_recurring": false,
+    "is_recurring": true,
     "years_observed": [
       2024,
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "closed",
-    "current_cycle": {
+    "trust_state": "historically_recurring",
+    "current_cycle": null,
+    "official_url": "https://www.riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-program-in-kenya/",
+    "research_notes": "",
+    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails",
+    "previous_cycle": {
       "year": 2026,
       "status": "closed",
       "opens_on": null,
@@ -7528,11 +7546,9 @@
       "verified_at": "2026-07-17",
       "source_url": "https://www.riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-program-in-kenya/",
       "note": "2026 cycle closed on 2026-07-19; moved from open_now by the freshness job on 2026-11-23.",
-      "summary_when_open": "The 2026 Kenya Leadership and Advocacy Accelerator is accepting applications."
-    },
-    "official_url": "https://www.riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-program-in-kenya/",
-    "research_notes": "",
-    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+      "summary_when_open": "The 2026 Kenya Leadership and Advocacy Accelerator is accepting applications.",
+      "recurrence_evidence": "Rise Up Together runs country calls several times a year (Kenya, Maharashtra, South Africa in 2026). Checked 2026-11-24."
+    }
   },
   {
     "id": "lineage-food-chain-innovation-challenge",
@@ -7637,10 +7653,11 @@
   {
     "id": "clif-family-foundation",
     "name": "Clif Family Foundation",
-    "summary": "The 2026 cycle closed on 3 August 2026. Check the official page for any future call.",
+    "summary": "The 2026 cycle closed on 3 August 2026. This programme has run in more than one year; check the official page for the next call.",
     "historical_context": "Operational Support Grant : Seeks organizations addressing two or more of their funding priorities at the same time. Priorities include strengthening food system, enhancing equitable community health outcomes, and safeguarding environment and natural resources. Apply by August 1.",
     "grant_amount": "$5K–$50K",
     "typical_cycle_months": [
+      "Mar",
       "Aug"
     ],
     "geography": "US Only",
@@ -7648,7 +7665,7 @@
     "sector": "Health/HealthTech, Climate/Environment, Food Security",
     "tech_focus": "General Tech/Digital",
     "opportunity_type": "Grant",
-    "is_recurring": false,
+    "is_recurring": true,
     "years_observed": [
       2020,
       2021,
@@ -7656,8 +7673,12 @@
       2026
     ],
     "last_observed_year": 2026,
-    "trust_state": "closed",
-    "current_cycle": {
+    "trust_state": "historically_recurring",
+    "current_cycle": null,
+    "official_url": "https://cliffamilyfoundation.org/grants-program",
+    "research_notes": "Deadlines are 1 March and 3 August each year (official page, checked 24 November 2026).",
+    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails",
+    "previous_cycle": {
       "year": 2026,
       "status": "closed",
       "opens_on": null,
@@ -7665,11 +7686,9 @@
       "verified_at": "2026-07-17",
       "source_url": "https://cliffamilyfoundation.org/",
       "note": "2026 cycle closed on 2026-08-03; moved from open_now by the freshness job on 2026-11-23.",
-      "summary_when_open": "The second 2026 Open Call cycle is open for U.S. nonprofits."
-    },
-    "official_url": "https://cliffamilyfoundation.org/grants-program",
-    "research_notes": "",
-    "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+      "summary_when_open": "The second 2026 Open Call cycle is open for U.S. nonprofits.",
+      "recurrence_evidence": "The official page says applications are reviewed twice a year, with deadlines on 1 March and 3 August. Checked 2026-11-24."
+    }
   },
   {
     "id": "community-based-maternal-bhs",
@@ -11700,25 +11719,34 @@
   {
     "id": "the-draper-richards-kaplan-foundation",
     "name": "The Draper Richards Kaplan Foundation",
-    "summary": "accepts applications year-round from scalable social impact start up orgs, particularly those working in COVID-19 response, Civic Tech, Criminal Justice, Human Trafficking, Water, & Refugees. Selected entrepreneurs receive 3 years of unrestricted capital (totaling $300K) and rigorous on-going support from the Foundation. Learn more about what they fund, their selection process, and apply anytime.",
+    "summary": "The Draper Richards Kaplan Foundation backs early-stage social entrepreneurs worldwide with up to USD 300,000 over three years plus in-kind support. Applications are accepted year-round.",
     "historical_context": "accepts applications year-round from scalable social impact start up orgs, particularly those working in COVID-19 response, Civic Tech, Criminal Justice, Human Trafficking, Water, & Refugees. Selected entrepreneurs receive 3 years of unrestricted capital (totaling $300K) and rigorous on-going support from the Foundation. Learn more about what they fund , their selection process , and apply anytime.",
     "grant_amount": "$300K",
     "typical_cycle_months": [
       "Varies"
     ],
-    "geography": "Not Specified",
+    "geography": "Global",
     "eligibility_type": "Not Specified",
     "sector": "Democracy/Civic Tech, Criminal Justice",
     "tech_focus": "Civic Tech",
     "opportunity_type": "Grant",
     "is_recurring": false,
     "years_observed": [
-      2021
+      2021,
+      2026
     ],
-    "last_observed_year": 2021,
-    "trust_state": "historical_archive",
-    "current_cycle": null,
-    "official_url": "",
+    "last_observed_year": 2026,
+    "trust_state": "rolling",
+    "current_cycle": {
+      "year": 2026,
+      "status": "rolling",
+      "opens_on": null,
+      "closes_on": null,
+      "verified_at": "2026-11-24",
+      "source_url": "https://www.drkfoundation.org/apply-for-funding/",
+      "note": "Funding applications are accepted year-round."
+    },
+    "official_url": "https://www.drkfoundation.org/apply-for-funding/",
     "research_notes": "",
     "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
   },
@@ -16446,5 +16474,170 @@
     "official_url": "",
     "research_notes": "",
     "provenance": "EdZola historical research, including opportunities surfaced in Fast Forward funding emails"
+  },
+  {
+    "id": "iki-small-grants-2026",
+    "name": "IKI Small Grants 2026 (8th call): nature-based solutions",
+    "summary": "The German government's International Climate Initiative is taking applications from local non-profits in developing and emerging countries for nature-based climate projects. Apply by 8 January 2027.",
+    "historical_context": "First recorded from the official programme page on 24 November 2026.",
+    "grant_amount": "€60K–€200K",
+    "typical_cycle_months": [
+      "Jan"
+    ],
+    "geography": "Developing Countries",
+    "eligibility_type": "Nonprofit",
+    "sector": "Climate/Environment",
+    "tech_focus": "General Tech/Digital",
+    "opportunity_type": "Grant",
+    "is_recurring": true,
+    "years_observed": [
+      2026
+    ],
+    "last_observed_year": 2026,
+    "trust_state": "open_now",
+    "current_cycle": {
+      "year": 2026,
+      "status": "open_now",
+      "opens_on": "2026-11-15",
+      "closes_on": "2027-01-08",
+      "verified_at": "2026-11-24",
+      "source_url": "https://www.international-climate-initiative.com/en/find-funding/small-grants/small-grants-2026/",
+      "note": "Eighth call open from 15 November 2026 to 8 January 2027 (23:59 CET)."
+    },
+    "official_url": "https://www.international-climate-initiative.com/en/find-funding/small-grants/small-grants-2026/",
+    "research_notes": "For local non-profits in ODA-eligible countries with at least three years of experience and average annual revenue of about EUR 60,000–500,000. Grants of EUR 60,000–200,000 over one to two years. This is the 8th call, so the programme recurs.",
+    "provenance": "EdZola web research, 24 November 2026, confirmed on the funder's official page"
+  },
+  {
+    "id": "hcltech-global-grant-climate-action",
+    "name": "HCLTech Global Grant for Climate Action",
+    "summary": "HCLTech's climate grant for non-profits, awarded to one winner and three runners-up each year from a USD 5.5 million, five-year commitment. Apply by 24 January 2027.",
+    "historical_context": "First recorded from the official programme page on 24 November 2026.",
+    "grant_amount": "",
+    "typical_cycle_months": [
+      "Jan"
+    ],
+    "geography": "Not Specified",
+    "eligibility_type": "Nonprofit",
+    "sector": "Climate/Environment",
+    "tech_focus": "General Tech/Digital",
+    "opportunity_type": "Competition/Prize/Award",
+    "is_recurring": true,
+    "years_observed": [
+      2026
+    ],
+    "last_observed_year": 2026,
+    "trust_state": "open_now",
+    "current_cycle": {
+      "year": 2026,
+      "status": "open_now",
+      "opens_on": null,
+      "closes_on": "2027-01-24",
+      "verified_at": "2026-11-24",
+      "source_url": "https://globalgrant.hcltech.com/",
+      "note": "Applications close 24 January 2027 at 11:59 PM ET."
+    },
+    "official_url": "https://globalgrant.hcltech.com/",
+    "research_notes": "Open to non-profits in 24 countries. The country list did not render when checked, so country eligibility is unconfirmed: check it on the official page before applying. USD 5.5 million over five years across one winner and three runners-up per year.",
+    "provenance": "EdZola web research, 24 November 2026, confirmed on the funder's official page"
+  },
+  {
+    "id": "cisco-youth-leadership-award",
+    "name": "Cisco Youth Leadership Award",
+    "summary": "Global Citizen and Cisco award USD 250,000 to each of three young leaders running a registered nonprofit, for-profit or social enterprise. Applications close 18 December 2026.",
+    "historical_context": "First recorded from the official programme page on 24 November 2026.",
+    "grant_amount": "$250K",
+    "typical_cycle_months": [
+      "Dec"
+    ],
+    "geography": "Global",
+    "eligibility_type": "Individual/Fellow",
+    "sector": "General/Multiple Sectors, Youth",
+    "tech_focus": "General Tech/Digital",
+    "opportunity_type": "Competition/Prize/Award",
+    "is_recurring": true,
+    "years_observed": [
+      2026
+    ],
+    "last_observed_year": 2026,
+    "trust_state": "open_now",
+    "current_cycle": {
+      "year": 2026,
+      "status": "open_now",
+      "opens_on": "2026-11-11",
+      "closes_on": "2026-12-18",
+      "verified_at": "2026-11-24",
+      "source_url": "https://www.globalcitizen.org/programs/youth-leadership-award/",
+      "note": "Open 11 November 2026 (10:00 ET) to 18 December 2026 (17:00 ET)."
+    },
+    "official_url": "https://www.globalcitizen.org/programs/youth-leadership-award/",
+    "research_notes": "Applicants aged 18–35 who lead a registered entity (nonprofit, for-profit or social enterprise). Open worldwide except OFAC-sanctioned countries. Three winners of USD 250,000 each.",
+    "provenance": "EdZola web research, 24 November 2026, confirmed on the funder's official page"
+  },
+  {
+    "id": "nexa-lighthouse-asia-pacific",
+    "name": "Nexa Lighthouse: Asia and the Pacific (Transition to Scale)",
+    "summary": "Grand Challenges Canada and AVPN fund proven innovations in Asia and the Pacific that are ready to scale, with about USD 250,000 to 2 million each. Apply by 8 December 2026 (extended).",
+    "historical_context": "First recorded from the official programme page on 24 November 2026.",
+    "grant_amount": "$250K–$2M",
+    "typical_cycle_months": [
+      "Dec"
+    ],
+    "geography": "Asia",
+    "eligibility_type": "Not Specified",
+    "sector": "General/Multiple Sectors",
+    "tech_focus": "General Tech/Digital",
+    "opportunity_type": "Grant",
+    "is_recurring": false,
+    "years_observed": [
+      2026
+    ],
+    "last_observed_year": 2026,
+    "trust_state": "open_now",
+    "current_cycle": {
+      "year": 2026,
+      "status": "open_now",
+      "opens_on": null,
+      "closes_on": "2026-12-08",
+      "verified_at": "2026-11-24",
+      "source_url": "https://www.grandchallenges.ca/funding-opportunity-nexa-lighthouse/",
+      "note": "Deadline extended to 8 December 2026 at 2:00 p.m. ET."
+    },
+    "official_url": "https://www.grandchallenges.ca/funding-opportunity-nexa-lighthouse/",
+    "research_notes": "For organisations incorporated and implementing in Asia and the Pacific. The eligible-country list (Appendix B of the call) was not read; India and Indonesia eligibility comes from secondary sources, so confirm it on the official page before applying.",
+    "provenance": "EdZola web research, 24 November 2026, confirmed on the funder's official page"
+  },
+  {
+    "id": "rise-up-south-africa",
+    "name": "Rise Up Together Leadership & Advocacy Accelerator: South Africa",
+    "summary": "Rise Up Together's accelerator for civil society leaders in Gauteng and KwaZulu-Natal, with up to USD 17,000 in seed funding after the programme. Apply by 30 November 2026.",
+    "historical_context": "First recorded from the official programme page on 24 November 2026.",
+    "grant_amount": "up to $17K",
+    "typical_cycle_months": [
+      "Nov"
+    ],
+    "geography": "South Africa",
+    "eligibility_type": "Civil society leader",
+    "sector": "Women/Gender Equity",
+    "tech_focus": "General Tech/Digital",
+    "opportunity_type": "Accelerator/Incubator",
+    "is_recurring": true,
+    "years_observed": [
+      2026
+    ],
+    "last_observed_year": 2026,
+    "trust_state": "open_now",
+    "current_cycle": {
+      "year": 2026,
+      "status": "open_now",
+      "opens_on": "2026-11-02",
+      "closes_on": "2026-11-30",
+      "verified_at": "2026-11-24",
+      "source_url": "https://riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-accelerator-in-south-africa/",
+      "note": "South Africa call open 2 November to 30 November 2026."
+    },
+    "official_url": "https://riseuptogether.org/call-for-applications-rise-up-together-launches-leadership-advocacy-accelerator-in-south-africa/",
+    "research_notes": "Rise Up Together runs country calls several times a year (Kenya in June 2026, Maharashtra in August 2026, South Africa in November 2026). This call is for leaders based in Gauteng and KwaZulu-Natal.",
+    "provenance": "EdZola web research, 24 November 2026, confirmed on the funder's official page"
   }
 ]

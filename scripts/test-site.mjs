@@ -11,7 +11,14 @@ assert.match(html, /<script src="app\.js" defer><\/script>/, 'index must load ap
 assert.match(html, /template=add-grant\.yml/, 'add-grant issue form must be linked');
 assert.match(html, /template=correct-grant\.yml/, 'correction issue form must be linked');
 assert.doesNotMatch(`${html}\n${app}`, /Times Spotted|times_mentioned|for_profit_eligible|f-fp/, 'removed fields must not return');
-assert.equal(grants.length, 646, 'deduplicated record count changed unexpectedly');
+// Records are added as opportunities are verified, so guard against duplicates rather than pinning a count.
+assert.ok(grants.length >= 646, 'records were removed unexpectedly');
+const seenUrls = new Map();
+for (const grant of grants.filter(item => item.trust_state !== 'historical_archive' && item.official_url)) {
+  const key = `${grant.name.toLowerCase()}|${grant.official_url.replace(/\/+$/, '').toLowerCase()}`;
+  assert.ok(!seenUrls.has(key), `${grant.name} duplicates ${seenUrls.get(key)}`);
+  seenUrls.set(key, grant.id);
+}
 
 // The number of current records changes as deadlines pass (scripts/refresh-freshness.mjs), so test the rules,
 // not a fixed count.
