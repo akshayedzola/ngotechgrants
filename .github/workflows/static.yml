@@ -9,6 +9,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Redeploys daily so records whose deadline has passed leave "open now" without waiting for a push
+  schedule:
+    - cron: "37 1 * * *"
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -31,6 +35,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # A verified deadline passing must not block the deploy. Apply the freshness rule to this run's copy of the data
+      # (docs/SOURCES.md) and flag what moved, so the same change can be committed. Nothing is pushed from here.
+      - name: Apply the freshness rule
+        run: |
+          node scripts/refresh-freshness.mjs | tee "$RUNNER_TEMP/freshness.log"
+          if ! git diff --quiet -- data/grants.json; then
+            node scripts/build-grants-v2.mjs
+            moved=$(tail -n +2 "$RUNNER_TEMP/freshness.log" | paste -sd ';' -)
+            echo "::warning title=Freshness rule moved records in this deploy::${moved}. Run node scripts/refresh-freshness.mjs and node scripts/build-grants-v2.mjs, then commit, to bring the repository in step."
+          fi
       - name: Validate grant data and site contract
         run: |
           node --check app.js
@@ -46,7 +60,9 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        # From Nov 2026, deploy-pages@v5 found no artifact uploaded by upload-pages-artifact@v3; keep both on current majors.
+        # Documented fallback if this pairing fails: upload-pages-artifact@v3 with deploy-pages@v4.
+        uses: actions/upload-pages-artifact@v5
         with:
           # Upload entire repository
           path: '.'

@@ -165,8 +165,9 @@ const golden = [
     assert.deepEqual(r.edzola_markets, ['east_africa']);
   }],
   ['iki-small-grants-2026', r => {
-    assert.equal(r.trust_state, 'open_now');
-    assert.equal(r.current_cycle.closes_on, '2027-01-08');
+    // Open until 8 Jan 2027; after that the freshness rule moves it to historically_recurring with previous_cycle.
+    assert.ok(['open_now', 'historically_recurring'].includes(r.trust_state));
+    assert.equal((r.current_cycle ?? r.previous_cycle).closes_on, '2027-01-08');
     assert.deepEqual(r.geography.country_groups, ['LMIC']);
     assert.equal(r.amount.currency, 'EUR');
     assert.equal(r.amount.usd_max, Math.round(200000 * fx.usd_per_unit.EUR));
