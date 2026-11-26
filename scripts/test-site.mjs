@@ -59,4 +59,10 @@ for (const id of ['hs-total', 'hs-recurring', 'k-recurring', 'hp-recurring', 'hp
   assert.match(app, new RegExp(`'${id}'`), `${id} must be set from the data in app.js`);
 }
 
+// edzola.com/resources/ngo-tech-grants/ reads data/grants.json from GitHub Pages. It needs these fields on every record.
+for (const grant of grants) {
+  for (const field of ['id', 'name', 'trust_state', 'opportunity_type']) assert.ok(grant[field], `${grant.id || grant.name}: ${field} is required by the edzola.com finder`);
+}
+assert.match(html, /rel="canonical" href="https:\/\/www\.edzola\.com\/resources\/ngo-tech-grants\/"/, 'the canonical must point at the edzola.com finder');
+
 console.log('Static site contract tests passed.');
