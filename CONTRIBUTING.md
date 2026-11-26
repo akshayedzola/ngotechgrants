@@ -1,5 +1,10 @@
 # Contributing funding information
 
+The directory's public home is the [NGO tech grants finder on edzola.com](https://www.edzola.com/resources/ngo-tech-grants/).
+That page reads `data/grants.json` from this repository's GitHub Pages site, so a reviewed change here shows up there
+once Pages has deployed, with no website release. Keep the file at that path and keep it a JSON array of records with
+the fields the schema describes: renaming or reshaping fields breaks the edzola.com finder too.
+
 This directory is a static GitHub Pages site. GitHub Issues are its public contribution queue, so every proposed addition or correction remains visible and auditable without a paid database.
 
 ## Suggest an addition or correction
