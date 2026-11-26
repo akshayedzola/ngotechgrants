@@ -9,6 +9,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Redeploys daily so records whose deadline has passed leave "open now" without waiting for a push
+  schedule:
+    - cron: "37 1 * * *"
+
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
   contents: read
@@ -22,15 +26,24 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Validate the data and upload the site. Deploying happens in a separate job: when deploy-pages ran in the same job,
+  # its artifact lookup ran under a second after the upload and found nothing ("Found 0 artifact(s)"), a known race
+  # (actions/deploy-pages#451). A job that starts after this one finishes sees the uploaded artifact.
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # A verified deadline passing must not block the deploy. Apply the freshness rule to this run's copy of the data
+      # (docs/SOURCES.md) and flag what moved, so the same change can be committed. Nothing is pushed from here.
+      - name: Apply the freshness rule
+        run: |
+          node scripts/refresh-freshness.mjs | tee "$RUNNER_TEMP/freshness.log"
+          if ! git diff --quiet -- data/grants.json; then
+            node scripts/build-grants-v2.mjs
+            moved=$(tail -n +2 "$RUNNER_TEMP/freshness.log" | paste -sd ';' -)
+            echo "::warning title=Freshness rule moved records in this deploy::${moved}. Run node scripts/refresh-freshness.mjs and node scripts/build-grants-v2.mjs, then commit, to bring the repository in step."
+          fi
       - name: Validate grant data and site contract
         run: |
           node --check app.js
@@ -46,10 +59,18 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           # Upload entire repository
           path: '.'
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
